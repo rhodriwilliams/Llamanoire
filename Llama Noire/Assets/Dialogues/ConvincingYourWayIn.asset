@@ -1,0 +1,213 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9858b4990db6ccf419f6dda3bc4f300b, type: 3}
+  m_Name: ConvincingYourWayIn
+  m_EditorClassIdentifier: 
+  objectiveName: ConvinceHarold
+  nodes:
+  - image: {fileID: 0}
+    name: Harold Zubron
+    message: Armstrong? What are you doing here?
+    options:
+    - text: I'm here to drink.
+      nextNode: 1
+      function: 
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    autoNext: 0
+    nextTime: 0
+    nextIndex: 0
+    succeed: 0
+  - image: {fileID: 0}
+    name: Harold Zubron
+    message: Now, I know that isn't the case. You want my advice?
+    options:
+    - text: Not really.
+      nextNode: 2
+      function: 
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    autoNext: 0
+    nextTime: 0
+    nextIndex: 0
+    succeed: 0
+  - image: {fileID: 0}
+    name: Harold Zubron
+    message: Leave it. What's done is done.
+    options:
+    - text: I can't leave it.
+      nextNode: 3
+      function: 
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    - text: Fine, it's over. [Lie]
+      nextNode: 3
+      function: RandomChance
+      difficulty: 5
+      failNode: 4
+      succeed: 0
+    - text: He'll get what he deserves.
+      nextNode: 4
+      function: 
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    - text: '...'
+      nextNode: 3
+      function: 
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    autoNext: 0
+    nextTime: 0
+    nextIndex: 0
+    succeed: 0
+  - image: {fileID: 0}
+    name: Harold Zubron
+    message: Just don't get hurt in there, Armstrong.
+    options:
+    - text: '...'
+      nextNode: 1
+      function: ExitDialogue
+      difficulty: 0
+      failNode: 0
+      succeed: 1
+    autoNext: 0
+    nextTime: 0
+    nextIndex: 0
+    succeed: 0
+  - image: {fileID: 0}
+    name: Harold Zubron
+    message: You're not going in with that attitude. I appreciate the loyalty to your
+      pop, but getting killed ain't gonna bring him back.
+    options:
+    - text: Funny, I thought it would.
+      nextNode: 5
+      function: 
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    - text: I know that.
+      nextNode: 6
+      function: 
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    - text: Let me in.
+      nextNode: 7
+      function: 
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    - text: '...'
+      nextNode: 8
+      function: ExitDialogue
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    autoNext: 0
+    nextTime: 0
+    nextIndex: 0
+    succeed: 0
+  - image: {fileID: 0}
+    name: Harold Zubron
+    message: You've got a deathwish if you think you're gonna take on Pacone.
+    options:
+    - text: My life doesn't matter here.
+      nextNode: 9
+      function: 
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    - text: Pacone won't get away with what he's done.
+      nextNode: 10
+      function: 
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    autoNext: 0
+    nextTime: 0
+    nextIndex: 0
+    succeed: 0
+  - image: {fileID: 0}
+    name: Harold Zubron
+    message: Don't do anything you'll regret.
+    options:
+    - text: '...'
+      nextNode: 0
+      function: ExitDialogue
+      difficulty: 0
+      failNode: 0
+      succeed: 1
+    autoNext: 0
+    nextTime: 0
+    nextIndex: 0
+    succeed: 0
+  - image: {fileID: 0}
+    name: Harold Zubron
+    message: Not a chance. Get out of here, Armstrong.
+    options:
+    - text: '...'
+      nextNode: 1
+      function: ExitDialogue
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    autoNext: 0
+    nextTime: 0
+    nextIndex: 0
+    succeed: 0
+  - image: {fileID: 0}
+    name: Harold Zubron
+    message: I didn't mean to upset you. Look, you should probably go home. Drinking
+      here isn't going to do you any good.
+    options:
+    - text: '...'
+      nextNode: 1
+      function: ExitDialogue
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    autoNext: 0
+    nextTime: 0
+    nextIndex: 0
+    succeed: 0
+  - image: {fileID: 0}
+    name: Harold Zubron
+    message: Don't make a mess in there.
+    options:
+    - text: '...'
+      nextNode: 1
+      function: ExitDialogue
+      difficulty: 0
+      failNode: 0
+      succeed: 1
+    autoNext: 0
+    nextTime: 0
+    nextIndex: 0
+    succeed: 0
+  - image: {fileID: 0}
+    name: Harold Zubron
+    message: I'm out of a job if you go through with this. You're not getting in.
+    options:
+    - text: '...'
+      nextNode: 0
+      function: ExitDialogue
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    autoNext: 0
+    nextTime: 0
+    nextIndex: 0
+    succeed: 0

@@ -1,0 +1,1957 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9858b4990db6ccf419f6dda3bc4f300b, type: 3}
+  m_Name: ISeeYouArmstrong
+  m_EditorClassIdentifier: 
+  objectiveName: GetPastFrank
+  nodes:
+  - image: {fileID: 0}
+    name: Frank Sotto
+    message: Not one step further, punk! You can't be up here!
+    options:
+    - text: '[Step Forward]'
+      nextNode: 1
+      function: 
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    - text: '[Stay Where You Are]'
+      nextNode: 2
+      function: 
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    autoNext: 0
+    nextTime: 0
+    nextIndex: 0
+    succeed: 0
+  - image: {fileID: 0}
+    name: Frank Sotto
+    message: I mean it! You customers aren't allowed up here.
+    options:
+    - text: I'm not a customer.
+      nextNode: 3
+      function: 
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    - text: I'm here for Pacone.
+      nextNode: 4
+      function: 
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    - text: You can't stop me.
+      nextNode: 5
+      function: 
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    - text: '...'
+      nextNode: 6
+      function: 
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    autoNext: 0
+    nextTime: 0
+    nextIndex: 0
+    succeed: 0
+  - image: {fileID: 0}
+    name: Frank Sotto
+    message: That's right. Now turn around and go back.
+    options:
+    - text: I'm exactly where I need to be.
+      nextNode: 7
+      function: 
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    - text: Make me.
+      nextNode: 8
+      function: 
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    - text: No problem. [Lie]
+      nextNode: 9
+      function: 
+      difficulty: 10
+      failNode: 10
+      succeed: 0
+    - text: '...'
+      nextNode: 12
+      function: 
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    autoNext: 0
+    nextTime: 0
+    nextIndex: 0
+    succeed: 0
+  - image: {fileID: 0}
+    name: Frank Sotto
+    message: What are you then? Because unless you're employed by Pacone, you're not
+      allowed up here.
+    options:
+    - text: I'm his tailor. [Lie]
+      nextNode: 25
+      function: 
+      difficulty: 5
+      failNode: 26
+      succeed: 0
+    - text: I'm here to protect him. [Lie]
+      nextNode: 28
+      function: 
+      difficulty: 4
+      failNode: 29
+      succeed: 0
+    - text: I'm Floyd Armstrong.
+      nextNode: 30
+      function: 
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    - text: '...'
+      nextNode: 31
+      function: 
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    autoNext: 0
+    nextTime: 0
+    nextIndex: 0
+    succeed: 0
+  - image: {fileID: 0}
+    name: Frank Sotto
+    message: You some kind of hitman or something? You're not getting to Pacone.
+    options:
+    - text: I'm coming up.
+      nextNode: 13
+      function: 
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    autoNext: 0
+    nextTime: 0
+    nextIndex: 0
+    succeed: 0
+  - image: {fileID: 0}
+    name: Frank Sotto
+    message: I sure can, and I'm not afraid to. So stay where you are.
+    options:
+    - text: I'm coming up.
+      nextNode: 13
+      function: 
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    - text: I need to talk to Pacone.
+      nextNode: 23
+      function: 
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    - text: '...'
+      nextNode: 15
+      function: 
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    autoNext: 0
+    nextTime: 0
+    nextIndex: 0
+    succeed: 0
+  - image: {fileID: 0}
+    name: Frank Sotto
+    message: One more step and I'll shoot you where you stand.
+    options:
+    - text: I'm coming up.
+      nextNode: 13
+      function: 
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    - text: I need to talk to you.
+      nextNode: 14
+      function: 
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    - text: I need to talk to Pacone.
+      nextNode: 23
+      function: 
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    - text: '...'
+      nextNode: 15
+      function: 
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    autoNext: 0
+    nextTime: 0
+    nextIndex: 0
+    succeed: 0
+  - image: {fileID: 0}
+    name: Frank Sotto
+    message: The boss doesn't have any meetings with nobody I don't know today. And
+      you're definitely somebody I don't know.
+    options:
+    - text: I'm his tailor. [Lie]
+      nextNode: 25
+      function: 
+      difficulty: 5
+      failNode: 26
+      succeed: 0
+    - text: I'm here to protect him. [Lie]
+      nextNode: 28
+      function: 
+      difficulty: 4
+      failNode: 29
+      succeed: 0
+    - text: I'm Floyd Armstrong.
+      nextNode: 30
+      function: 
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    - text: '...'
+      nextNode: 31
+      function: 
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    autoNext: 0
+    nextTime: 0
+    nextIndex: 0
+    succeed: 0
+  - image: {fileID: 0}
+    name: Frank Sotto
+    message: Are you looking to get shot?
+    options:
+    - text: Pretty much.
+      nextNode: 16
+      function: 
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    autoNext: 0
+    nextTime: 0
+    nextIndex: 0
+    succeed: 0
+  - image: {fileID: 0}
+    name: Frank Sotto
+    message: I hope you enjoy the rest of your night.
+    options: []
+    autoNext: 0
+    nextTime: 0
+    nextIndex: 0
+    succeed: 0
+  - image: {fileID: 0}
+    name: Frank Sotto
+    message: Wait a minute, how did you get a key to get up here?
+    options:
+    - text: It was unlocked. [Lie]
+      nextNode: 34
+      function: 
+      difficulty: 7
+      failNode: 35
+      succeed: 0
+    - text: It's my key. [Lie]
+      nextNode: 18
+      function: 
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    - text: Does it matter?
+      nextNode: 19
+      function: 
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    - text: '...'
+      nextNode: 11
+      function: 
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    autoNext: 0
+    nextTime: 0
+    nextIndex: 0
+    succeed: 0
+  - image: {fileID: 0}
+    name: Frank Sotto
+    message: 'I remember locking it, so you better have an explanation. '
+    options:
+    - text: It was unlocked. [Lie]
+      nextNode: 34
+      function: 
+      difficulty: 10
+      failNode: 35
+      succeed: 0
+    - text: It's my key. [Lie]
+      nextNode: 18
+      function: 
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    - text: Does it matter?
+      nextNode: 19
+      function: 
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    autoNext: 0
+    nextTime: 0
+    nextIndex: 0
+    succeed: 0
+  - image: {fileID: 0}
+    name: Frank Sotto
+    message: Nothing to say, huh? That's pretty suspicious, you know. If I didn't
+      know any better, I'd say you're trying to get past me.
+    options:
+    - text: I am.
+      nextNode: 20
+      function: 
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    autoNext: 0
+    nextTime: 0
+    nextIndex: 0
+    succeed: 0
+  - image: {fileID: 0}
+    name: Frank Sotto
+    message: That's not happening. Not a chance. Come any closer, and you're dead.
+    options:
+    - text: '[Step Forward]'
+      nextNode: 21
+      function: 
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    - text: '[Stay Where You Are]'
+      nextNode: 22
+      function: 
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    autoNext: 0
+    nextTime: 0
+    nextIndex: 0
+    succeed: 0
+  - image: {fileID: 0}
+    name: Frank Sotto
+    message: Me? What have I got to do with you?
+    options:
+    - text: You're in the way.
+      nextNode: 23
+      function: 
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    - text: I'm here for you.
+      nextNode: 24
+      function: 
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    autoNext: 0
+    nextTime: 0
+    nextIndex: 0
+    succeed: 0
+  - image: {fileID: 0}
+    name: Frank Sotto
+    message: You're right to be afraid.
+    options:
+    - text: You're in the way.
+      nextNode: 23
+      function: 
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    - text: I'm not afraid.
+      nextNode: 27
+      function: 
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    autoNext: 0
+    nextTime: 0
+    nextIndex: 0
+    succeed: 0
+  - image: {fileID: 0}
+    name: Frank Sotto
+    message: 'I''d be more careful if I were you: it doesn''t take much to kill a
+      llama. One shot, most times.'
+    options:
+    - text: Speaking from experience?
+      nextNode: 32
+      function: 
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    - text: '...'
+      nextNode: 33
+      function: 
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    autoNext: 0
+    nextTime: 0
+    nextIndex: 0
+    succeed: 0
+  - image: {fileID: 0}
+    name: Frank Sotto
+    message: What are you doing there?! Stop that!
+    options:
+    - text: '...'
+      nextNode: 36
+      function: RushAt
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    autoNext: 0
+    nextTime: 0
+    nextIndex: 0
+    succeed: 0
+  - image: {fileID: 0}
+    name: Frank Sotto
+    message: 'Better question then: why do you have a key?'
+    options:
+    - text: I work here. [Lie]
+      nextNode: 52
+      function: 
+      difficulty: 6
+      failNode: 53
+      succeed: 0
+    - text: Through legitimate means.
+      nextNode: 37
+      function: 
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    autoNext: 0
+    nextTime: 0
+    nextIndex: 0
+    succeed: 0
+  - image: {fileID: 0}
+    name: Frank Sotto
+    message: Yeah, I'd say it matters. You trying to pull one over on me?
+    options:
+    - text: '...'
+      nextNode: 51
+      function: 
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    autoNext: 0
+    nextTime: 0
+    nextIndex: 0
+    succeed: 0
+  - image: {fileID: 0}
+    name: Frank Sotto
+    message: You are?
+    options:
+    - text: I'm here to kill Al Pacone.
+      nextNode: 38
+      function: 
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    - text: I'm here for revenge.
+      nextNode: 39
+      function: 
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    autoNext: 0
+    nextTime: 0
+    nextIndex: 0
+    succeed: 0
+  - image: {fileID: 0}
+    name: Frank Sotto
+    message: I warned you.
+    options:
+    - text: '...'
+      nextNode: 0
+      function: SottoShoots
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    autoNext: 0
+    nextTime: 0
+    nextIndex: 0
+    succeed: 0
+  - image: {fileID: 0}
+    name: Frank Sotto
+    message: Oh, so now you can follow instructions?
+    options:
+    - text: I'm not getting shot today.
+      nextNode: 40
+      function: 
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    - text: If it can get me in that office.
+      nextNode: 41
+      function: 
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    autoNext: 0
+    nextTime: 0
+    nextIndex: 0
+    succeed: 0
+  - image: {fileID: 0}
+    name: Frank Sotto
+    message: Yeah? And you're not getting past me.
+    options:
+    - text: I'm sure I can.
+      nextNode: 41
+      function: 
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    autoNext: 0
+    nextTime: 0
+    nextIndex: 0
+    succeed: 0
+  - image: {fileID: 0}
+    name: Frank Sotto
+    message: Me? I'm flattered, but you're still trespassing. Please leave.
+    options: []
+    autoNext: 0
+    nextTime: 0
+    nextIndex: 0
+    succeed: 0
+  - image: {fileID: 0}
+    name: Frank Sotto
+    message: Oh, finally. He's been getting at me for weeks about his new suit. His
+      old suit got ruined. If you want to wait for a minute, I'll tell him you're
+      here.
+    options:
+    - text: I can do that for you.
+      nextNode: 42
+      function: 
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    - text: I'll wait here.
+      nextNode: 0
+      function: SottoTurn
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    autoNext: 0
+    nextTime: 0
+    nextIndex: 0
+    succeed: 0
+  - image: {fileID: 0}
+    name: Frank Sotto
+    message: That sounds like a lie.
+    options:
+    - text: Well...
+      nextNode: 43
+      function: 
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    autoNext: 0
+    nextTime: 0
+    nextIndex: 0
+    succeed: 0
+  - image: {fileID: 0}
+    name: Frank Sotto
+    message: You some kind of madman with a deathwish? You're a nobody, and you just
+      come in here and expect me to roll over and let you past me!
+    options:
+    - text: I'm sure I can.
+      nextNode: 41
+      function: 
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    - text: Well...
+      nextNode: 43
+      function: 
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    - text: I can hold my own.
+      nextNode: 45
+      function: 
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    autoNext: 0
+    nextTime: 0
+    nextIndex: 0
+    succeed: 0
+  - image: {fileID: 0}
+    name: Frank Sotto
+    message: So, you're the back-up? That's a relief, because we've gotta protect
+      the boss. A llama has been systematically tearing down the operations. He's
+      working his way up to Pacone.
+    options:
+    - text: Just one llama?
+      nextNode: 44
+      function: 
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    - text: I'm well aware.
+      nextNode: 60
+      function: 
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    autoNext: 0
+    nextTime: 0
+    nextIndex: 0
+    succeed: 0
+  - image: {fileID: 0}
+    name: Frank Sotto
+    message: I doubt you could protect anyone. You can't even follow basic instructions.
+    options:
+    - text: I can hold my own.
+      nextNode: 45
+      function: 
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    autoNext: 0
+    nextTime: 0
+    nextIndex: 0
+    succeed: 0
+  - image: {fileID: 0}
+    name: Frank Sotto
+    message: Hang on, Floyd Armstrong? I do know you....
+    options:
+    - text: I'm only here for Pacone.
+      nextNode: 61
+      function: 
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    autoNext: 0
+    nextTime: 0
+    nextIndex: 0
+    succeed: 0
+  - image: {fileID: 0}
+    name: Frank Sotto
+    message: You better go back down those stairs, and not come back.
+    options: []
+    autoNext: 0
+    nextTime: 0
+    nextIndex: 0
+    succeed: 0
+  - image: {fileID: 0}
+    name: Frank Sotto
+    message: Maybe I am. What's it to you?
+    options:
+    - text: You're his executioner?
+      nextNode: 46
+      function: 
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    autoNext: 0
+    nextTime: 0
+    nextIndex: 0
+    succeed: 0
+  - image: {fileID: 0}
+    name: Frank Sotto
+    message: I've seen it happen. The first time, it shocks you. But you get used
+      to it. Eventually, they get your hands dirty. That's when they've got you.
+    options:
+    - text: Are you okay?
+      nextNode: 46
+      function: 
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    - text: '...'
+      nextNode: 47
+      function: 
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    autoNext: 0
+    nextTime: 0
+    nextIndex: 0
+    succeed: 0
+  - image: {fileID: 0}
+    name: Frank Sotto
+    message: Oh. Okay. You're still not allowed up here though.
+    options:
+    - text: Why not?
+      nextNode: 48
+      function: 
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    autoNext: 0
+    nextTime: 0
+    nextIndex: 0
+    succeed: 0
+  - image: {fileID: 0}
+    name: Frank Sotto
+    message: I locked it myself. What did you say your name was?
+    options:
+    - text: I'm your worst nightmare.
+      nextNode: 50
+      function: 
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    - text: '...'
+      nextNode: 49
+      function: 
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    autoNext: 0
+    nextTime: 0
+    nextIndex: 0
+    succeed: 0
+  - image: {fileID: 0}
+    name: Frank Sotto
+    message: You can't be sneaking around here. Who are you?
+    options:
+    - text: I'm your worst nightmare.
+      nextNode: 50
+      function: 
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    - text: '...'
+      nextNode: 51
+      function: 
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    autoNext: 0
+    nextTime: 0
+    nextIndex: 0
+    succeed: 0
+  - image: {fileID: 0}
+    name: Frank Sotto
+    message: Patsy gave it to you, didn't she? I knew that bitch was working with
+      someone. Never would'a guessed it was someone like you.
+    options:
+    - text: No idea who that is. [Lie]
+      nextNode: 54
+      function: 
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    - text: Leave her out of this.
+      nextNode: 55
+      function: 
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    autoNext: 0
+    nextTime: 0
+    nextIndex: 0
+    succeed: 0
+  - image: {fileID: 0}
+    name: Frank Sotto
+    message: You are? You see, this happens pretty regularly, and surprisingly enough,
+      he's not dead yet. D'you know why that is?
+    options:
+    - text: No.
+      nextNode: 56
+      function: 
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    - text: '...'
+      nextNode: 56
+      function: 
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    autoNext: 0
+    nextTime: 0
+    nextIndex: 0
+    succeed: 0
+  - image: {fileID: 0}
+    name: Frank Sotto
+    message: Revenge? It's a little early in the night for revenge, pal. No revenge
+      happening on my watch.
+    options: []
+    autoNext: 0
+    nextTime: 0
+    nextIndex: 0
+    succeed: 0
+  - image: {fileID: 0}
+    name: Frank Sotto
+    message: That's up to me now, isn't it? I have all the power in this situation.
+      Turning that around is gonna prove especially difficult.
+    options:
+    - text: Your boss wants revenge.
+      nextNode: 57
+      function: 
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    autoNext: 0
+    nextTime: 0
+    nextIndex: 0
+    succeed: 0
+  - image: {fileID: 0}
+    name: Frank Sotto
+    message: 'Snarky bastard, ain''t you. Here''s the thing: you aren''t getting into
+      that office unless the boss wants you in there.'
+    options:
+    - text: Your boss wants revenge.
+      nextNode: 57
+      function: 
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    - text: I think he wants to meet me.
+      nextNode: 58
+      function: 
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    autoNext: 0
+    nextTime: 0
+    nextIndex: 0
+    succeed: 0
+  - image: {fileID: 0}
+    name: Frank Sotto
+    message: The boss don't really like unannounced guests.
+    options:
+    - text: I'll do my thing and leave.
+      nextNode: 99
+      function: 
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    - text: I understand.
+      nextNode: 0
+      function: SottoTurn
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    autoNext: 0
+    nextTime: 0
+    nextIndex: 0
+    succeed: 0
+  - image: {fileID: 0}
+    name: Frank Sotto
+    message: 'Tell me the damned truth: who are you?'
+    options:
+    - text: I'm Floyd Armstrong.
+      nextNode: 75
+      function: 
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    autoNext: 0
+    nextTime: 0
+    nextIndex: 0
+    succeed: 0
+  - image: {fileID: 0}
+    name: 76
+    message: Don't underestimate him. I'm sure he'll get here any minute.
+    options:
+    - text: I saw someone suspicious by the bar. [Lie]
+      nextNode: 76
+      function: 
+      difficulty: 3
+      failNode: 77
+      succeed: 0
+    - text: We can get him.
+      nextNode: 60
+      function: 
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    autoNext: 0
+    nextTime: 0
+    nextIndex: 0
+    succeed: 0
+  - image: {fileID: 0}
+    name: Frank Sotto
+    message: Go on then, give me your best shot.
+    options: []
+    autoNext: 0
+    nextTime: 0
+    nextIndex: 0
+    succeed: 0
+  - image: {fileID: 0}
+    name: Frank Sotto
+    message: Sometimes... It just gets so hard, y'know?
+    options:
+    - text: I do.
+      nextNode: 62
+      function: 
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    - text: '...'
+      nextNode: 63
+      function: 
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    autoNext: 0
+    nextTime: 0
+    nextIndex: 0
+    succeed: 0
+  - image: {fileID: 0}
+    name: Frank Sotto
+    message: Before you know it, you're drowning. Nothing stopping you from sinking
+      further.
+    options:
+    - text: '...'
+      nextNode: 63
+      function: 
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    autoNext: 0
+    nextTime: 0
+    nextIndex: 0
+    succeed: 0
+  - image: {fileID: 0}
+    name: Frank Sotto
+    message: The boss is in, and he likes his privacy.
+    options:
+    - text: I have to see him.
+      nextNode: 68
+      function: 
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    - text: I don't care about his privacy.
+      nextNode: 64
+      function: 
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    - text: He needs to see me.
+      nextNode: 65
+      function: 
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    - text: '...'
+      nextNode: 67
+      function: 
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    autoNext: 0
+    nextTime: 0
+    nextIndex: 0
+    succeed: 0
+  - image: {fileID: 0}
+    name: Frank Sotto
+    message: No name, huh? What are you here for?
+    options:
+    - text: I need to see Pacone.
+      nextNode: 68
+      function: 
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    - text: Your boss is as good as dead.
+      nextNode: 69
+      function: 
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    autoNext: 0
+    nextTime: 0
+    nextIndex: 0
+    succeed: 0
+  - image: {fileID: 0}
+    name: Frank Sotto
+    message: My worst nightmare? Is that a line from a film? You're not exactly gonna
+      scare me. I've got the upper hand here.
+    options:
+    - text: I need to see Pacone.
+      nextNode: 68
+      function: 
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    - text: Your boss is as good as dead.
+      nextNode: 69
+      function: 
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    - text: I don't see your advantage.
+      nextNode: 80
+      function: PullGun
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    autoNext: 0
+    nextTime: 0
+    nextIndex: 0
+    succeed: 0
+  - image: {fileID: 0}
+    name: Frank Sotto
+    message: Are you new or something then? There isn't any stock up here.
+    options:
+    - text: I assumed there would be.
+      nextNode: 70
+      function: 
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    - text: I'm not here for stock.
+      nextNode: 71
+      function: 
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    autoNext: 0
+    nextTime: 0
+    nextIndex: 0
+    succeed: 0
+  - image: {fileID: 0}
+    name: Frank Sotto
+    message: No you don't. In fact, I don't even think you're a customer. I think
+      I just about figured you out.
+    options:
+    - text: '...'
+      nextNode: 72
+      function: 
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    autoNext: 0
+    nextTime: 0
+    nextIndex: 0
+    succeed: 0
+  - image: {fileID: 0}
+    name: Frank Sotto
+    message: You can't fool me. We've known she was working with somebody. Seems we
+      found who.
+    options:
+    - text: She gave me nothing.
+      nextNode: 73
+      function: 
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    autoNext: 0
+    nextTime: 0
+    nextIndex: 0
+    succeed: 0
+  - image: {fileID: 0}
+    name: Frank Sotto
+    message: Oh, so you two are actually close? That makes this even better.
+    options:
+    - text: She gave me nothing.
+      nextNode: 73
+      function: 
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    autoNext: 0
+    nextTime: 0
+    nextIndex: 0
+    succeed: 0
+  - image: {fileID: 0}
+    name: Frank Sotto
+    message: Because I'm here. And I stop punks like you.
+    options:
+    - text: '...'
+      nextNode: 0
+      function: SottoShoots
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    autoNext: 0
+    nextTime: 0
+    nextIndex: 0
+    succeed: 0
+  - image: {fileID: 0}
+    name: Frank Sotto
+    message: If you are who I think you are, then there's not a lot you can do to
+      stop him. You see, we've already won. You're nothing.
+    options:
+    - text: I'll keep fighting.
+      nextNode: 82
+      function: 
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    - text: I'm Floyd Armstrong.
+      nextNode: 75
+      function: 
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    autoNext: 0
+    nextTime: 0
+    nextIndex: 0
+    succeed: 0
+  - image: {fileID: 0}
+    name: Frank Sotto
+    message: And why would that be?
+    options:
+    - text: Pacone owes me something.
+      nextNode: 74
+      function: 
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    - text: I'm Floyd Armstrong.
+      nextNode: 75
+      function: 
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    autoNext: 0
+    nextTime: 0
+    nextIndex: 0
+    succeed: 0
+  - image: {fileID: 0}
+    name: Frank Sotto
+    message: I'm sure we can. I just don't want to get blindsided by a madman.
+    options:
+    - text: That's a shame.
+      nextNode: 0
+      function: PunchSotto
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    autoNext: 0
+    nextTime: 0
+    nextIndex: 0
+    succeed: 0
+  - image: {fileID: 0}
+    name: Frank Sotto
+    message: Huh? How? This ain't exactly public information.
+    options:
+    - text: Well, you see...
+      nextNode: 0
+      function: PunchSotto
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    autoNext: 0
+    nextTime: 0
+    nextIndex: 0
+    succeed: 0
+  - image: {fileID: 0}
+    name: Frank Sotto
+    message: You're the one who's killed all our guys?
+    options:
+    - text: You're in my way. Don't be.
+      nextNode: 104
+      function: 
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    autoNext: 0
+    nextTime: 0
+    nextIndex: 0
+    succeed: 0
+  - image: {fileID: 0}
+    name: Frank Sotto
+    message: I used to want to be someone special. I don't think I can do this any
+      more.
+    options:
+    - text: '...'
+      nextNode: 78
+      function: 
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    autoNext: 0
+    nextTime: 0
+    nextIndex: 0
+    succeed: 0
+  - image: {fileID: 0}
+    name: Frank Sotto
+    message: The only solace you get is when you're working, so you work more, and
+      you only see more. They never stop.
+    options:
+    - text: '...'
+      nextNode: 78
+      function: 
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    autoNext: 0
+    nextTime: 0
+    nextIndex: 0
+    succeed: 0
+  - image: {fileID: 0}
+    name: Frank Sotto
+    message: Well, he does. If he does, then I wouldn't be doing my job if I didn't.
+      Get it? Now piss off.
+    options: []
+    autoNext: 0
+    nextTime: 0
+    nextIndex: 0
+    succeed: 0
+  - image: {fileID: 0}
+    name: Frank Sotto
+    message: Oh. you already have an appointment? Sorry Sir, I didn't know. But seriously,
+      there's no way you're getting in there.
+    options: []
+    autoNext: 0
+    nextTime: 0
+    nextIndex: 0
+    succeed: 0
+  - image: {fileID: 0}
+    name: Frank Sotto
+    message: Oh, uh, probably me.
+    options:
+    - text: How about right now?
+      nextNode: 79
+      function: 
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    autoNext: 0
+    nextTime: 0
+    nextIndex: 0
+    succeed: 0
+  - image: {fileID: 0}
+    name: Frank Sotto
+    message: Look, if you wanna see the boss, you gotta make an appointment.
+    options:
+    - text: Fine, who do I speak to for an appointment?
+      nextNode: 65
+      function: 
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    - text: How about right now?
+      nextNode: 79
+      function: 
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    autoNext: 0
+    nextTime: 0
+    nextIndex: 0
+    succeed: 0
+  - image: {fileID: 0}
+    name: Frank Sotto
+    message: Make an appointment then. He's a busy man.
+    options:
+    - text: Fine, who do I speak to for an appointment?
+      nextNode: 65
+      function: 
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    - text: Fine, who do I speak to for an appointment?
+      nextNode: 79
+      function: 
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    autoNext: 0
+    nextTime: 0
+    nextIndex: 0
+    succeed: 0
+  - image: {fileID: 0}
+    name: Frank Sotto
+    message: Who do you think you are, making threats like that?
+    options:
+    - text: '...'
+      nextNode: 80
+      function: PullGun
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    autoNext: 0
+    nextTime: 0
+    nextIndex: 0
+    succeed: 0
+  - image: {fileID: 0}
+    name: Frank Sotto
+    message: None here, buddy. Down the stairs is where we keep the bar supplies.
+      In fact, you should have seen it when you came up. Seems like you weren't actually
+      looking for them. That's real suspicious.
+    options:
+    - text: '...'
+      nextNode: 80
+      function: PullGun
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    autoNext: 0
+    nextTime: 0
+    nextIndex: 0
+    succeed: 0
+  - image: {fileID: 0}
+    name: Frank Sotto
+    message: Oh, you're on the other side of the business, like me. I guess I've just
+      never seen you before, how long you been with us?
+    options:
+    - text: Not long. [Lie]
+      nextNode: 81
+      function: 
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    - text: About a month. [Lie]
+      nextNode: 81
+      function: 
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    autoNext: 0
+    nextTime: 0
+    nextIndex: 0
+    succeed: 0
+  - image: {fileID: 0}
+    name: Frank Sotto
+    message: None here, buddy. Down the stairs is where we keep the bar supplies.
+      In fact, you should have seen it when you came up. Seems like you weren't actually
+      looking for them. That's real suspicious.
+    options:
+    - text: '...'
+      nextNode: 0
+      function: SottoShoots
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    autoNext: 0
+    nextTime: 0
+    nextIndex: 0
+    succeed: 0
+  - image: {fileID: 0}
+    name: Frank Sotto
+    message: Except she let you up here. She let you get close to Pacone. Not close
+      enough for you to do anything, but she still betrayed us. I hope you know, your
+      stupidity got both of you killed.
+    options:
+    - text: '...'
+      nextNode: 0
+      function: SottoShoots
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    autoNext: 0
+    nextTime: 0
+    nextIndex: 0
+    succeed: 0
+  - image: {fileID: 0}
+    name: 
+    message: You can't just sneak past me. I'm here for a reason you know. I keep
+      shit-heads like you out the way.
+    options:
+    - text: I need to see Pacone.
+      nextNode: 67
+      function: 
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    - text: Your boss is as good as dead.
+      nextNode: 68
+      function: 
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    autoNext: 0
+    nextTime: 0
+    nextIndex: 0
+    succeed: 0
+  - image: {fileID: 0}
+    name: Frank Sotto
+    message: And what would that be?
+    options:
+    - text: His life.
+      nextNode: 83
+      function: 
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    - text: Something belonging to my father.
+      nextNode: 83
+      function: 
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    autoNext: 0
+    nextTime: 0
+    nextIndex: 0
+    succeed: 0
+  - image: {fileID: 0}
+    name: Frank Sotto
+    message: Thought as much. You're never getting to Pacone, and you're as good as
+      dead. The boss will finish you shit-stain Armstrong family off.
+    options: []
+    autoNext: 0
+    nextTime: 0
+    nextIndex: 0
+    succeed: 0
+  - image: {fileID: 0}
+    name: Frank Sotto
+    message: I should probably go check that out, huh? You wait here, make sure no-one
+      gets into the office.
+    options:
+    - text: '...'
+      nextNode: 0
+      function: ExitDialogue
+      difficulty: 0
+      failNode: 0
+      succeed: 1
+    autoNext: 0
+    nextTime: 0
+    nextIndex: 0
+    succeed: 0
+  - image: {fileID: 0}
+    name: Frank Sotto
+    message: Why don't you go check them out, and report back when you're done then?
+    options:
+    - text: '...'
+      nextNode: 0
+      function: ExitDialogue
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    autoNext: 0
+    nextTime: 0
+    nextIndex: 0
+    succeed: 0
+  - image: {fileID: 0}
+    name: Frank Sotto
+    message: You know what? Just go in. I think I need a minute.
+    options: []
+    autoNext: 0
+    nextTime: 3
+    nextIndex: 0
+    succeed: 1
+  - image: {fileID: 0}
+    name: Frank Sotto
+    message: I don't think the boss wants any visitors right now.
+    options:
+    - text: Can you make an exception?
+      nextNode: 91
+      function: 
+      difficulty: 5
+      failNode: 92
+      succeed: 0
+    autoNext: 0
+    nextTime: 0
+    nextIndex: 0
+    succeed: 0
+  - image: {fileID: 0}
+    name: Frank Sotto
+    message: Choose your next words carefully, or they'll be your last.
+    options:
+    - text: You're dead too.
+      nextNode: 0
+      function: SottoShoots
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    - text: My name is Floyd Armstrong.
+      nextNode: 85
+      function: 
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    - text: You can't stop me.
+      nextNode: 86
+      function: 
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    - text: '...'
+      nextNode: 87
+      function: 
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    autoNext: 0
+    nextTime: 0
+    nextIndex: 0
+    succeed: 0
+  - image: {fileID: 0}
+    name: Frank Sotto
+    message: Explains why I haven't seen you before. If you're gonna be working here,
+      you should definitely meet the boss, seeing as he's in. Or have you already
+      met?
+    options:
+    - text: We've never met.
+      nextNode: 110
+      function: 
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    - text: I know him.
+      nextNode: 88
+      function: 
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    autoNext: 0
+    nextTime: 0
+    nextIndex: 0
+    succeed: 0
+  - image: {fileID: 0}
+    name: Frank Sotto
+    message: 'This isn''t some happy story. You keep fighting, and you die. You understand
+      that? '
+    options:
+    - text: I don't care.
+      nextNode: 89
+      function: 
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    - text: Pacone's as good as dead.
+      nextNode: 90
+      function: 
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    autoNext: 0
+    nextTime: 0
+    nextIndex: 0
+    succeed: 0
+  - image: {fileID: 0}
+    name: Frank Sotto
+    message: You're Armstrong, aren't you? Big mistake coming here without a plan.
+      No matter what vendetta you think you have with Mr. Pacone, you're mad if you
+      think you're going to get away with this.
+    options:
+    - text: I don't care.
+      nextNode: 89
+      function: 
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    - text: Pacone's as good as dead.
+      nextNode: 90
+      function: 
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    autoNext: 0
+    nextTime: 0
+    nextIndex: 0
+    succeed: 0
+  - image: {fileID: 0}
+    name: Frank Sotto
+    message: The boss says you can go in, but I'm keeping my eye on you.
+    options: []
+    autoNext: 0
+    nextTime: 3
+    nextIndex: 0
+    succeed: 1
+  - image: {fileID: 0}
+    name: Frank Sotto
+    message: Armstrong?
+    options:
+    - text: Your boss killed my father.
+      nextNode: 93
+      function: 
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    autoNext: 0
+    nextTime: 0
+    nextIndex: 0
+    succeed: 0
+  - image: {fileID: 0}
+    name: Frank Sotto
+    message: Sure I can. I've got a gun. Do you have a gun?
+    options:
+    - text: Yes. [Lie]
+      nextNode: 94
+      function: 
+      difficulty: 5
+      failNode: 95
+      succeed: 0
+    - text: No.
+      nextNode: 96
+      function: 
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    autoNext: 0
+    nextTime: 0
+    nextIndex: 0
+    succeed: 0
+  - image: {fileID: 0}
+    name: Frank Sotto
+    message: Bold choice.
+    options:
+    - text: '...'
+      nextNode: 0
+      function: SottoShoots
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    autoNext: 0
+    nextTime: 0
+    nextIndex: 0
+    succeed: 0
+  - image: {fileID: 0}
+    name: Frank Sotto
+    message: See, if you know him, then I'd know you. Wherever he goes, I go, and
+      I meet all the people who meet him.
+    options:
+    - text: He's a family friend.
+      nextNode: 97
+      function: 
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    - text: It's been a while.
+      nextNode: 98
+      function: 
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    autoNext: 0
+    nextTime: 0
+    nextIndex: 0
+    succeed: 0
+  - image: {fileID: 0}
+    name: Frank Sotto
+    message: This crusade you're on, it was flawed from the start! Your father was
+      a part of this, and he broke the rules!
+    options:
+    - text: Pacone murdered him!
+      nextNode: 99
+      function: 
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    autoNext: 0
+    nextTime: 0
+    nextIndex: 0
+    succeed: 0
+  - image: {fileID: 0}
+    name: Frank Sotto
+    message: You think this is gonna make it all better? Not a chance. This is all
+      your father's fault! You didn't need to get involved!
+    options:
+    - text: He murdered him!
+      nextNode: 99
+      function: 
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    autoNext: 0
+    nextTime: 0
+    nextIndex: 0
+    succeed: 0
+  - image: {fileID: 0}
+    name: Frank Sotto
+    message: Fine. Just this once.
+    options:
+    - text: Thank you for your help.
+      nextNode: 0
+      function: ExitDialogue
+      difficulty: 0
+      failNode: 0
+      succeed: 1
+    autoNext: 0
+    nextTime: 0
+    nextIndex: 0
+    succeed: 0
+  - image: {fileID: 0}
+    name: Frank Sotto
+    message: No exceptions.
+    options: []
+    autoNext: 0
+    nextTime: 0
+    nextIndex: 0
+    succeed: 0
+  - image: {fileID: 0}
+    name: Frank Sotto
+    message: No, it can't be...
+    options:
+    - text: I'm here to make him pay.
+      nextNode: 100
+      function: 
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    autoNext: 0
+    nextTime: 0
+    nextIndex: 0
+    succeed: 0
+  - image: {fileID: 0}
+    name: Frank Sotto
+    message: Well, then we both have guns. I can still shoot you.
+    options:
+    - text: It still won't stop me.
+      nextNode: 101
+      function: 
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    autoNext: 0
+    nextTime: 0
+    nextIndex: 0
+    succeed: 0
+  - image: {fileID: 0}
+    name: Frank Sotto
+    message: No point in lying to me. I've got the upper hand here. You aren't even
+      a threat. Go back downstairs. Enjoy your evening a little. But don't come back
+      here.
+    options: []
+    autoNext: 0
+    nextTime: 0
+    nextIndex: 0
+    succeed: 0
+  - image: {fileID: 0}
+    name: Frank Sotto
+    message: Good to know.
+    options:
+    - text: '...'
+      nextNode: 0
+      function: SottoShoots
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    autoNext: 0
+    nextTime: 0
+    nextIndex: 0
+    succeed: 0
+  - image: {fileID: 0}
+    name: Frank Sotto
+    message: I'll say. Not exactly friends anymore, are they, now that the Armstrong
+      family is almost completely dead and buried. You're Floyd Armstrong's little
+      boy. aren't you? You're the one who ruined all of this.
+    options:
+    - text: Yes.
+      nextNode: 107
+      function: 
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    - text: No. [Lie]
+      nextNode: 102
+      function: 
+      difficulty: 8
+      failNode: 103
+      succeed: 0
+    autoNext: 0
+    nextTime: 0
+    nextIndex: 0
+    succeed: 0
+  - image: {fileID: 0}
+    name: Frank Sotto
+    message: Oh, now that would make sense. I didn't always work here, I guess.
+    options:
+    - text: Can't know everyone.
+      nextNode: 111
+      function: 
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    autoNext: 0
+    nextTime: 0
+    nextIndex: 0
+    succeed: 0
+  - image: {fileID: 0}
+    name: Al Pacone
+    message: Let him in, Sotto. The man wants to speak to me. Let's give him what
+      he wants.
+    options:
+    - text: '...'
+      nextNode: 0
+      function: ExitDialogue
+      difficulty: 0
+      failNode: 0
+      succeed: 1
+    autoNext: 0
+    nextTime: 0
+    nextIndex: 0
+    succeed: 0
+  - image: {fileID: 0}
+    name: Frank Sotto
+    message: How do you know?
+    options:
+    - text: You're in my way. Don't be.
+      nextNode: 104
+      function: 
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    autoNext: 0
+    nextTime: 0
+    nextIndex: 0
+    succeed: 0
+  - image: {fileID: 0}
+    name: Frank Sotto
+    message: 'You think a gun won''t stop you? '
+    options:
+    - text: Try it.
+      nextNode: 105
+      function: 
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    - text: I don't have time for this.
+      nextNode: 106
+      function: 
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    autoNext: 0
+    nextTime: 0
+    nextIndex: 0
+    succeed: 0
+  - image: {fileID: 0}
+    name: Frank Sotto
+    message: Yeah, in fairness, you don't look like a guy who could tear down our
+      entire operations, piece by piece.
+    options:
+    - text: Always best to be careful.
+      nextNode: 112
+      function: 
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    - text: '...'
+      nextNode: 112
+      function: 
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    autoNext: 0
+    nextTime: 0
+    nextIndex: 0
+    succeed: 0
+  - image: {fileID: 0}
+    name: Frank Sotto
+    message: You're a bad liar.
+    options:
+    - text: '...'
+      nextNode: 107
+      function: 
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    autoNext: 0
+    nextTime: 0
+    nextIndex: 0
+    succeed: 0
+  - image: {fileID: 0}
+    name: Frank Sotto
+    message: '...'
+    options: []
+    autoNext: 0
+    nextTime: 0
+    nextIndex: 0
+    succeed: 0
+  - image: {fileID: 0}
+    name: Frank Sotto
+    message: What are you even gonna do if I shoot you?
+    options:
+    - text: Nothing.
+      nextNode: 108
+      function: 
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    - text: Shoot back.
+      nextNode: 109
+      function: 
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    autoNext: 0
+    nextTime: 0
+    nextIndex: 0
+    succeed: 0
+  - image: {fileID: 0}
+    name: Frank Sotto
+    message: 'You think your time is worth more than mine? '
+    options:
+    - text: I've got something to do.
+      nextNode: 110
+      function: 
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    autoNext: 0
+    nextTime: 0
+    nextIndex: 0
+    succeed: 0
+  - image: {fileID: 0}
+    name: Frank Sotto
+    message: Thought as much. Better make the most of tonight, as by tomorrow, you'll
+      be as dead as your pa. And forget about getting into the office there. Only
+      reason I'm not shooting you here and now is because Pacone wants to see you
+      squirm.
+    options: []
+    autoNext: 0
+    nextTime: 0
+    nextIndex: 0
+    succeed: 0
+  - image: {fileID: 0}
+    name: Frank Sotto
+    message: Suits me just fine.
+    options:
+    - text: '...'
+      nextNode: 0
+      function: SottoShoots
+      difficulty: 0
+      failNode: 0
+      succeed: 0
+    autoNext: 0
+    nextTime: 0
+    nextIndex: 0
+    succeed: 0
+  - image: {fileID: 0}
+    name: Frank Sotto
+    message: You're a bloody madman. But I ain't looking to get shot. You can go in
+      there, but I hope you get what's coming to you.
+    options: []
+    autoNext: 0
+    nextTime: 3
+    nextIndex: 0
+    succeed: 1
+  - image: {fileID: 0}
+    name: Frank Sotto
+    message: I hope you die in there.
+    options: []
+    autoNext: 0
+    nextTime: 3
+    nextIndex: 0
+    succeed: 1
+  - image: {fileID: 0}
+    name: Frank Sotto
+    message: In which case, why don't you head on in? He'll tell you all about the
+      business, get you set up.
+    options: []
+    autoNext: 0
+    nextTime: 3
+    nextIndex: 0
+    succeed: 1
+  - image: {fileID: 0}
+    name: Frank Sotto
+    message: Well, if you're not Armstrong, then we've got nothing to worry about.
+      Head on in.
+    options: []
+    autoNext: 0
+    nextTime: 0
+    nextIndex: 3
+    succeed: 1
