@@ -16,6 +16,7 @@ MonoBehaviour:
   - {fileID: 114550960512675916}
   - {fileID: 114825943041012270}
   - {fileID: 114091257652914918}
+  - {fileID: 114885427865587654}
 --- !u!114 &114091257652914918
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -57,10 +58,10 @@ MonoBehaviour:
     value: 1
   intensity:
     overrideState: 1
-    value: 0.23
+    value: 0
   color:
     overrideState: 1
-    value: {r: 0, g: 0, b: 0, a: 1}
+    value: {r: 0.5471698, g: 0.5471698, b: 0.5471698, a: 1}
   ambientOnly:
     overrideState: 1
     value: 1
@@ -145,7 +146,7 @@ MonoBehaviour:
     value: 1
   intensity:
     overrideState: 1
-    value: 14
+    value: 21.24
   threshold:
     overrideState: 1
     value: 0.98
@@ -174,3 +175,39 @@ MonoBehaviour:
   dirtIntensity:
     overrideState: 1
     value: 0
+--- !u!114 &114885427865587654
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3f6f3f7c722b4544b97e3c75840aa33, type: 3}
+  m_Name: AutoExposure
+  m_EditorClassIdentifier: 
+  active: 1
+  enabled:
+    overrideState: 1
+    value: 1
+  filtering:
+    overrideState: 1
+    value: {x: 50, y: 95}
+  minLuminance:
+    overrideState: 1
+    value: 0
+  maxLuminance:
+    overrideState: 1
+    value: 0
+  keyValue:
+    overrideState: 1
+    value: 1
+  eyeAdaptation:
+    overrideState: 0
+    value: 0
+  speedUp:
+    overrideState: 0
+    value: 2
+  speedDown:
+    overrideState: 0
+    value: 1
