@@ -15,5 +15,5 @@ public class DialogueOption {
 
 	public int difficulty = 1;
 	public int failNode;
-	public bool succeed;
+	public string objective;
 }

@@ -13,11 +13,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodes:
   - image: {fileID: 0}
-    name: Jeff
-    message: Hello I work
-    options:
-    - text: cool
-      nextNode: 0
-      function: ExitDialogue
-      difficulty: 0
-      failNode: 0
+    name: Harold
+    message: What are you still doing here Armstrong? I told you, get lost.
+    options: []
+    autoQuit: 1
+    autoTime: 2
+    autoNextIndex: 0
+    objective: 

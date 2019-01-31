@@ -23,14 +23,9 @@ public class Dialogue : MonoBehaviour {
 
 	private int currentNode;
 
-
-	void Start(){
-
-
-		objMan = GameObject.FindGameObjectWithTag("Manager").GetComponent<ObjectiveManager>();
-	
-		ScriptableDialogueTree tree = Instantiate(dialogueTree);
-
+	public void SwitchDialogue(ScriptableDialogueTree newTree){
+		ScriptableDialogueTree tree = Instantiate(newTree);
+		nodeList.Clear();
 		for(int i = 0; i < tree.nodes.Count; i++){
 			DialogueNode dn = tree.nodes[i];
 			nodeList.Add(dn);
@@ -41,6 +36,12 @@ public class Dialogue : MonoBehaviour {
 				}
 			}
 		}
+	}
+	void Start(){
+		objMan = GameObject.FindGameObjectWithTag("Manager").GetComponent<ObjectiveManager>();
+
+		SwitchDialogue(dialogueTree);
+		
 		//StartDialogue();
 	}
 	
@@ -79,29 +80,42 @@ public class Dialogue : MonoBehaviour {
 		image.sprite = node.image;
 		speakerName.text = node.name;
 		message.text = node.message;
+
 		if(node.options.Length == 0){
+			//no options, that's ok
 			for (int i = 0; i < 4; i++){
 				buttonTexts[i].transform.parent.gameObject.SetActive(false);
 			}
-			if(node.autoNext){
-				IEnumerator coroutine = LoadAfterSeconds(node.nextIndex, node.nextTime);
-				StartCoroutine(coroutine);
-			} else {
-				IEnumerator coroutine = ExitAfterSeconds(node.nextTime);
+			if(!node.autoQuit){
+				//no auto quit, that's still ok
+				if(node.autoNextIndex == 0){
+					//someone probably forgot to set the auto next. but that's ok.
+					DialogueError(nodeIndex, "No options or auto quit and auto next index is 0. Did you forget something?");
+				}
+				IEnumerator coroutine = LoadAfterSeconds(node.autoNextIndex, node.autoTime);
 				StartCoroutine(coroutine);
 			}
 		} else {
 			for (int i = 0; i < 4; i++){
 				if(i < node.options.Length){
-					buttonTexts[i].transform.parent.gameObject.SetActive(true); //delete this
+					//set the option buttons' texts
+					buttonTexts[i].transform.parent.gameObject.SetActive(true);
 					buttonTexts[i].text = node.options[i].text;
 				} else {
+					//disable all buttons without options
 					buttonTexts[i].transform.parent.gameObject.SetActive(false);
 				}
 			}
 			
 		}
-		
+		if(node.autoQuit){
+			IEnumerator coroutine = ExitAfterSeconds(node.autoTime);
+			StartCoroutine(coroutine);
+		} else if (node.autoTime > 0f){
+			//if autotime is set but autoquit is false, load the auto next
+			IEnumerator coroutine = LoadAfterSeconds(node.autoNextIndex, node.autoTime);
+			StartCoroutine(coroutine);
+		}
 		currentNode = nodeIndex;
 	}
 
@@ -109,27 +123,34 @@ public class Dialogue : MonoBehaviour {
 		//find the button that was clicked and open a new node accordingly
 		int buttonNo = int.Parse(EventSystem.current.currentSelectedGameObject.name);
 		DialogueOption option = nodeList[currentNode].options[buttonNo]; //find the dialogue option selected
-		if(option.function == ""){ // -1 is exit dialogue. hopefully temporarily, probably permanently. update: hey grats to me for changing it
+		if(option.function == ""){ //for special dialogue actions like exiting and animation
 			DisplayNode(option.nextNode);
 		} else {
-			SendMessage(option.function, option);
+			SendMessage(option.function, option, SendMessageOptions.RequireReceiver);
 		}
 
 	}
 	
 	public void ExitDialogue(DialogueOption o){
+		//exit dialogue through option
 		Destroy(instance);
+		//turn everything off
 		gameObject.GetComponent<TalkativeNPC>().beingInteracted = false;
 		cam.Priority = 0;
 		GameObject.FindGameObjectWithTag("Player").GetComponent<RhunCharacter>().ToggleCursor();
-		objMan.SetBool(dialogueTree.objectiveName, o.succeed);
+
+		if(o.objective != ""){ //complete objectives if applicable
+			objMan.SetBool(o.objective, true);
+		}
 	}
 	public void ExitDialogue(){
+		//exit dialogue through auto quit
 		Destroy(instance);
 		gameObject.GetComponent<TalkativeNPC>().beingInteracted = false;
 		cam.Priority = 0;
 		GameObject.FindGameObjectWithTag("Player").GetComponent<RhunCharacter>().ToggleCursor();
-		objMan.SetBool(dialogueTree.objectiveName, nodeList[currentNode].succeed);
+		if(nodeList[currentNode].objective != "") // complete objectives if applicable
+			objMan.SetBool(nodeList[currentNode].objective, true);
 	}
 
 	public void RandomChance(DialogueOption o){

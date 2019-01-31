@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Door : ObjectiveListener {
+public class HasKey : ObjectiveListener {
 
 	protected ToolTip toolTip;
 	protected bool hasKey;
