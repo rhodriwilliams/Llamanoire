@@ -5,7 +5,13 @@ using UnityEngine;
 public class HasKey : ObjectiveListener {
 
 	protected ToolTip toolTip;
-	protected bool hasKey;
+	protected bool hasKey {get;set;}
+	public bool HaveKey {
+		get
+		{
+			return hasKey;
+		}
+	}
 
 	void Awake()
 	{
@@ -13,18 +19,5 @@ public class HasKey : ObjectiveListener {
 	}
 	protected override void CompleteObjective(){
 		hasKey = true;
-	}
-	void OnTriggerEnter(Collider other)
-	{
-		if(other.tag == "Player" && hasKey){
-			Destroy(gameObject);
-		} else {
-			toolTip.NewTip("Door (I need a key)");
-		}
-	}
-	void OnTriggerExit(Collider other){
-		if(other.tag == "Player"){
-			toolTip.ClearTip();
-		}
 	}
 }

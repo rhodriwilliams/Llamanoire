@@ -20,7 +20,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 2}
-  m_MinSize: {x: 950, y: 300}
+  m_MinSize: {x: 950, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -109,7 +109,7 @@ MonoBehaviour:
   m_MinSize: {x: 683, y: 492}
   m_MaxSize: {x: 14004, y: 14042}
   vertical: 0
-  controlID: 3436
+  controlID: 50
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -133,7 +133,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 3437
+  controlID: 51
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -157,7 +157,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 221}
   m_MaxSize: {x: 8006, y: 4021}
   vertical: 0
-  controlID: 3438
+  controlID: 52
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -409,10 +409,10 @@ MonoBehaviour:
     height: 552
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
-    scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: ba61f2ff
-    m_LastClickedID: -892486
-    m_ExpandedIDs: cca0f2ff08f8f2ff12f8f2ff32f9f2ffd671f5ffa418f6ffe679f8ff4ee5ffff50e5ffffdcf8ffff12fbfffff4ffffff000000007c3a00005a3b0000824c000006580000fa580000cc590000
+    scrollPos: {x: 0, y: 761}
+    m_SelectedIDs: b0aa0000
+    m_LastClickedID: 43696
+    m_ExpandedIDs: 58e7f8fff813f9ffe4aef9ff206afdff62a0fdff3ec7fdffe4fbfffff4ffffff0000000010190000a2a10000aca1000098bb00007ac2000052c40000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -431,7 +431,7 @@ MonoBehaviour:
       m_ClientGUIView: {fileID: 8}
     m_SearchString: 
   m_ExpandedScenes:
-  - Test
+  - ExteriorSpeakeasyWhitebox
   m_CurrenRootInstanceID: 0
   m_LockTracker:
     m_IsLocked: 0
@@ -461,15 +461,15 @@ MonoBehaviour:
     width: 1044
     height: 552
   m_PersistentViewDataDictionary: {fileID: 0}
-  m_SceneLighting: 1
-  lastFramingTime: 19609.86855315657
-  m_2DMode: 1
+  m_SceneLighting: 0
+  lastFramingTime: 5776.212156283113
+  m_2DMode: 0
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 503.8461, y: 164.20526, z: 758.875}
+    m_Target: {x: 131.13469, y: 52.93492, z: 138.72414}
     speed: 2
-    m_Value: {x: 503.8461, y: 164.20526, z: 758.875}
+    m_Value: {x: 131.13469, y: 52.93492, z: 138.72414}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -481,35 +481,35 @@ MonoBehaviour:
     showMaterialUpdate: 0
     showSkybox: 1
     showFlares: 1
-    showImageEffects: 1
-    showParticleSystems: 1
+    showImageEffects: 0
+    showParticleSystems: 0
   grid:
     xGrid:
       m_Target: 0
       speed: 2
       m_Value: 0
     yGrid:
-      m_Target: 0
-      speed: 2
-      m_Value: 0
-    zGrid:
       m_Target: 1
       speed: 2
       m_Value: 1
+    zGrid:
+      m_Target: 0
+      speed: 2
+      m_Value: 0
   m_Rotation:
-    m_Target: {x: 0, y: 0, z: 0, w: 1}
+    m_Target: {x: -0.00014350378, y: 0.8857455, z: -0.00027387752, w: -0.46417102}
     speed: 2
-    m_Value: {x: 0, y: 0, z: 0, w: 1}
+    m_Value: {x: -0.0001435038, y: 0.8857456, z: -0.00027387755, w: -0.46417105}
   m_Size:
-    m_Target: 220.524
+    m_Target: 20.893522
     speed: 2
-    m_Value: 220.524
+    m_Value: 20.893522
   m_Ortho:
-    m_Target: 1
+    m_Target: 0
     speed: 2
-    m_Value: 1
+    m_Value: 0
   m_ShowGlobalGrid: 1
-  m_LastSceneViewRotation: {x: 0.0054194643, y: 0.98172665, z: -0.18810533, w: 0.028282514}
+  m_LastSceneViewRotation: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
   m_LastSceneViewOrtho: 0
   m_ReplacementShader: {fileID: 0}
   m_ReplacementString: 
@@ -577,20 +577,20 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets
+    - Assets/Prefabs
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets
+  - Assets/Prefabs
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: C:\Temp\Rhun\LlamaNoireNew\Llama Noire
+  m_LastProjectPath: D:\Shitty Unity Games I make\LlamaNoireNew\Llama Noire
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 79}
-    m_SelectedIDs: e02d0000
-    m_LastClickedID: 11744
-    m_ExpandedIDs: 00000000e02d0000382f0000ee3100001232000000ca9a3b
+    scrollPos: {x: 0, y: 276}
+    m_SelectedIDs: b20e0000
+    m_LastClickedID: 3762
+    m_ExpandedIDs: 000000005a0d0000640d0000b20e0000701100009411000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -618,7 +618,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000e02d0000ee3100001232000000ca9a3b
+    m_ExpandedIDs: 000000005a0d0000b20e00007011000094110000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -646,7 +646,7 @@ MonoBehaviour:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 1
-    m_ExpandedInstanceIDs: c62300000aac000088ad0000
+    m_ExpandedInstanceIDs: c62300000aac000088ad0000686ffdff
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -728,7 +728,7 @@ MonoBehaviour:
   m_LockTracker:
     m_IsLocked: 0
   m_PreviewResizer:
-    m_CachedPref: 371
+    m_CachedPref: -371
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_PreviewWindow: {fileID: 0}

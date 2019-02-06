@@ -11,6 +11,8 @@ TagManager:
   - DialogButton
   - Manager
   - FadeInOut
+  - HUD
+  - Danger
   layers:
   - Default
   - TransparentFX
