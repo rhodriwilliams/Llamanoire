@@ -11,68 +11,67 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9858b4990db6ccf419f6dda3bc4f300b, type: 3}
   m_Name: PatsyTheInformant
   m_EditorClassIdentifier: 
-  objectiveName: GetKey
   nodes:
   - image: {fileID: 0}
     name: Patsy McKenzie
     message: Armstrong. The boss is upstairs, but you'd know that if you were half
-      as good a dick-tective as you sell yourself. What do I get, for risking my livelihood
+      as good a detective as you sell yourself. What do I get, for risking my livelihood
       like this for you anyways?
     options:
-    - text: It's de-tective.
+    - text: I'm not half bad.
       nextNode: 1
       function: 
       difficulty: 0
       failNode: 0
-      succeed: 0
+      objective: 
     - text: You get money. [Lie]
       nextNode: 2
       function: 
       difficulty: 5
       failNode: 3
-      succeed: 0
+      objective: 
     - text: I've got nothing to give you.
       nextNode: 4
       function: 
       difficulty: 0
       failNode: 0
-      succeed: 0
+      objective: 
     - text: '...'
       nextNode: 5
       function: 
       difficulty: 0
       failNode: 0
-      succeed: 0
-    autoNext: 0
-    nextTime: 0
-    nextIndex: 0
-    succeed: 0
+      objective: 
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
   - image: {fileID: 0}
     name: Patsy McKenzie
-    message: I know. So, what am I getting for my troubles?
+    message: I disagree. So, what am I getting for my troubles?
     options:
     - text: You get money. [Lie]
       nextNode: 2
       function: 
       difficulty: 6
       failNode: 3
-      succeed: 0
+      objective: 
     - text: I've got nothing to give you.
       nextNode: 4
       function: 
       difficulty: 0
       failNode: 0
-      succeed: 0
+      objective: 
     - text: '...'
       nextNode: 5
       function: 
       difficulty: 0
       failNode: 0
-      succeed: 0
-    autoNext: 0
-    nextTime: 0
-    nextIndex: 0
-    succeed: 0
+      objective: 
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
   - image: {fileID: 0}
     name: Patsy McKenzie
     message: You actually got money? Are you streetwalking to make ends meet or something?
@@ -84,17 +83,17 @@ MonoBehaviour:
       function: 
       difficulty: 0
       failNode: 0
-      succeed: 0
+      objective: 
     - text: Thank you for your help.
       nextNode: 7
       function: 
       difficulty: 0
       failNode: 0
-      succeed: 1
-    autoNext: 0
-    nextTime: 0
-    nextIndex: 0
-    succeed: 0
+      objective: 
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
   - image: {fileID: 0}
     name: Patsy McKenzie
     message: You haven't got no money Armstrong. I know that, you damned fool.
@@ -104,20 +103,20 @@ MonoBehaviour:
       function: 
       difficulty: 0
       failNode: 0
-      succeed: 0
-    autoNext: 0
-    nextTime: 0
-    nextIndex: 0
-    succeed: 0
+      objective: 
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
   - image: {fileID: 0}
     name: Patsy McKenzie
     message: A whole lotta nothing don't exactly pay the bills round here. Funny that.
       Piss off.
     options: []
-    autoNext: 0
-    nextTime: 0
-    nextIndex: 0
-    succeed: 0
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
   - image: {fileID: 0}
     name: Patsy McKenzie.
     message: Look honey, I gotta get paid in something.
@@ -127,47 +126,47 @@ MonoBehaviour:
       function: 
       difficulty: 0
       failNode: 0
-      succeed: 0
+      objective: 
     - text: I can get you out of here.
       nextNode: 10
       function: 
       difficulty: 0
       failNode: 0
-      succeed: 0
+      objective: 
     - text: Nothing I have is good enough.
       nextNode: 11
       function: 
       difficulty: 0
       failNode: 0
-      succeed: 0
+      objective: 
     - text: '...'
       nextNode: 12
       function: 
       difficulty: 0
       failNode: 0
-      succeed: 0
-    autoNext: 0
-    nextTime: 0
-    nextIndex: 0
-    succeed: 0
+      objective: 
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
   - image: {fileID: 0}
     name: Patsy McKenzie
     message: You're not going to get very far without a key to upstairs, might as
       well have mine.
     options: []
-    autoNext: 0
-    nextTime: 2
-    nextIndex: 0
-    succeed: 1
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
   - image: {fileID: 0}
     name: Patsy McKenzie
     message: Hey, so long as you're deciding to be a good person, here's my key to
       the upstairs. You'd be pretty stuck without it.
     options: []
-    autoNext: 0
-    nextTime: 0
-    nextIndex: 2
-    succeed: 1
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
   - image: {fileID: 0}
     name: Patsy McKenzie
     message: Like what?
@@ -177,58 +176,58 @@ MonoBehaviour:
       function: 
       difficulty: 0
       failNode: 0
-      succeed: 0
+      objective: 
     - text: I can get you out of here.
       nextNode: 10
       function: 
       difficulty: 0
       failNode: 0
-      succeed: 0
+      objective: 
     - text: Nothing I have is good enough.
       nextNode: 11
       function: 
       difficulty: 0
       failNode: 0
-      succeed: 0
-    autoNext: 0
-    nextTime: 0
-    nextIndex: 0
-    succeed: 0
+      objective: 
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
   - image: {fileID: 0}
     name: Patsy McKenzie
     message: You're real desperate ain't you? I like trading with desperate people,
       Armstrong. Next time I need anything, I'm coming straight to you. I got the
       key for upstairs just for you, so here.
     options: []
-    autoNext: 0
-    nextTime: 2
-    nextIndex: 0
-    succeed: 1
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
   - image: {fileID: 0}
     name: Patsy McKenzie
     message: I like what I do, Armstrong. You don't have to save me from this place.
       It pays better than you anyway.
     options: []
-    autoNext: 0
-    nextTime: 0
-    nextIndex: 0
-    succeed: 0
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
   - image: {fileID: 0}
     name: Patsy McKenzie
     message: Strange to hear you honest, Armstrong. Honestly, right now, I could do
       with a drink. Why don't you go get me one off Lucy at the bar, and then maybe
       I'll think more seriously about our "working relationship"?
     options: []
-    autoNext: 0
-    nextTime: 0
-    nextIndex: 0
-    succeed: 0
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
   - image: {fileID: 0}
     name: Patsy McKenzie
     message: Your silence isn't gonna get you anywhere. Come back when you got something
       to say. Or better still, something to drink.
     options: []
-    autoNext: 0
-    nextTime: 0
-    nextIndex: 0
-    succeed: 0
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
