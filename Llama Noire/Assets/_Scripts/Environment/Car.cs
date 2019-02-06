@@ -56,7 +56,7 @@ public class Car : MonoBehaviour {
 		Ray ray = new Ray(transform.position, other.transform.position - transform.position);
 		if(Physics.Raycast(ray, out hit, 500f)){
 			if(hit.collider == other){
-				Debug.Log("I'm outta here");
+//				Debug.Log("I'm outta here");
 				targetSpeed = maxSpeed;
 			} else {
 				Debug.Log(hit.collider);
