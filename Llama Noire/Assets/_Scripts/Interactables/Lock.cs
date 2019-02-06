@@ -19,19 +19,21 @@ public class Lock : Interactable {
 		}
 	}
 	public override void Interact(){
-		if(!door.isOpen){ //can't lock an open door
-			if(keyScript.HaveKey){
-				//allow players with the key to lock/unlock the door freely
-				LockUnlock();
-			} else {
-				if(door.isLocked){ //no need to lockpick a door shut
-					//instantiate the lockpicking minigame and pause the game
-					GameObject newMinigame = Instantiate(lockpickingMinigame, Vector3.zero, Quaternion.identity);
-					newMinigame.GetComponent<Lockpicking>().LockScript = this;
-					newMinigame.GetComponent<Lockpicking>().Setup(difficulty);
-					beingInteracted = true;
-					player.gameObject.GetComponent<RhunCharacter>().ToggleCursor();
-				}	
+		if(!beingInteracted){
+			if(!door.isOpen){ //can't lock an open door
+				if(keyScript.HaveKey){
+					//allow players with the key to lock/unlock the door freely
+					LockUnlock();
+				} else {
+					if(door.isLocked){ //no need to lockpick a door shut
+						//instantiate the lockpicking minigame and pause the game
+						GameObject newMinigame = Instantiate(lockpickingMinigame, Vector3.zero, Quaternion.identity);
+						newMinigame.GetComponent<Lockpicking>().LockScript = this;
+						newMinigame.GetComponent<Lockpicking>().Setup(difficulty);
+						beingInteracted = true;
+						player.gameObject.GetComponent<RhunCharacter>().ToggleCursor();
+					}	
+				}
 			}
 		}
 	}

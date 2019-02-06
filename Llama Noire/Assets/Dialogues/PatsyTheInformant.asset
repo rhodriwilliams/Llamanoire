@@ -113,8 +113,8 @@ MonoBehaviour:
     message: A whole lotta nothing don't exactly pay the bills round here. Funny that.
       Piss off.
     options: []
-    autoQuit: 0
-    autoTime: 0
+    autoQuit: 1
+    autoTime: 2
     autoNextIndex: 0
     objective: 
   - image: {fileID: 0}
@@ -154,19 +154,19 @@ MonoBehaviour:
     message: You're not going to get very far without a key to upstairs, might as
       well have mine.
     options: []
-    autoQuit: 0
-    autoTime: 0
+    autoQuit: 1
+    autoTime: 2
     autoNextIndex: 0
-    objective: 
+    objective: GetKey
   - image: {fileID: 0}
     name: Patsy McKenzie
     message: Hey, so long as you're deciding to be a good person, here's my key to
       the upstairs. You'd be pretty stuck without it.
     options: []
-    autoQuit: 0
-    autoTime: 0
+    autoQuit: 1
+    autoTime: 2
     autoNextIndex: 0
-    objective: 
+    objective: GetKey
   - image: {fileID: 0}
     name: Patsy McKenzie
     message: Like what?
@@ -199,17 +199,17 @@ MonoBehaviour:
       Armstrong. Next time I need anything, I'm coming straight to you. I got the
       key for upstairs just for you, so here.
     options: []
-    autoQuit: 0
-    autoTime: 0
+    autoQuit: 1
+    autoTime: 2
     autoNextIndex: 0
-    objective: 
+    objective: GetKey
   - image: {fileID: 0}
     name: Patsy McKenzie
     message: I like what I do, Armstrong. You don't have to save me from this place.
       It pays better than you anyway.
     options: []
-    autoQuit: 0
-    autoTime: 0
+    autoQuit: 1
+    autoTime: 2
     autoNextIndex: 0
     objective: 
   - image: {fileID: 0}
@@ -218,8 +218,8 @@ MonoBehaviour:
       with a drink. Why don't you go get me one off Lucy at the bar, and then maybe
       I'll think more seriously about our "working relationship"?
     options: []
-    autoQuit: 0
-    autoTime: 0
+    autoQuit: 1
+    autoTime: 2
     autoNextIndex: 0
     objective: 
   - image: {fileID: 0}
@@ -227,7 +227,7 @@ MonoBehaviour:
     message: Your silence isn't gonna get you anywhere. Come back when you got something
       to say. Or better still, something to drink.
     options: []
-    autoQuit: 0
-    autoTime: 0
+    autoQuit: 1
+    autoTime: 2
     autoNextIndex: 0
     objective: 
