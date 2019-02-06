@@ -10,6 +10,7 @@ public class ObjectiveListener : MonoBehaviour {
 		GameObject.FindGameObjectWithTag("Manager").GetComponent<ObjectiveManager>().listeners.Add(this);
 	}
 	public void UpdateObj(bool b, int i){
+		Debug.Log("ye");
 		if(b || (i >= iTarget && iTarget > 0)){
 			CompleteObjective();
 		}

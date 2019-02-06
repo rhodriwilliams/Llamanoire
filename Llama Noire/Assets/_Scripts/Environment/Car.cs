@@ -6,7 +6,6 @@ public class Car : MonoBehaviour {
 
 	public float distance;
 	public float maxSpeed;
-	
 
 	public float acceleration;
 
@@ -53,6 +52,17 @@ public class Car : MonoBehaviour {
 	}
 
 	void OnTriggerExit(Collider other){
-		targetSpeed = maxSpeed;
+		RaycastHit hit;
+		Ray ray = new Ray(transform.position, other.transform.position - transform.position);
+		if(Physics.Raycast(ray, out hit, 500f)){
+			if(hit.collider == other){
+				Debug.Log("I'm outta here");
+				targetSpeed = maxSpeed;
+			} else {
+				Debug.Log(hit.collider);
+			}
+		} else {
+			Debug.Log("?");
+		}
 	}
 }

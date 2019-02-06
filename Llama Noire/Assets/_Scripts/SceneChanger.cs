@@ -6,7 +6,8 @@ public class SceneChanger : MonoBehaviour {
 
 	void OnTriggerEnter(Collider other){
 		if(other.gameObject.tag == "Player"){
-			SceneManager.LoadScene("InteriorSpeakeasyWhitebox");
+			SceneManager.LoadSceneAsync("InteriorSpeakeasyWhitebox");
+			GameObject.FindGameObjectWithTag("FadeInOut").GetComponent<FadeInOut>().FadeOut();
 		}
 	}
 }

@@ -10,6 +10,9 @@ TagManager:
   - ToolTip
   - DialogButton
   - Manager
+  - FadeInOut
+  - HUD
+  - Danger
   layers:
   - Default
   - TransparentFX
