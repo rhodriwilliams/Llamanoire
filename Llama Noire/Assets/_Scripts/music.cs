@@ -22,6 +22,7 @@ public class music : MonoBehaviour {
 			GetComponent<AudioLowPassFilter>().enabled = false;
 			source.spatialBlend = 0f;
 			source.loop = false;
+			source.volume = 0.4f;
 		}
 	}
 	void Update(){

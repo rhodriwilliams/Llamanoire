@@ -56,8 +56,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58a91f9d4ec63ee4b9e56eeb13253157, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  min: 437
-  max: 477
+  outerRadius: 102
+  innerRadius: 58
   speed: 2
 --- !u!114 &114548835454448706
 MonoBehaviour:
