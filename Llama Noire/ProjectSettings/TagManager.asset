@@ -13,6 +13,7 @@ TagManager:
   - FadeInOut
   - HUD
   - Danger
+  - PedestrianSpawn
   layers:
   - Default
   - TransparentFX

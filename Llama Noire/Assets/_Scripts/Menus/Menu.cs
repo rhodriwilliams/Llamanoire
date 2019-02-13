@@ -26,6 +26,12 @@ public class Menu : MonoBehaviour {
 			menuCam.Priority = 0;
 			armstrong.GetComponent<RhunCharacter>().ToggleCursor();
 			armstrong.GetComponentInChildren<Animator>().SetBool("InMenu", false);
+			GameObject[] pedestrianSpawners = GameObject.FindGameObjectsWithTag("PedestrianSpawn");
+			foreach(GameObject g in pedestrianSpawners){
+				if(!g.GetComponent<Pedestrians>().spawnOnStart){
+					g.GetComponent<Pedestrians>().StartCoroutine("Spawn");
+				}
+			}
 			Destroy(gameObject);
 		}
 	}

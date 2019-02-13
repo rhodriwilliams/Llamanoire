@@ -11,9 +11,12 @@ public class Pedestrians : MonoBehaviour {
 	public float spawnRate;
 
 	public int numOfPedestrians;
+	public bool spawnOnStart;
 
 	void Start(){
-		StartCoroutine("Wait");
+		if(spawnOnStart){
+			StartCoroutine("Wait");
+		}
 	}
 
 	IEnumerator Spawn(){
