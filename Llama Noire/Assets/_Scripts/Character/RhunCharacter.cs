@@ -25,8 +25,9 @@ public class RhunCharacter : MonoBehaviour {
 		if(!busy){
 			Vector3 forward = mainCamera.forward * Input.GetAxis("Vertical");
 			Vector3 right = mainCamera.right * Input.GetAxis("Horizontal");
-			Vector3 movement = forward + right;
-			controller.SimpleMove(movement * speed );
+			Vector3 movement = (forward + right);
+			movement = movement.normalized;
+			controller.SimpleMove(movement * speed);
 
 			if(movement.magnitude > 0){
 				if(!animator.GetBool("IsWalking"))
