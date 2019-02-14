@@ -11,7 +11,8 @@ public class Dialogue : MonoBehaviour {
 	public ScriptableDialogueTree dialogueTree;
 	public GameObject dialoguePrefab;
 	public Vector3 dialoguePos;
-
+	public string[] animationBools;
+	protected Animator animator;
 	private GameObject instance;
 	private Text speakerName;
 	private Text message;
@@ -42,6 +43,7 @@ public class Dialogue : MonoBehaviour {
 
 		SwitchDialogue(dialogueTree);
 		
+		animator = GetComponentInChildren<Animator>();
 		//StartDialogue();
 	}
 	
@@ -159,6 +161,15 @@ public class Dialogue : MonoBehaviour {
 		} else {
 			DisplayNode(o.failNode);
 		}
+	}
+
+	public void Animation(DialogueOption o){
+		//if(!animator.GetBool(animationBools[o.difficulty])){
+		//	Debug.Log("Yeah boi");
+		//	animator.SetBool(animationBools[o.difficulty], true);
+		//}
+		animator.SetTrigger(animationBools[o.difficulty]);
+		DisplayNode(o.nextNode);
 	}
 
 	IEnumerator LoadAfterSeconds(int i, float waitTime){

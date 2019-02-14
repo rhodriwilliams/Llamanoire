@@ -31,6 +31,7 @@ public class CameraBoom : MonoBehaviour {
 				curRot.y + Input.GetAxis("Mouse X") * sensitivity,
 				curRot.z
 			);
+			//Quaternion slowRot = Quaternion.Lerp(Quaternion.Euler(curRot), newRot, 0.1f);
 			transform.rotation = newRot;
 		}
 	}

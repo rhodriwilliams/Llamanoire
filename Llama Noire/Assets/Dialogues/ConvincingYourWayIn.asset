@@ -174,3 +174,11 @@ MonoBehaviour:
     autoTime: 1
     autoNextIndex: 0
     objective: GetRejected
+  - image: {fileID: 0}
+    name: Harold Zubron
+    message: Yeah boiiii
+    options: []
+    autoQuit: 1
+    autoTime: 2
+    autoNextIndex: 0
+    objective: ConvinceHarold

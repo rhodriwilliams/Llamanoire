@@ -11,7 +11,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9858b4990db6ccf419f6dda3bc4f300b, type: 3}
   m_Name: ISeeYouArmstrong
   m_EditorClassIdentifier: 
-  objectiveName: GetPastFrank
   nodes:
   - image: {fileID: 0}
     name: Frank Sotto
@@ -22,17 +21,17 @@ MonoBehaviour:
       function: 
       difficulty: 0
       failNode: 0
-      succeed: 0
+      objective: 
     - text: '[Stay Where You Are]'
       nextNode: 2
       function: 
       difficulty: 0
       failNode: 0
-      succeed: 0
-    autoNext: 0
-    nextTime: 0
-    nextIndex: 0
-    succeed: 0
+      objective: 
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
   - image: {fileID: 0}
     name: Frank Sotto
     message: I mean it! You customers aren't allowed up here.
@@ -42,29 +41,29 @@ MonoBehaviour:
       function: 
       difficulty: 0
       failNode: 0
-      succeed: 0
+      objective: 
     - text: I'm here for Pacone.
       nextNode: 4
       function: 
       difficulty: 0
       failNode: 0
-      succeed: 0
+      objective: 
     - text: You can't stop me.
       nextNode: 5
       function: 
       difficulty: 0
       failNode: 0
-      succeed: 0
+      objective: 
     - text: '...'
       nextNode: 6
       function: 
       difficulty: 0
       failNode: 0
-      succeed: 0
-    autoNext: 0
-    nextTime: 0
-    nextIndex: 0
-    succeed: 0
+      objective: 
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
   - image: {fileID: 0}
     name: Frank Sotto
     message: That's right. Now turn around and go back.
@@ -74,29 +73,29 @@ MonoBehaviour:
       function: 
       difficulty: 0
       failNode: 0
-      succeed: 0
+      objective: 
     - text: Make me.
       nextNode: 8
       function: 
       difficulty: 0
       failNode: 0
-      succeed: 0
+      objective: 
     - text: No problem. [Lie]
       nextNode: 9
       function: 
       difficulty: 10
       failNode: 10
-      succeed: 0
+      objective: 
     - text: '...'
       nextNode: 12
       function: 
       difficulty: 0
       failNode: 0
-      succeed: 0
-    autoNext: 0
-    nextTime: 0
-    nextIndex: 0
-    succeed: 0
+      objective: 
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
   - image: {fileID: 0}
     name: Frank Sotto
     message: What are you then? Because unless you're employed by Pacone, you're not
@@ -107,29 +106,29 @@ MonoBehaviour:
       function: 
       difficulty: 5
       failNode: 26
-      succeed: 0
+      objective: 
     - text: I'm here to protect him. [Lie]
       nextNode: 28
       function: 
       difficulty: 4
       failNode: 29
-      succeed: 0
+      objective: 
     - text: I'm Floyd Armstrong.
       nextNode: 30
       function: 
       difficulty: 0
       failNode: 0
-      succeed: 0
+      objective: 
     - text: '...'
       nextNode: 31
       function: 
       difficulty: 0
       failNode: 0
-      succeed: 0
-    autoNext: 0
-    nextTime: 0
-    nextIndex: 0
-    succeed: 0
+      objective: 
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
   - image: {fileID: 0}
     name: Frank Sotto
     message: You some kind of hitman or something? You're not getting to Pacone.
@@ -139,11 +138,11 @@ MonoBehaviour:
       function: 
       difficulty: 0
       failNode: 0
-      succeed: 0
-    autoNext: 0
-    nextTime: 0
-    nextIndex: 0
-    succeed: 0
+      objective: 
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
   - image: {fileID: 0}
     name: Frank Sotto
     message: I sure can, and I'm not afraid to. So stay where you are.
@@ -153,23 +152,23 @@ MonoBehaviour:
       function: 
       difficulty: 0
       failNode: 0
-      succeed: 0
+      objective: 
     - text: I need to talk to Pacone.
       nextNode: 23
       function: 
       difficulty: 0
       failNode: 0
-      succeed: 0
+      objective: 
     - text: '...'
       nextNode: 15
       function: 
       difficulty: 0
       failNode: 0
-      succeed: 0
-    autoNext: 0
-    nextTime: 0
-    nextIndex: 0
-    succeed: 0
+      objective: 
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
   - image: {fileID: 0}
     name: Frank Sotto
     message: One more step and I'll shoot you where you stand.
@@ -179,29 +178,29 @@ MonoBehaviour:
       function: 
       difficulty: 0
       failNode: 0
-      succeed: 0
+      objective: 
     - text: I need to talk to you.
       nextNode: 14
       function: 
       difficulty: 0
       failNode: 0
-      succeed: 0
+      objective: 
     - text: I need to talk to Pacone.
       nextNode: 23
       function: 
       difficulty: 0
       failNode: 0
-      succeed: 0
+      objective: 
     - text: '...'
       nextNode: 15
       function: 
       difficulty: 0
       failNode: 0
-      succeed: 0
-    autoNext: 0
-    nextTime: 0
-    nextIndex: 0
-    succeed: 0
+      objective: 
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
   - image: {fileID: 0}
     name: Frank Sotto
     message: The boss doesn't have any meetings with nobody I don't know today. And
@@ -212,29 +211,29 @@ MonoBehaviour:
       function: 
       difficulty: 5
       failNode: 26
-      succeed: 0
+      objective: 
     - text: I'm here to protect him. [Lie]
       nextNode: 28
       function: 
       difficulty: 4
       failNode: 29
-      succeed: 0
+      objective: 
     - text: I'm Floyd Armstrong.
       nextNode: 30
       function: 
       difficulty: 0
       failNode: 0
-      succeed: 0
+      objective: 
     - text: '...'
       nextNode: 31
       function: 
       difficulty: 0
       failNode: 0
-      succeed: 0
-    autoNext: 0
-    nextTime: 0
-    nextIndex: 0
-    succeed: 0
+      objective: 
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
   - image: {fileID: 0}
     name: Frank Sotto
     message: Are you looking to get shot?
@@ -244,19 +243,19 @@ MonoBehaviour:
       function: 
       difficulty: 0
       failNode: 0
-      succeed: 0
-    autoNext: 0
-    nextTime: 0
-    nextIndex: 0
-    succeed: 0
+      objective: 
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
   - image: {fileID: 0}
     name: Frank Sotto
     message: I hope you enjoy the rest of your night.
     options: []
-    autoNext: 0
-    nextTime: 0
-    nextIndex: 0
-    succeed: 0
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
   - image: {fileID: 0}
     name: Frank Sotto
     message: Wait a minute, how did you get a key to get up here?
@@ -266,29 +265,29 @@ MonoBehaviour:
       function: 
       difficulty: 7
       failNode: 35
-      succeed: 0
+      objective: 
     - text: It's my key. [Lie]
       nextNode: 18
       function: 
       difficulty: 0
       failNode: 0
-      succeed: 0
+      objective: 
     - text: Does it matter?
       nextNode: 19
       function: 
       difficulty: 0
       failNode: 0
-      succeed: 0
+      objective: 
     - text: '...'
       nextNode: 11
       function: 
       difficulty: 0
       failNode: 0
-      succeed: 0
-    autoNext: 0
-    nextTime: 0
-    nextIndex: 0
-    succeed: 0
+      objective: 
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
   - image: {fileID: 0}
     name: Frank Sotto
     message: 'I remember locking it, so you better have an explanation. '
@@ -298,23 +297,23 @@ MonoBehaviour:
       function: 
       difficulty: 10
       failNode: 35
-      succeed: 0
+      objective: 
     - text: It's my key. [Lie]
       nextNode: 18
       function: 
       difficulty: 0
       failNode: 0
-      succeed: 0
+      objective: 
     - text: Does it matter?
       nextNode: 19
       function: 
       difficulty: 0
       failNode: 0
-      succeed: 0
-    autoNext: 0
-    nextTime: 0
-    nextIndex: 0
-    succeed: 0
+      objective: 
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
   - image: {fileID: 0}
     name: Frank Sotto
     message: Nothing to say, huh? That's pretty suspicious, you know. If I didn't
@@ -325,11 +324,11 @@ MonoBehaviour:
       function: 
       difficulty: 0
       failNode: 0
-      succeed: 0
-    autoNext: 0
-    nextTime: 0
-    nextIndex: 0
-    succeed: 0
+      objective: 
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
   - image: {fileID: 0}
     name: Frank Sotto
     message: That's not happening. Not a chance. Come any closer, and you're dead.
@@ -339,17 +338,17 @@ MonoBehaviour:
       function: 
       difficulty: 0
       failNode: 0
-      succeed: 0
+      objective: 
     - text: '[Stay Where You Are]'
       nextNode: 22
       function: 
       difficulty: 0
       failNode: 0
-      succeed: 0
-    autoNext: 0
-    nextTime: 0
-    nextIndex: 0
-    succeed: 0
+      objective: 
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
   - image: {fileID: 0}
     name: Frank Sotto
     message: Me? What have I got to do with you?
@@ -359,17 +358,17 @@ MonoBehaviour:
       function: 
       difficulty: 0
       failNode: 0
-      succeed: 0
+      objective: 
     - text: I'm here for you.
       nextNode: 24
       function: 
       difficulty: 0
       failNode: 0
-      succeed: 0
-    autoNext: 0
-    nextTime: 0
-    nextIndex: 0
-    succeed: 0
+      objective: 
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
   - image: {fileID: 0}
     name: Frank Sotto
     message: You're right to be afraid.
@@ -379,17 +378,17 @@ MonoBehaviour:
       function: 
       difficulty: 0
       failNode: 0
-      succeed: 0
+      objective: 
     - text: I'm not afraid.
       nextNode: 27
       function: 
       difficulty: 0
       failNode: 0
-      succeed: 0
-    autoNext: 0
-    nextTime: 0
-    nextIndex: 0
-    succeed: 0
+      objective: 
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
   - image: {fileID: 0}
     name: Frank Sotto
     message: 'I''d be more careful if I were you: it doesn''t take much to kill a
@@ -400,17 +399,17 @@ MonoBehaviour:
       function: 
       difficulty: 0
       failNode: 0
-      succeed: 0
+      objective: 
     - text: '...'
       nextNode: 33
       function: 
       difficulty: 0
       failNode: 0
-      succeed: 0
-    autoNext: 0
-    nextTime: 0
-    nextIndex: 0
-    succeed: 0
+      objective: 
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
   - image: {fileID: 0}
     name: Frank Sotto
     message: What are you doing there?! Stop that!
@@ -420,11 +419,11 @@ MonoBehaviour:
       function: RushAt
       difficulty: 0
       failNode: 0
-      succeed: 0
-    autoNext: 0
-    nextTime: 0
-    nextIndex: 0
-    succeed: 0
+      objective: 
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
   - image: {fileID: 0}
     name: Frank Sotto
     message: 'Better question then: why do you have a key?'
@@ -434,17 +433,17 @@ MonoBehaviour:
       function: 
       difficulty: 6
       failNode: 53
-      succeed: 0
+      objective: 
     - text: Through legitimate means.
       nextNode: 37
       function: 
       difficulty: 0
       failNode: 0
-      succeed: 0
-    autoNext: 0
-    nextTime: 0
-    nextIndex: 0
-    succeed: 0
+      objective: 
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
   - image: {fileID: 0}
     name: Frank Sotto
     message: Yeah, I'd say it matters. You trying to pull one over on me?
@@ -454,11 +453,11 @@ MonoBehaviour:
       function: 
       difficulty: 0
       failNode: 0
-      succeed: 0
-    autoNext: 0
-    nextTime: 0
-    nextIndex: 0
-    succeed: 0
+      objective: 
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
   - image: {fileID: 0}
     name: Frank Sotto
     message: You are?
@@ -468,17 +467,17 @@ MonoBehaviour:
       function: 
       difficulty: 0
       failNode: 0
-      succeed: 0
+      objective: 
     - text: I'm here for revenge.
       nextNode: 39
       function: 
       difficulty: 0
       failNode: 0
-      succeed: 0
-    autoNext: 0
-    nextTime: 0
-    nextIndex: 0
-    succeed: 0
+      objective: 
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
   - image: {fileID: 0}
     name: Frank Sotto
     message: I warned you.
@@ -488,11 +487,11 @@ MonoBehaviour:
       function: SottoShoots
       difficulty: 0
       failNode: 0
-      succeed: 0
-    autoNext: 0
-    nextTime: 0
-    nextIndex: 0
-    succeed: 0
+      objective: 
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
   - image: {fileID: 0}
     name: Frank Sotto
     message: Oh, so now you can follow instructions?
@@ -502,17 +501,17 @@ MonoBehaviour:
       function: 
       difficulty: 0
       failNode: 0
-      succeed: 0
+      objective: 
     - text: If it can get me in that office.
       nextNode: 41
       function: 
       difficulty: 0
       failNode: 0
-      succeed: 0
-    autoNext: 0
-    nextTime: 0
-    nextIndex: 0
-    succeed: 0
+      objective: 
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
   - image: {fileID: 0}
     name: Frank Sotto
     message: Yeah? And you're not getting past me.
@@ -522,19 +521,19 @@ MonoBehaviour:
       function: 
       difficulty: 0
       failNode: 0
-      succeed: 0
-    autoNext: 0
-    nextTime: 0
-    nextIndex: 0
-    succeed: 0
+      objective: 
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
   - image: {fileID: 0}
     name: Frank Sotto
     message: Me? I'm flattered, but you're still trespassing. Please leave.
     options: []
-    autoNext: 0
-    nextTime: 0
-    nextIndex: 0
-    succeed: 0
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
   - image: {fileID: 0}
     name: Frank Sotto
     message: Oh, finally. He's been getting at me for weeks about his new suit. His
@@ -546,17 +545,17 @@ MonoBehaviour:
       function: 
       difficulty: 0
       failNode: 0
-      succeed: 0
+      objective: 
     - text: I'll wait here.
       nextNode: 0
       function: SottoTurn
       difficulty: 0
       failNode: 0
-      succeed: 0
-    autoNext: 0
-    nextTime: 0
-    nextIndex: 0
-    succeed: 0
+      objective: 
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
   - image: {fileID: 0}
     name: Frank Sotto
     message: That sounds like a lie.
@@ -566,11 +565,11 @@ MonoBehaviour:
       function: 
       difficulty: 0
       failNode: 0
-      succeed: 0
-    autoNext: 0
-    nextTime: 0
-    nextIndex: 0
-    succeed: 0
+      objective: 
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
   - image: {fileID: 0}
     name: Frank Sotto
     message: You some kind of madman with a deathwish? You're a nobody, and you just
@@ -581,23 +580,23 @@ MonoBehaviour:
       function: 
       difficulty: 0
       failNode: 0
-      succeed: 0
+      objective: 
     - text: Well...
       nextNode: 43
       function: 
       difficulty: 0
       failNode: 0
-      succeed: 0
+      objective: 
     - text: I can hold my own.
       nextNode: 45
       function: 
       difficulty: 0
       failNode: 0
-      succeed: 0
-    autoNext: 0
-    nextTime: 0
-    nextIndex: 0
-    succeed: 0
+      objective: 
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
   - image: {fileID: 0}
     name: Frank Sotto
     message: So, you're the back-up? That's a relief, because we've gotta protect
@@ -609,17 +608,17 @@ MonoBehaviour:
       function: 
       difficulty: 0
       failNode: 0
-      succeed: 0
+      objective: 
     - text: I'm well aware.
       nextNode: 60
       function: 
       difficulty: 0
       failNode: 0
-      succeed: 0
-    autoNext: 0
-    nextTime: 0
-    nextIndex: 0
-    succeed: 0
+      objective: 
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
   - image: {fileID: 0}
     name: Frank Sotto
     message: I doubt you could protect anyone. You can't even follow basic instructions.
@@ -629,11 +628,11 @@ MonoBehaviour:
       function: 
       difficulty: 0
       failNode: 0
-      succeed: 0
-    autoNext: 0
-    nextTime: 0
-    nextIndex: 0
-    succeed: 0
+      objective: 
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
   - image: {fileID: 0}
     name: Frank Sotto
     message: Hang on, Floyd Armstrong? I do know you....
@@ -643,19 +642,19 @@ MonoBehaviour:
       function: 
       difficulty: 0
       failNode: 0
-      succeed: 0
-    autoNext: 0
-    nextTime: 0
-    nextIndex: 0
-    succeed: 0
+      objective: 
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
   - image: {fileID: 0}
     name: Frank Sotto
     message: You better go back down those stairs, and not come back.
     options: []
-    autoNext: 0
-    nextTime: 0
-    nextIndex: 0
-    succeed: 0
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
   - image: {fileID: 0}
     name: Frank Sotto
     message: Maybe I am. What's it to you?
@@ -665,11 +664,11 @@ MonoBehaviour:
       function: 
       difficulty: 0
       failNode: 0
-      succeed: 0
-    autoNext: 0
-    nextTime: 0
-    nextIndex: 0
-    succeed: 0
+      objective: 
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
   - image: {fileID: 0}
     name: Frank Sotto
     message: I've seen it happen. The first time, it shocks you. But you get used
@@ -680,17 +679,17 @@ MonoBehaviour:
       function: 
       difficulty: 0
       failNode: 0
-      succeed: 0
+      objective: 
     - text: '...'
       nextNode: 47
       function: 
       difficulty: 0
       failNode: 0
-      succeed: 0
-    autoNext: 0
-    nextTime: 0
-    nextIndex: 0
-    succeed: 0
+      objective: 
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
   - image: {fileID: 0}
     name: Frank Sotto
     message: Oh. Okay. You're still not allowed up here though.
@@ -700,11 +699,11 @@ MonoBehaviour:
       function: 
       difficulty: 0
       failNode: 0
-      succeed: 0
-    autoNext: 0
-    nextTime: 0
-    nextIndex: 0
-    succeed: 0
+      objective: 
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
   - image: {fileID: 0}
     name: Frank Sotto
     message: I locked it myself. What did you say your name was?
@@ -714,17 +713,17 @@ MonoBehaviour:
       function: 
       difficulty: 0
       failNode: 0
-      succeed: 0
+      objective: 
     - text: '...'
       nextNode: 49
       function: 
       difficulty: 0
       failNode: 0
-      succeed: 0
-    autoNext: 0
-    nextTime: 0
-    nextIndex: 0
-    succeed: 0
+      objective: 
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
   - image: {fileID: 0}
     name: Frank Sotto
     message: You can't be sneaking around here. Who are you?
@@ -734,17 +733,17 @@ MonoBehaviour:
       function: 
       difficulty: 0
       failNode: 0
-      succeed: 0
+      objective: 
     - text: '...'
       nextNode: 51
       function: 
       difficulty: 0
       failNode: 0
-      succeed: 0
-    autoNext: 0
-    nextTime: 0
-    nextIndex: 0
-    succeed: 0
+      objective: 
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
   - image: {fileID: 0}
     name: Frank Sotto
     message: Patsy gave it to you, didn't she? I knew that bitch was working with
@@ -755,17 +754,17 @@ MonoBehaviour:
       function: 
       difficulty: 0
       failNode: 0
-      succeed: 0
+      objective: 
     - text: Leave her out of this.
       nextNode: 55
       function: 
       difficulty: 0
       failNode: 0
-      succeed: 0
-    autoNext: 0
-    nextTime: 0
-    nextIndex: 0
-    succeed: 0
+      objective: 
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
   - image: {fileID: 0}
     name: Frank Sotto
     message: You are? You see, this happens pretty regularly, and surprisingly enough,
@@ -776,26 +775,26 @@ MonoBehaviour:
       function: 
       difficulty: 0
       failNode: 0
-      succeed: 0
+      objective: 
     - text: '...'
       nextNode: 56
       function: 
       difficulty: 0
       failNode: 0
-      succeed: 0
-    autoNext: 0
-    nextTime: 0
-    nextIndex: 0
-    succeed: 0
+      objective: 
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
   - image: {fileID: 0}
     name: Frank Sotto
     message: Revenge? It's a little early in the night for revenge, pal. No revenge
       happening on my watch.
     options: []
-    autoNext: 0
-    nextTime: 0
-    nextIndex: 0
-    succeed: 0
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
   - image: {fileID: 0}
     name: Frank Sotto
     message: That's up to me now, isn't it? I have all the power in this situation.
@@ -806,11 +805,11 @@ MonoBehaviour:
       function: 
       difficulty: 0
       failNode: 0
-      succeed: 0
-    autoNext: 0
-    nextTime: 0
-    nextIndex: 0
-    succeed: 0
+      objective: 
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
   - image: {fileID: 0}
     name: Frank Sotto
     message: 'Snarky bastard, ain''t you. Here''s the thing: you aren''t getting into
@@ -821,17 +820,17 @@ MonoBehaviour:
       function: 
       difficulty: 0
       failNode: 0
-      succeed: 0
+      objective: 
     - text: I think he wants to meet me.
       nextNode: 58
       function: 
       difficulty: 0
       failNode: 0
-      succeed: 0
-    autoNext: 0
-    nextTime: 0
-    nextIndex: 0
-    succeed: 0
+      objective: 
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
   - image: {fileID: 0}
     name: Frank Sotto
     message: The boss don't really like unannounced guests.
@@ -841,17 +840,17 @@ MonoBehaviour:
       function: 
       difficulty: 0
       failNode: 0
-      succeed: 0
+      objective: 
     - text: I understand.
       nextNode: 0
       function: SottoTurn
       difficulty: 0
       failNode: 0
-      succeed: 0
-    autoNext: 0
-    nextTime: 0
-    nextIndex: 0
-    succeed: 0
+      objective: 
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
   - image: {fileID: 0}
     name: Frank Sotto
     message: 'Tell me the damned truth: who are you?'
@@ -861,11 +860,11 @@ MonoBehaviour:
       function: 
       difficulty: 0
       failNode: 0
-      succeed: 0
-    autoNext: 0
-    nextTime: 0
-    nextIndex: 0
-    succeed: 0
+      objective: 
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
   - image: {fileID: 0}
     name: 76
     message: Don't underestimate him. I'm sure he'll get here any minute.
@@ -875,25 +874,25 @@ MonoBehaviour:
       function: 
       difficulty: 3
       failNode: 77
-      succeed: 0
+      objective: 
     - text: We can get him.
       nextNode: 60
       function: 
       difficulty: 0
       failNode: 0
-      succeed: 0
-    autoNext: 0
-    nextTime: 0
-    nextIndex: 0
-    succeed: 0
+      objective: 
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
   - image: {fileID: 0}
     name: Frank Sotto
     message: Go on then, give me your best shot.
     options: []
-    autoNext: 0
-    nextTime: 0
-    nextIndex: 0
-    succeed: 0
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
   - image: {fileID: 0}
     name: Frank Sotto
     message: Sometimes... It just gets so hard, y'know?
@@ -903,17 +902,17 @@ MonoBehaviour:
       function: 
       difficulty: 0
       failNode: 0
-      succeed: 0
+      objective: 
     - text: '...'
       nextNode: 63
       function: 
       difficulty: 0
       failNode: 0
-      succeed: 0
-    autoNext: 0
-    nextTime: 0
-    nextIndex: 0
-    succeed: 0
+      objective: 
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
   - image: {fileID: 0}
     name: Frank Sotto
     message: Before you know it, you're drowning. Nothing stopping you from sinking
@@ -924,11 +923,11 @@ MonoBehaviour:
       function: 
       difficulty: 0
       failNode: 0
-      succeed: 0
-    autoNext: 0
-    nextTime: 0
-    nextIndex: 0
-    succeed: 0
+      objective: 
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
   - image: {fileID: 0}
     name: Frank Sotto
     message: The boss is in, and he likes his privacy.
@@ -938,29 +937,29 @@ MonoBehaviour:
       function: 
       difficulty: 0
       failNode: 0
-      succeed: 0
+      objective: 
     - text: I don't care about his privacy.
       nextNode: 64
       function: 
       difficulty: 0
       failNode: 0
-      succeed: 0
+      objective: 
     - text: He needs to see me.
       nextNode: 65
       function: 
       difficulty: 0
       failNode: 0
-      succeed: 0
+      objective: 
     - text: '...'
       nextNode: 67
       function: 
       difficulty: 0
       failNode: 0
-      succeed: 0
-    autoNext: 0
-    nextTime: 0
-    nextIndex: 0
-    succeed: 0
+      objective: 
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
   - image: {fileID: 0}
     name: Frank Sotto
     message: No name, huh? What are you here for?
@@ -970,17 +969,17 @@ MonoBehaviour:
       function: 
       difficulty: 0
       failNode: 0
-      succeed: 0
+      objective: 
     - text: Your boss is as good as dead.
       nextNode: 69
       function: 
       difficulty: 0
       failNode: 0
-      succeed: 0
-    autoNext: 0
-    nextTime: 0
-    nextIndex: 0
-    succeed: 0
+      objective: 
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
   - image: {fileID: 0}
     name: Frank Sotto
     message: My worst nightmare? Is that a line from a film? You're not exactly gonna
@@ -991,23 +990,23 @@ MonoBehaviour:
       function: 
       difficulty: 0
       failNode: 0
-      succeed: 0
+      objective: 
     - text: Your boss is as good as dead.
       nextNode: 69
       function: 
       difficulty: 0
       failNode: 0
-      succeed: 0
+      objective: 
     - text: I don't see your advantage.
       nextNode: 80
       function: PullGun
       difficulty: 0
       failNode: 0
-      succeed: 0
-    autoNext: 0
-    nextTime: 0
-    nextIndex: 0
-    succeed: 0
+      objective: 
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
   - image: {fileID: 0}
     name: Frank Sotto
     message: Are you new or something then? There isn't any stock up here.
@@ -1017,17 +1016,17 @@ MonoBehaviour:
       function: 
       difficulty: 0
       failNode: 0
-      succeed: 0
+      objective: 
     - text: I'm not here for stock.
       nextNode: 71
       function: 
       difficulty: 0
       failNode: 0
-      succeed: 0
-    autoNext: 0
-    nextTime: 0
-    nextIndex: 0
-    succeed: 0
+      objective: 
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
   - image: {fileID: 0}
     name: Frank Sotto
     message: No you don't. In fact, I don't even think you're a customer. I think
@@ -1038,11 +1037,11 @@ MonoBehaviour:
       function: 
       difficulty: 0
       failNode: 0
-      succeed: 0
-    autoNext: 0
-    nextTime: 0
-    nextIndex: 0
-    succeed: 0
+      objective: 
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
   - image: {fileID: 0}
     name: Frank Sotto
     message: You can't fool me. We've known she was working with somebody. Seems we
@@ -1053,11 +1052,11 @@ MonoBehaviour:
       function: 
       difficulty: 0
       failNode: 0
-      succeed: 0
-    autoNext: 0
-    nextTime: 0
-    nextIndex: 0
-    succeed: 0
+      objective: 
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
   - image: {fileID: 0}
     name: Frank Sotto
     message: Oh, so you two are actually close? That makes this even better.
@@ -1067,11 +1066,11 @@ MonoBehaviour:
       function: 
       difficulty: 0
       failNode: 0
-      succeed: 0
-    autoNext: 0
-    nextTime: 0
-    nextIndex: 0
-    succeed: 0
+      objective: 
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
   - image: {fileID: 0}
     name: Frank Sotto
     message: Because I'm here. And I stop punks like you.
@@ -1081,11 +1080,11 @@ MonoBehaviour:
       function: SottoShoots
       difficulty: 0
       failNode: 0
-      succeed: 0
-    autoNext: 0
-    nextTime: 0
-    nextIndex: 0
-    succeed: 0
+      objective: 
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
   - image: {fileID: 0}
     name: Frank Sotto
     message: If you are who I think you are, then there's not a lot you can do to
@@ -1096,17 +1095,17 @@ MonoBehaviour:
       function: 
       difficulty: 0
       failNode: 0
-      succeed: 0
+      objective: 
     - text: I'm Floyd Armstrong.
       nextNode: 75
       function: 
       difficulty: 0
       failNode: 0
-      succeed: 0
-    autoNext: 0
-    nextTime: 0
-    nextIndex: 0
-    succeed: 0
+      objective: 
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
   - image: {fileID: 0}
     name: Frank Sotto
     message: And why would that be?
@@ -1116,31 +1115,31 @@ MonoBehaviour:
       function: 
       difficulty: 0
       failNode: 0
-      succeed: 0
+      objective: 
     - text: I'm Floyd Armstrong.
       nextNode: 75
       function: 
       difficulty: 0
       failNode: 0
-      succeed: 0
-    autoNext: 0
-    nextTime: 0
-    nextIndex: 0
-    succeed: 0
+      objective: 
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
   - image: {fileID: 0}
     name: Frank Sotto
     message: I'm sure we can. I just don't want to get blindsided by a madman.
     options:
     - text: That's a shame.
       nextNode: 0
-      function: PunchSotto
+      function: Punch
       difficulty: 0
       failNode: 0
-      succeed: 0
-    autoNext: 0
-    nextTime: 0
-    nextIndex: 0
-    succeed: 0
+      objective: 
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
   - image: {fileID: 0}
     name: Frank Sotto
     message: Huh? How? This ain't exactly public information.
@@ -1150,11 +1149,11 @@ MonoBehaviour:
       function: PunchSotto
       difficulty: 0
       failNode: 0
-      succeed: 0
-    autoNext: 0
-    nextTime: 0
-    nextIndex: 0
-    succeed: 0
+      objective: 
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
   - image: {fileID: 0}
     name: Frank Sotto
     message: You're the one who's killed all our guys?
@@ -1164,11 +1163,11 @@ MonoBehaviour:
       function: 
       difficulty: 0
       failNode: 0
-      succeed: 0
-    autoNext: 0
-    nextTime: 0
-    nextIndex: 0
-    succeed: 0
+      objective: 
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
   - image: {fileID: 0}
     name: Frank Sotto
     message: I used to want to be someone special. I don't think I can do this any
@@ -1179,11 +1178,11 @@ MonoBehaviour:
       function: 
       difficulty: 0
       failNode: 0
-      succeed: 0
-    autoNext: 0
-    nextTime: 0
-    nextIndex: 0
-    succeed: 0
+      objective: 
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
   - image: {fileID: 0}
     name: Frank Sotto
     message: The only solace you get is when you're working, so you work more, and
@@ -1194,29 +1193,29 @@ MonoBehaviour:
       function: 
       difficulty: 0
       failNode: 0
-      succeed: 0
-    autoNext: 0
-    nextTime: 0
-    nextIndex: 0
-    succeed: 0
+      objective: 
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
   - image: {fileID: 0}
     name: Frank Sotto
     message: Well, he does. If he does, then I wouldn't be doing my job if I didn't.
       Get it? Now piss off.
     options: []
-    autoNext: 0
-    nextTime: 0
-    nextIndex: 0
-    succeed: 0
+    autoQuit: 1
+    autoTime: 5
+    autoNextIndex: 0
+    objective: 
   - image: {fileID: 0}
     name: Frank Sotto
     message: Oh. you already have an appointment? Sorry Sir, I didn't know. But seriously,
       there's no way you're getting in there.
     options: []
-    autoNext: 0
-    nextTime: 0
-    nextIndex: 0
-    succeed: 0
+    autoQuit: 1
+    autoTime: 8
+    autoNextIndex: 0
+    objective: FailSotto
   - image: {fileID: 0}
     name: Frank Sotto
     message: Oh, uh, probably me.
@@ -1226,11 +1225,11 @@ MonoBehaviour:
       function: 
       difficulty: 0
       failNode: 0
-      succeed: 0
-    autoNext: 0
-    nextTime: 0
-    nextIndex: 0
-    succeed: 0
+      objective: 
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
   - image: {fileID: 0}
     name: Frank Sotto
     message: Look, if you wanna see the boss, you gotta make an appointment.
@@ -1240,17 +1239,17 @@ MonoBehaviour:
       function: 
       difficulty: 0
       failNode: 0
-      succeed: 0
+      objective: 
     - text: How about right now?
       nextNode: 79
       function: 
       difficulty: 0
       failNode: 0
-      succeed: 0
-    autoNext: 0
-    nextTime: 0
-    nextIndex: 0
-    succeed: 0
+      objective: 
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
   - image: {fileID: 0}
     name: Frank Sotto
     message: Make an appointment then. He's a busy man.
@@ -1260,17 +1259,17 @@ MonoBehaviour:
       function: 
       difficulty: 0
       failNode: 0
-      succeed: 0
-    - text: Fine, who do I speak to for an appointment?
+      objective: 
+    - text: How about right now?
       nextNode: 79
       function: 
       difficulty: 0
       failNode: 0
-      succeed: 0
-    autoNext: 0
-    nextTime: 0
-    nextIndex: 0
-    succeed: 0
+      objective: 
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
   - image: {fileID: 0}
     name: Frank Sotto
     message: Who do you think you are, making threats like that?
@@ -1280,11 +1279,11 @@ MonoBehaviour:
       function: PullGun
       difficulty: 0
       failNode: 0
-      succeed: 0
-    autoNext: 0
-    nextTime: 0
-    nextIndex: 0
-    succeed: 0
+      objective: 
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
   - image: {fileID: 0}
     name: Frank Sotto
     message: None here, buddy. Down the stairs is where we keep the bar supplies.
@@ -1293,14 +1292,14 @@ MonoBehaviour:
     options:
     - text: '...'
       nextNode: 80
-      function: PullGun
+      function: Animation
       difficulty: 0
       failNode: 0
-      succeed: 0
-    autoNext: 0
-    nextTime: 0
-    nextIndex: 0
-    succeed: 0
+      objective: 
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
   - image: {fileID: 0}
     name: Frank Sotto
     message: Oh, you're on the other side of the business, like me. I guess I've just
@@ -1311,17 +1310,17 @@ MonoBehaviour:
       function: 
       difficulty: 0
       failNode: 0
-      succeed: 0
+      objective: 
     - text: About a month. [Lie]
       nextNode: 81
       function: 
       difficulty: 0
       failNode: 0
-      succeed: 0
-    autoNext: 0
-    nextTime: 0
-    nextIndex: 0
-    succeed: 0
+      objective: 
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
   - image: {fileID: 0}
     name: Frank Sotto
     message: None here, buddy. Down the stairs is where we keep the bar supplies.
@@ -1330,14 +1329,14 @@ MonoBehaviour:
     options:
     - text: '...'
       nextNode: 0
-      function: SottoShoots
+      function: Shoot
       difficulty: 0
       failNode: 0
-      succeed: 0
-    autoNext: 0
-    nextTime: 0
-    nextIndex: 0
-    succeed: 0
+      objective: 
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
   - image: {fileID: 0}
     name: Frank Sotto
     message: Except she let you up here. She let you get close to Pacone. Not close
@@ -1346,14 +1345,14 @@ MonoBehaviour:
     options:
     - text: '...'
       nextNode: 0
-      function: SottoShoots
+      function: Shoot
       difficulty: 0
       failNode: 0
-      succeed: 0
-    autoNext: 0
-    nextTime: 0
-    nextIndex: 0
-    succeed: 0
+      objective: 
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
   - image: {fileID: 0}
     name: 
     message: You can't just sneak past me. I'm here for a reason you know. I keep
@@ -1364,17 +1363,17 @@ MonoBehaviour:
       function: 
       difficulty: 0
       failNode: 0
-      succeed: 0
+      objective: 
     - text: Your boss is as good as dead.
       nextNode: 68
       function: 
       difficulty: 0
       failNode: 0
-      succeed: 0
-    autoNext: 0
-    nextTime: 0
-    nextIndex: 0
-    succeed: 0
+      objective: 
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
   - image: {fileID: 0}
     name: Frank Sotto
     message: And what would that be?
@@ -1384,26 +1383,26 @@ MonoBehaviour:
       function: 
       difficulty: 0
       failNode: 0
-      succeed: 0
+      objective: 
     - text: Something belonging to my father.
       nextNode: 83
       function: 
       difficulty: 0
       failNode: 0
-      succeed: 0
-    autoNext: 0
-    nextTime: 0
-    nextIndex: 0
-    succeed: 0
+      objective: 
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
   - image: {fileID: 0}
     name: Frank Sotto
     message: Thought as much. You're never getting to Pacone, and you're as good as
       dead. The boss will finish you shit-stain Armstrong family off.
     options: []
-    autoNext: 0
-    nextTime: 0
-    nextIndex: 0
-    succeed: 0
+    autoQuit: 1
+    autoTime: 5
+    autoNextIndex: 0
+    objective: FailSotto
   - image: {fileID: 0}
     name: Frank Sotto
     message: I should probably go check that out, huh? You wait here, make sure no-one
@@ -1414,11 +1413,11 @@ MonoBehaviour:
       function: ExitDialogue
       difficulty: 0
       failNode: 0
-      succeed: 1
-    autoNext: 0
-    nextTime: 0
-    nextIndex: 0
-    succeed: 0
+      objective: 
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
   - image: {fileID: 0}
     name: Frank Sotto
     message: Why don't you go check them out, and report back when you're done then?
@@ -1428,19 +1427,19 @@ MonoBehaviour:
       function: ExitDialogue
       difficulty: 0
       failNode: 0
-      succeed: 0
-    autoNext: 0
-    nextTime: 0
-    nextIndex: 0
-    succeed: 0
+      objective: 
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
   - image: {fileID: 0}
     name: Frank Sotto
     message: You know what? Just go in. I think I need a minute.
     options: []
-    autoNext: 0
-    nextTime: 3
-    nextIndex: 0
-    succeed: 1
+    autoQuit: 1
+    autoTime: 5
+    autoNextIndex: 0
+    objective: GetPastSotto
   - image: {fileID: 0}
     name: Frank Sotto
     message: I don't think the boss wants any visitors right now.
@@ -1450,11 +1449,11 @@ MonoBehaviour:
       function: 
       difficulty: 5
       failNode: 92
-      succeed: 0
-    autoNext: 0
-    nextTime: 0
-    nextIndex: 0
-    succeed: 0
+      objective: 
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
   - image: {fileID: 0}
     name: Frank Sotto
     message: Choose your next words carefully, or they'll be your last.
@@ -1464,29 +1463,29 @@ MonoBehaviour:
       function: SottoShoots
       difficulty: 0
       failNode: 0
-      succeed: 0
+      objective: 
     - text: My name is Floyd Armstrong.
       nextNode: 85
       function: 
       difficulty: 0
       failNode: 0
-      succeed: 0
+      objective: 
     - text: You can't stop me.
       nextNode: 86
       function: 
       difficulty: 0
       failNode: 0
-      succeed: 0
+      objective: 
     - text: '...'
       nextNode: 87
       function: 
       difficulty: 0
       failNode: 0
-      succeed: 0
-    autoNext: 0
-    nextTime: 0
-    nextIndex: 0
-    succeed: 0
+      objective: 
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
   - image: {fileID: 0}
     name: Frank Sotto
     message: Explains why I haven't seen you before. If you're gonna be working here,
@@ -1498,17 +1497,17 @@ MonoBehaviour:
       function: 
       difficulty: 0
       failNode: 0
-      succeed: 0
+      objective: 
     - text: I know him.
       nextNode: 88
       function: 
       difficulty: 0
       failNode: 0
-      succeed: 0
-    autoNext: 0
-    nextTime: 0
-    nextIndex: 0
-    succeed: 0
+      objective: 
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
   - image: {fileID: 0}
     name: Frank Sotto
     message: 'This isn''t some happy story. You keep fighting, and you die. You understand
@@ -1519,17 +1518,17 @@ MonoBehaviour:
       function: 
       difficulty: 0
       failNode: 0
-      succeed: 0
+      objective: 
     - text: Pacone's as good as dead.
       nextNode: 90
       function: 
       difficulty: 0
       failNode: 0
-      succeed: 0
-    autoNext: 0
-    nextTime: 0
-    nextIndex: 0
-    succeed: 0
+      objective: 
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
   - image: {fileID: 0}
     name: Frank Sotto
     message: You're Armstrong, aren't you? Big mistake coming here without a plan.
@@ -1541,25 +1540,25 @@ MonoBehaviour:
       function: 
       difficulty: 0
       failNode: 0
-      succeed: 0
+      objective: 
     - text: Pacone's as good as dead.
       nextNode: 90
       function: 
       difficulty: 0
       failNode: 0
-      succeed: 0
-    autoNext: 0
-    nextTime: 0
-    nextIndex: 0
-    succeed: 0
+      objective: 
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
   - image: {fileID: 0}
     name: Frank Sotto
     message: The boss says you can go in, but I'm keeping my eye on you.
     options: []
-    autoNext: 0
-    nextTime: 3
-    nextIndex: 0
-    succeed: 1
+    autoQuit: 1
+    autoTime: 5
+    autoNextIndex: 0
+    objective: GetPastSotto
   - image: {fileID: 0}
     name: Frank Sotto
     message: Armstrong?
@@ -1569,11 +1568,11 @@ MonoBehaviour:
       function: 
       difficulty: 0
       failNode: 0
-      succeed: 0
-    autoNext: 0
-    nextTime: 0
-    nextIndex: 0
-    succeed: 0
+      objective: 
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
   - image: {fileID: 0}
     name: Frank Sotto
     message: Sure I can. I've got a gun. Do you have a gun?
@@ -1583,31 +1582,31 @@ MonoBehaviour:
       function: 
       difficulty: 5
       failNode: 95
-      succeed: 0
+      objective: 
     - text: No.
       nextNode: 96
       function: 
       difficulty: 0
       failNode: 0
-      succeed: 0
-    autoNext: 0
-    nextTime: 0
-    nextIndex: 0
-    succeed: 0
+      objective: 
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
   - image: {fileID: 0}
     name: Frank Sotto
     message: Bold choice.
     options:
     - text: '...'
       nextNode: 0
-      function: SottoShoots
+      function: Shoot
       difficulty: 0
       failNode: 0
-      succeed: 0
-    autoNext: 0
-    nextTime: 0
-    nextIndex: 0
-    succeed: 0
+      objective: 
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
   - image: {fileID: 0}
     name: Frank Sotto
     message: See, if you know him, then I'd know you. Wherever he goes, I go, and
@@ -1618,17 +1617,17 @@ MonoBehaviour:
       function: 
       difficulty: 0
       failNode: 0
-      succeed: 0
+      objective: 
     - text: It's been a while.
       nextNode: 98
       function: 
       difficulty: 0
       failNode: 0
-      succeed: 0
-    autoNext: 0
-    nextTime: 0
-    nextIndex: 0
-    succeed: 0
+      objective: 
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
   - image: {fileID: 0}
     name: Frank Sotto
     message: This crusade you're on, it was flawed from the start! Your father was
@@ -1639,11 +1638,11 @@ MonoBehaviour:
       function: 
       difficulty: 0
       failNode: 0
-      succeed: 0
-    autoNext: 0
-    nextTime: 0
-    nextIndex: 0
-    succeed: 0
+      objective: 
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
   - image: {fileID: 0}
     name: Frank Sotto
     message: You think this is gonna make it all better? Not a chance. This is all
@@ -1654,11 +1653,11 @@ MonoBehaviour:
       function: 
       difficulty: 0
       failNode: 0
-      succeed: 0
-    autoNext: 0
-    nextTime: 0
-    nextIndex: 0
-    succeed: 0
+      objective: 
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
   - image: {fileID: 0}
     name: Frank Sotto
     message: Fine. Just this once.
@@ -1668,19 +1667,19 @@ MonoBehaviour:
       function: ExitDialogue
       difficulty: 0
       failNode: 0
-      succeed: 1
-    autoNext: 0
-    nextTime: 0
-    nextIndex: 0
-    succeed: 0
+      objective: GetPastSotto
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
   - image: {fileID: 0}
     name: Frank Sotto
     message: No exceptions.
     options: []
-    autoNext: 0
-    nextTime: 0
-    nextIndex: 0
-    succeed: 0
+    autoQuit: 1
+    autoTime: 5
+    autoNextIndex: 0
+    objective: FailSotto
   - image: {fileID: 0}
     name: Frank Sotto
     message: No, it can't be...
@@ -1690,11 +1689,11 @@ MonoBehaviour:
       function: 
       difficulty: 0
       failNode: 0
-      succeed: 0
-    autoNext: 0
-    nextTime: 0
-    nextIndex: 0
-    succeed: 0
+      objective: 
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
   - image: {fileID: 0}
     name: Frank Sotto
     message: Well, then we both have guns. I can still shoot you.
@@ -1704,21 +1703,21 @@ MonoBehaviour:
       function: 
       difficulty: 0
       failNode: 0
-      succeed: 0
-    autoNext: 0
-    nextTime: 0
-    nextIndex: 0
-    succeed: 0
+      objective: 
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
   - image: {fileID: 0}
     name: Frank Sotto
     message: No point in lying to me. I've got the upper hand here. You aren't even
       a threat. Go back downstairs. Enjoy your evening a little. But don't come back
       here.
     options: []
-    autoNext: 0
-    nextTime: 0
-    nextIndex: 0
-    succeed: 0
+    autoQuit: 1
+    autoTime: 8
+    autoNextIndex: 0
+    objective: FailSotto
   - image: {fileID: 0}
     name: Frank Sotto
     message: Good to know.
@@ -1728,11 +1727,11 @@ MonoBehaviour:
       function: SottoShoots
       difficulty: 0
       failNode: 0
-      succeed: 0
-    autoNext: 0
-    nextTime: 0
-    nextIndex: 0
-    succeed: 0
+      objective: 
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
   - image: {fileID: 0}
     name: Frank Sotto
     message: I'll say. Not exactly friends anymore, are they, now that the Armstrong
@@ -1744,17 +1743,17 @@ MonoBehaviour:
       function: 
       difficulty: 0
       failNode: 0
-      succeed: 0
+      objective: 
     - text: No. [Lie]
       nextNode: 102
       function: 
       difficulty: 8
       failNode: 103
-      succeed: 0
-    autoNext: 0
-    nextTime: 0
-    nextIndex: 0
-    succeed: 0
+      objective: 
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
   - image: {fileID: 0}
     name: Frank Sotto
     message: Oh, now that would make sense. I didn't always work here, I guess.
@@ -1764,11 +1763,11 @@ MonoBehaviour:
       function: 
       difficulty: 0
       failNode: 0
-      succeed: 0
-    autoNext: 0
-    nextTime: 0
-    nextIndex: 0
-    succeed: 0
+      objective: 
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
   - image: {fileID: 0}
     name: Al Pacone
     message: Let him in, Sotto. The man wants to speak to me. Let's give him what
@@ -1779,11 +1778,11 @@ MonoBehaviour:
       function: ExitDialogue
       difficulty: 0
       failNode: 0
-      succeed: 1
-    autoNext: 0
-    nextTime: 0
-    nextIndex: 0
-    succeed: 0
+      objective: 
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
   - image: {fileID: 0}
     name: Frank Sotto
     message: How do you know?
@@ -1793,11 +1792,11 @@ MonoBehaviour:
       function: 
       difficulty: 0
       failNode: 0
-      succeed: 0
-    autoNext: 0
-    nextTime: 0
-    nextIndex: 0
-    succeed: 0
+      objective: 
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
   - image: {fileID: 0}
     name: Frank Sotto
     message: 'You think a gun won''t stop you? '
@@ -1807,17 +1806,17 @@ MonoBehaviour:
       function: 
       difficulty: 0
       failNode: 0
-      succeed: 0
+      objective: 
     - text: I don't have time for this.
       nextNode: 106
       function: 
       difficulty: 0
       failNode: 0
-      succeed: 0
-    autoNext: 0
-    nextTime: 0
-    nextIndex: 0
-    succeed: 0
+      objective: 
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
   - image: {fileID: 0}
     name: Frank Sotto
     message: Yeah, in fairness, you don't look like a guy who could tear down our
@@ -1828,39 +1827,33 @@ MonoBehaviour:
       function: 
       difficulty: 0
       failNode: 0
-      succeed: 0
+      objective: 
     - text: '...'
       nextNode: 112
       function: 
       difficulty: 0
       failNode: 0
-      succeed: 0
-    autoNext: 0
-    nextTime: 0
-    nextIndex: 0
-    succeed: 0
+      objective: 
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
   - image: {fileID: 0}
     name: Frank Sotto
     message: You're a bad liar.
-    options:
-    - text: '...'
-      nextNode: 107
-      function: 
-      difficulty: 0
-      failNode: 0
-      succeed: 0
-    autoNext: 0
-    nextTime: 0
-    nextIndex: 0
-    succeed: 0
+    options: []
+    autoQuit: 0
+    autoTime: 5
+    autoNextIndex: 107
+    objective: 
   - image: {fileID: 0}
     name: Frank Sotto
     message: '...'
     options: []
-    autoNext: 0
-    nextTime: 0
-    nextIndex: 0
-    succeed: 0
+    autoQuit: 1
+    autoTime: 6
+    autoNextIndex: 0
+    objective: GetPastSotto
   - image: {fileID: 0}
     name: Frank Sotto
     message: What are you even gonna do if I shoot you?
@@ -1870,17 +1863,17 @@ MonoBehaviour:
       function: 
       difficulty: 0
       failNode: 0
-      succeed: 0
+      objective: 
     - text: Shoot back.
       nextNode: 109
       function: 
       difficulty: 0
       failNode: 0
-      succeed: 0
-    autoNext: 0
-    nextTime: 0
-    nextIndex: 0
-    succeed: 0
+      objective: 
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
   - image: {fileID: 0}
     name: Frank Sotto
     message: 'You think your time is worth more than mine? '
@@ -1890,11 +1883,11 @@ MonoBehaviour:
       function: 
       difficulty: 0
       failNode: 0
-      succeed: 0
-    autoNext: 0
-    nextTime: 0
-    nextIndex: 0
-    succeed: 0
+      objective: 
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
   - image: {fileID: 0}
     name: Frank Sotto
     message: Thought as much. Better make the most of tonight, as by tomorrow, you'll
@@ -1902,56 +1895,56 @@ MonoBehaviour:
       reason I'm not shooting you here and now is because Pacone wants to see you
       squirm.
     options: []
-    autoNext: 0
-    nextTime: 0
-    nextIndex: 0
-    succeed: 0
+    autoQuit: 1
+    autoTime: 5
+    autoNextIndex: 0
+    objective: GetPastSotto
   - image: {fileID: 0}
     name: Frank Sotto
     message: Suits me just fine.
     options:
     - text: '...'
       nextNode: 0
-      function: SottoShoots
+      function: Shoot
       difficulty: 0
       failNode: 0
-      succeed: 0
-    autoNext: 0
-    nextTime: 0
-    nextIndex: 0
-    succeed: 0
+      objective: 
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
   - image: {fileID: 0}
     name: Frank Sotto
     message: You're a bloody madman. But I ain't looking to get shot. You can go in
       there, but I hope you get what's coming to you.
     options: []
-    autoNext: 0
-    nextTime: 3
-    nextIndex: 0
-    succeed: 1
+    autoQuit: 1
+    autoTime: 5
+    autoNextIndex: 0
+    objective: GetPastSotto
   - image: {fileID: 0}
     name: Frank Sotto
     message: I hope you die in there.
     options: []
-    autoNext: 0
-    nextTime: 3
-    nextIndex: 0
-    succeed: 1
+    autoQuit: 1
+    autoTime: 5
+    autoNextIndex: 0
+    objective: GetPastSotto
   - image: {fileID: 0}
     name: Frank Sotto
     message: In which case, why don't you head on in? He'll tell you all about the
       business, get you set up.
     options: []
-    autoNext: 0
-    nextTime: 3
-    nextIndex: 0
-    succeed: 1
+    autoQuit: 1
+    autoTime: 5
+    autoNextIndex: 0
+    objective: GetPastSotto
   - image: {fileID: 0}
     name: Frank Sotto
     message: Well, if you're not Armstrong, then we've got nothing to worry about.
       Head on in.
     options: []
-    autoNext: 0
-    nextTime: 0
-    nextIndex: 3
-    succeed: 1
+    autoQuit: 1
+    autoTime: 5
+    autoNextIndex: 0
+    objective: GetPastSotto

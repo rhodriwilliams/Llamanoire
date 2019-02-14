@@ -17,6 +17,9 @@ public class Door : Interactable {
 					isOpen = true;
 					anim.clip = anim.GetClip("Open");
 					anim.Play();
+					player.GetComponentInChildren<Animator>().SetTrigger("OpenDoor");
+				} else {
+					GetComponentInChildren<Lock>().Interact();
 				}
 			} else {
 				isOpen = false;
