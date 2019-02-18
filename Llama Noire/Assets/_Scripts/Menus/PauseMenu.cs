@@ -23,11 +23,13 @@ public class PauseMenu : MonoBehaviour {
 					Time.timeScale = 0f;
 					pauseMenu.SetActive(true);
 					isPaused = true;
+					AudioListener.pause = true;
 				} else {
 					chara.ToggleCursor();
 					Time.timeScale = 1f;
 					pauseMenu.SetActive(false);
 					isPaused = false;
+					AudioListener.pause = false;
 				}
 			}
 		}
@@ -38,6 +40,7 @@ public class PauseMenu : MonoBehaviour {
 			Time.timeScale = 1f;
 			pauseMenu.SetActive(false);
 			isPaused = false;
+			AudioListener.pause = false;
 		}
 	}
 

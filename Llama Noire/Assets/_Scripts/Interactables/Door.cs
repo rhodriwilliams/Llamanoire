@@ -6,6 +6,7 @@ public class Door : Interactable {
 	public bool isLocked;
 	public bool isOpen;
 	protected Animation anim;
+	protected bool AIUsing = false;
 
 	void Start(){
 		anim = transform.parent.GetComponent<Animation>();
@@ -22,10 +23,33 @@ public class Door : Interactable {
 					GetComponentInChildren<Lock>().Interact();
 				}
 			} else {
-				isOpen = false;
-				anim.clip = anim.GetClip("Close");
-				anim.Play();
+				if(!AIUsing){
+					isOpen = false;
+					anim.clip = anim.GetClip("Close");
+					anim.Play();
+				}
 			}
 		}
+	}
+	public void OnTriggerEnter(Collider other){
+		if(!AIUsing){
+			if(other.tag == "AI"){
+				StartCoroutine("OpenClose");
+			}
+		}
+	}
+	public IEnumerator OpenClose(){
+		AIUsing = true;
+		if(!isOpen){
+			isOpen = true;
+			anim.clip = anim.GetClip("Open");
+			anim.Play();
+		}
+		yield return new WaitUntil(() => !anim.isPlaying);
+		yield return new WaitForSeconds(4f);
+		AIUsing = false;
+		isOpen = false;
+		anim.clip = anim.GetClip("Close");
+		anim.Play();
 	}
 }
