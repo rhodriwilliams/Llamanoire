@@ -33,6 +33,7 @@ public class SceneChanger : MonoBehaviour {
 		Debug.Log("Came from " + cameFrom);
 		if(cameFrom != ""){
 			player.transform.position = GameObject.Find(cameFrom).transform.position;
+			player.transform.rotation = GameObject.Find(cameFrom).transform.rotation;
 		}
 	}
 }

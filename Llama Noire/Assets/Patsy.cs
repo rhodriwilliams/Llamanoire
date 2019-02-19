@@ -9,6 +9,7 @@ public class Patsy : MonoBehaviour {
 	public Transform[] otherWaypoints;
 	private NavMeshAgent agent;
 	private Animator anim;
+	protected bool goingToStage = false;
 	// Use this for initialization
 	void Start () {
 		music = GameObject.Find("music").GetComponent<Music>();
@@ -29,21 +30,23 @@ public class Patsy : MonoBehaviour {
 	
 	void Update () {
 		if(agent.remainingDistance < 0.1f){
-			
-			if(anim.GetBool("IsWalking")){
-				anim.SetBool("IsWalking", false);
-			}
-		} else if (!anim.GetBool("IsWalking")){
-			Debug.Log("I'm here");
-			if(agent.destination == singWaypoint.position){
-				
+			if(goingToStage){
+				Debug.Log("At stage");
 				anim.SetBool("IsDancing", true);
 				music.StartSinging();
+				goingToStage = false;
+			} else {
+				if(anim.GetBool("IsWalking")){
+					anim.SetBool("IsWalking", false);
+				}
 			}
+		} else if (!anim.GetBool("IsWalking")){
+			Debug.Log("Walking");
 			anim.SetBool("IsWalking", true);
 		}
 		if(music.IsSinging){
 			agent.SetDestination(singWaypoint.position);
+			goingToStage = true;
 		}
 	}
 }

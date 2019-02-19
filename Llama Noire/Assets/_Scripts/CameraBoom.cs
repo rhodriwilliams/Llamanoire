@@ -5,8 +5,9 @@ using UnityEngine;
 public class CameraBoom : MonoBehaviour {
 
 	private GameObject player;
+	public float defaultSensitivity;
+	[HideInInspector]
 	public float sensitivity;
-
 	public float maxRot;
 	public float minRot;
 	public bool inverted;

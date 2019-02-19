@@ -12,18 +12,18 @@ MonoBehaviour:
   m_Name: Test
   m_EditorClassIdentifier: 
   buttons:
-  - position: {x: 100, y: 200}
+  - position: {x: 20, y: 40}
     size: {x: 0, y: 0}
     text: Here we go!
     spawnTime: 0
-    endTime: 2
-  - position: {x: 500, y: 500}
+    endTime: 1
+  - position: {x: 50, y: 50}
     size: {x: 0, y: 0}
     text: Good effort
-    spawnTime: 3
-    endTime: 5
-  - position: {x: 1000, y: 5}
+    spawnTime: 1
+    endTime: 2
+  - position: {x: 80, y: 30}
     size: {x: 0, y: 0}
     text: You're doing well!
-    spawnTime: 6
-    endTime: 8
+    spawnTime: 2
+    endTime: 3

@@ -70,6 +70,7 @@ public class Menu : MonoBehaviour {
 	}
 
 	public void Back(){
+		PlayerPrefs.Save();
 		mainMenu = true;
 		menuCam.Priority = 10;
 		optionsCam.Priority = 0;
