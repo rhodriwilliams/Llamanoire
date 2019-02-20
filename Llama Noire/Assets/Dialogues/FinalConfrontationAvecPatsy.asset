@@ -1,0 +1,604 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9858b4990db6ccf419f6dda3bc4f300b, type: 3}
+  m_Name: FinalConfrontationAvecPatsy
+  m_EditorClassIdentifier: 
+  nodes:
+  - image: {fileID: 0}
+    name: Frank Sotto
+    message: Look boss, I got no idea where your revolver went, but we'll find it.
+    options: []
+    autoQuit: 1
+    autoTime: 5
+    autoNextIndex: 1
+    objective: 
+  - image: {fileID: 0}
+    name: Patsy McKenzie
+    message: Your revolver? Then this is a murder case on top of everything else.
+    options: []
+    autoQuit: 1
+    autoTime: 5
+    autoNextIndex: 2
+    objective: 
+  - image: {fileID: 0}
+    name: Al Pacone
+    message: Patsy, my girl, I've been wondering for so long as to when you were going
+      to turn on me. Seems like that time is now. Your work for that second job you
+      do hasn't gone unnoticed. And you know first hand what I do to traitors.
+    options: []
+    autoQuit: 1
+    autoTime: 15
+    autoNextIndex: 3
+    objective: 
+  - image: {fileID: 0}
+    name: Floyd Armstrong
+    message: But we've got you now, and you're not going anywhere. You paid off the
+      St. Llamis police force, bribed away your problems, but you let evidence get
+      away from you. You were sloppy, rusty. Even you can't get away with murder.
+    options: []
+    autoQuit: 1
+    autoTime: 15
+    autoNextIndex: 4
+    objective: 
+  - image: {fileID: 0}
+    name: Al Pacone
+    message: Now Armstrong, my boy, don't come into my office and start throwing around
+      accusations of murder. I'd expect that from someone more uncivilised, but you
+      were raised better than that, weren't you?
+    options:
+    - text: I know what's right and wrong.
+      nextNode: 5
+      function: 
+      difficulty: 0
+      failNode: 0
+      objective: 
+    - text: You're a murderer.
+      nextNode: 6
+      function: 
+      difficulty: 0
+      failNode: 0
+      objective: 
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
+  - image: {fileID: 0}
+    name: Floyd Armstrong
+    message: 'I know the difference between right and wrong, Pacone. Unlike you. '
+    options: []
+    autoQuit: 1
+    autoTime: 5
+    autoNextIndex: 7
+    objective: 
+  - image: {fileID: 0}
+    name: Floyd Armstrong
+    message: You're a murderer, Pacone, and you've been cornered. The evidence you
+      left at the theatre, the revolver, the casings; it's putting you away for a
+      long time. Especially now we know it's your murder weapon.
+    options: []
+    autoQuit: 1
+    autoTime: 13
+    autoNextIndex: 8
+    objective: 
+  - image: {fileID: 0}
+    name: Al Pacone
+    message: What makes you think that I'm some unfeeling monster? Of course I know
+      what's right and wrong, I just make the conscious decision to ignore it. We
+      have to keep moving upwards.
+    options: []
+    autoQuit: 1
+    autoTime: 12
+    autoNextIndex: 9
+    objective: 
+  - image: {fileID: 0}
+    name: Patsy McKenzie
+    message: The authorities are already on their way.
+    options: []
+    autoQuit: 0
+    autoTime: 4
+    autoNextIndex: 10
+    objective: 
+  - image: {fileID: 0}
+    name: Patsy McKenzie
+    message: You make me sick, Pacone.
+    options: []
+    autoQuit: 1
+    autoTime: 4
+    autoNextIndex: 11
+    objective: 
+  - image: {fileID: 0}
+    name: Al Pacone
+    message: Now Patsy, haven't you noticed? It can't have been us. Armstrong has
+      the missing murder weapon, and it seems to me that the father's lofty standards
+      drove his son to murder. It was a few days ago when I reported my revolver as
+      stolen to the proper authorities. Isn't that right, Sotto?
+    options: []
+    autoQuit: 1
+    autoTime: 20
+    autoNextIndex: 12
+    objective: 
+  - image: {fileID: 0}
+    name: 
+    message: Good. You got emotional, and rushed in without a plan. Seems like you're
+      really out of your element.
+    options:
+    - text: Maybe we are.
+      nextNode: 13
+      function: 
+      difficulty: 0
+      failNode: 0
+      objective: 
+    - text: We called backup.
+      nextNode: 15
+      function: 
+      difficulty: 0
+      failNode: 0
+      objective: 
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
+  - image: {fileID: 0}
+    name: Frank Sotto
+    message: Sure is, boss. If I remember right, you'd noticed it was missing when
+      you went to clean it.
+    options: []
+    autoQuit: 1
+    autoTime: 5
+    autoNextIndex: 16
+    objective: 
+  - image: {fileID: 0}
+    name: Floyd Armstrong
+    message: Maybe we are, but we're used to having each other's back when the gloves
+      are off, right Patsy?
+    options: []
+    autoQuit: 1
+    autoTime: 6
+    autoNextIndex: 17
+    objective: 
+  - image: {fileID: 0}
+    name: Al Pacone
+    message: You think backup is gonna save you? Half this city works for me, what
+      makes you think that anyone would let me go down?
+    options: []
+    autoQuit: 1
+    autoTime: 7
+    autoNextIndex: 18
+    objective: 
+  - image: {fileID: 0}
+    name: Floyd Armstrong
+    message: We called backup. We're just here to stall you until they arrive.
+    options: []
+    autoQuit: 1
+    autoTime: 4
+    autoNextIndex: 14
+    objective: 
+  - image: {fileID: 0}
+    name: Al Pacone
+    message: Now, forgive me if I'm wrong, but I can't have killed anyone with a gun
+      that I didn't have.
+    options:
+    - text: Why were you looking for it?
+      nextNode: 19
+      function: 
+      difficulty: 0
+      failNode: 0
+      objective: 
+    - text: When did you report it?
+      nextNode: 20
+      function: 
+      difficulty: 0
+      failNode: 0
+      objective: 
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
+  - image: {fileID: 0}
+    name: 
+    message: 
+    options: []
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
+  - image: {fileID: 0}
+    name: 
+    message: 
+    options: []
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
+  - image: {fileID: 0}
+    name: 
+    message: 
+    options: []
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
+  - image: {fileID: 0}
+    name: 
+    message: 
+    options: []
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
+  - image: {fileID: 0}
+    name: 
+    message: 
+    options: []
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
+  - image: {fileID: 0}
+    name: 
+    message: 
+    options: []
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
+  - image: {fileID: 0}
+    name: 
+    message: 
+    options: []
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
+  - image: {fileID: 0}
+    name: 
+    message: 
+    options: []
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
+  - image: {fileID: 0}
+    name: 
+    message: 
+    options: []
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
+  - image: {fileID: 0}
+    name: 
+    message: 
+    options: []
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
+  - image: {fileID: 0}
+    name: 
+    message: 
+    options: []
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
+  - image: {fileID: 0}
+    name: 
+    message: 
+    options: []
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
+  - image: {fileID: 0}
+    name: 
+    message: 
+    options: []
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
+  - image: {fileID: 0}
+    name: 
+    message: 
+    options: []
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
+  - image: {fileID: 0}
+    name: 
+    message: 
+    options: []
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
+  - image: {fileID: 0}
+    name: 
+    message: 
+    options: []
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
+  - image: {fileID: 0}
+    name: 
+    message: 
+    options: []
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
+  - image: {fileID: 0}
+    name: 
+    message: 
+    options: []
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
+  - image: {fileID: 0}
+    name: 
+    message: 
+    options: []
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
+  - image: {fileID: 0}
+    name: 
+    message: 
+    options: []
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
+  - image: {fileID: 0}
+    name: 
+    message: 
+    options: []
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
+  - image: {fileID: 0}
+    name: 
+    message: 
+    options: []
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
+  - image: {fileID: 0}
+    name: 
+    message: 
+    options: []
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
+  - image: {fileID: 0}
+    name: 
+    message: 
+    options: []
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
+  - image: {fileID: 0}
+    name: 
+    message: 
+    options: []
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
+  - image: {fileID: 0}
+    name: 
+    message: 
+    options: []
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
+  - image: {fileID: 0}
+    name: 
+    message: 
+    options: []
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
+  - image: {fileID: 0}
+    name: 
+    message: 
+    options: []
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
+  - image: {fileID: 0}
+    name: 
+    message: 
+    options: []
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
+  - image: {fileID: 0}
+    name: 
+    message: 
+    options: []
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
+  - image: {fileID: 0}
+    name: 
+    message: 
+    options: []
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
+  - image: {fileID: 0}
+    name: 
+    message: 
+    options: []
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
+  - image: {fileID: 0}
+    name: 
+    message: 
+    options: []
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
+  - image: {fileID: 0}
+    name: 
+    message: 
+    options: []
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
+  - image: {fileID: 0}
+    name: 
+    message: 
+    options: []
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
+  - image: {fileID: 0}
+    name: 
+    message: 
+    options: []
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
+  - image: {fileID: 0}
+    name: 
+    message: 
+    options: []
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
+  - image: {fileID: 0}
+    name: 
+    message: 
+    options: []
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
+  - image: {fileID: 0}
+    name: 
+    message: 
+    options: []
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
+  - image: {fileID: 0}
+    name: 
+    message: 
+    options: []
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
+  - image: {fileID: 0}
+    name: 
+    message: 
+    options: []
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
+  - image: {fileID: 0}
+    name: 
+    message: 
+    options: []
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
+  - image: {fileID: 0}
+    name: 
+    message: 
+    options: []
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
+  - image: {fileID: 0}
+    name: 
+    message: 
+    options: []
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
+  - image: {fileID: 0}
+    name: 
+    message: 
+    options: []
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
+  - image: {fileID: 0}
+    name: 
+    message: 
+    options: []
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
+  - image: {fileID: 0}
+    name: 
+    message: 
+    options: []
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
+  - image: {fileID: 0}
+    name: 
+    message: 
+    options: []
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
+  - image: {fileID: 0}
+    name: 
+    message: 
+    options: []
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
+  - image: {fileID: 0}
+    name: 
+    message: 
+    options: []
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 

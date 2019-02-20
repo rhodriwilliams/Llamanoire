@@ -1,0 +1,363 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9858b4990db6ccf419f6dda3bc4f300b, type: 3}
+  m_Name: FinalConfrontationSansPatsy
+  m_EditorClassIdentifier: 
+  nodes:
+  - image: {fileID: 0}
+    name: Frank Sotto
+    message: Look boss, I got no idea where your revolver went, but we'll find it.
+    options: []
+    autoQuit: 1
+    autoTime: 5
+    autoNextIndex: 1
+    objective: 
+  - image: {fileID: 0}
+    name: Floyd Armstrong
+    message: I've got it right here. So, it's your revolver, Pacone? That makes this
+      much simpler.
+    options: []
+    autoQuit: 1
+    autoTime: 7
+    autoNextIndex: 2
+    objective: 
+  - image: {fileID: 0}
+    name: Al Pacone
+    message: Armstrong, what a surprise. Seems like you've caught me unprepared. Now,
+      if you could return my weapon, I'd be grateful.
+    options: []
+    autoQuit: 1
+    autoTime: 7
+    autoNextIndex: 3
+    objective: 
+  - image: {fileID: 0}
+    name: Floyd Armstrong
+    message: You killed my father, Pacone? Can't really say I'm surprised, it's all
+      starting to add up. He was a good, honest man, and you couldn't have that, could
+      you? No good men on your streets.
+    options: []
+    autoQuit: 1
+    autoTime: 12
+    autoNextIndex: 4
+    objective: 
+  - image: {fileID: 0}
+    name: Al Pacone
+    message: No man is truly good, Junior. Your father was no exception. Sure, he
+      may have had his military decorations, and years of service for this city, but
+      how do you think he got where he was? His hands were as dirty as the rest of
+      us.
+    options:
+    - text: Then why kill him?
+      nextNode: 5
+      function: 
+      difficulty: 0
+      failNode: 0
+      objective: 
+    - text: He worked hard.
+      nextNode: 6
+      function: 
+      difficulty: 0
+      failNode: 0
+      objective: 
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
+  - image: {fileID: 0}
+    name: Floyd Armstrong
+    message: "If he was as dirty as you say, then why kill him? Surely he was more
+      use alive?\r"
+    options: []
+    autoQuit: 0
+    autoTime: 10
+    autoNextIndex: 7
+    objective: 
+  - image: {fileID: 0}
+    name: Floyd Armstrong
+    message: He worked hard to get where he was, to make this city a better place.
+    options: []
+    autoQuit: 1
+    autoTime: 10
+    autoNextIndex: 8
+    objective: 
+  - image: {fileID: 0}
+    name: Al Pacone
+    message: I never said I killed him. He got cold feet. The going got tough, and
+      he tried to get out, probably spouting about making St. Llamis a better place.
+      He just didn't have the stones to carry it through. It's a shame, really.
+    options: []
+    autoQuit: 1
+    autoTime: 15
+    autoNextIndex: 9
+    objective: 
+  - image: {fileID: 0}
+    name: Floyd Armstrong
+    message: You regret what you did?
+    options: []
+    autoQuit: 1
+    autoTime: 5
+    autoNextIndex: 10
+    objective: 
+  - image: {fileID: 0}
+    name: Floyd Armstrong
+    message: You killed him over cold feet?
+    options: []
+    autoQuit: 1
+    autoTime: 5
+    autoNextIndex: 11
+    objective: 
+  - image: {fileID: 0}
+    name: Al Pacone
+    message: Oh, of course not. He had to go eventually. When he'd outlived his usefulness,
+      and became a risk, that's when he was killed.
+    options: []
+    autoQuit: 1
+    autoTime: 8
+    autoNextIndex: 12
+    objective: 
+  - image: {fileID: 0}
+    name: Al Pacone
+    message: When we were jumping into the future of this business, he hesitated.
+      That hesitation got him killed, not me. I doubt you would hesitate in the same
+      way.
+    options: []
+    autoQuit: 1
+    autoTime: 14
+    autoNextIndex: 13
+    objective: 
+  - image: {fileID: 0}
+    name: Frank Sotto
+    message: He saw what he wasn't supposed to. Gotta get rid of the evidence, or
+      it talks.
+    options: []
+    autoQuit: 1
+    autoTime: 8
+    autoNextIndex: 14
+    objective: 
+  - image: {fileID: 0}
+    name: Floyd Armstrong
+    message: I won't serve under you.  I know you killed him.
+    options: []
+    autoQuit: 1
+    autoTime: 8
+    autoNextIndex: 15
+    objective: 
+  - image: {fileID: 0}
+    name: Al Pacone
+    message: Shut it, Sotto. If your mouth gets us in any more hot water, I'll close
+      it, permanently.
+    options: []
+    autoQuit: 1
+    autoTime: 8
+    autoNextIndex: 16
+    objective: 
+  - image: {fileID: 0}
+    name: Al Pacone
+    message: 'That''s a shame. We could have moulded you into the man your father
+      could never be. '
+    options: []
+    autoQuit: 1
+    autoTime: 6
+    autoNextIndex: 17
+    objective: 
+  - image: {fileID: 0}
+    name: Frank Sotto
+    message: Sorry boss.
+    options: []
+    autoQuit: 1
+    autoTime: 5
+    autoNextIndex: 18
+    objective: 
+  - image: {fileID: 0}
+    name: Frank Sotto
+    message: Wasn't much left in the end, was there boss?
+    options: []
+    autoQuit: 0
+    autoTime: 6
+    autoNextIndex: 14
+    objective: 
+  - image: {fileID: 0}
+    name: Floyd Armstrong
+    message: 'What''s wrong Frank? Your leash on too tight? You''ve always been under
+      his thumb. '
+    options: []
+    autoQuit: 1
+    autoTime: 8
+    autoNextIndex: 19
+    objective: 
+  - image: {fileID: 0}
+    name: Al Pacone
+    message: Sotto, stand down. Don't let him antagonise you.
+    options: []
+    autoQuit: 1
+    autoTime: 6
+    autoNextIndex: 20
+    objective: 
+  - image: {fileID: 0}
+    name: Floyd Armstrong
+    message: See, Frank? You just do whatever he says. You really just gonna let him
+      get away with that?
+    options: []
+    autoQuit: 1
+    autoTime: 8
+    autoNextIndex: 21
+    objective: 
+  - image: {fileID: 0}
+    name: Frank Sotto
+    message: I do what I want, when I want. Right now, I just really want to kill
+      you.
+    options: []
+    autoQuit: 1
+    autoTime: 6
+    autoNextIndex: 22
+    objective: 
+  - image: {fileID: 0}
+    name: Floyd Armstrong
+    message: Let the adults talk, I know you don't have enough mental agency to execute
+      a man like my father. It takes someone cold and skilled, just like your boss
+      over here.
+    options: []
+    autoQuit: 1
+    autoTime: 10
+    autoNextIndex: 23
+    objective: 
+  - image: {fileID: 0}
+    name: Al Pacone
+    message: And you're blaming me, Armstrong?
+    options:
+    - text: No.
+      nextNode: 24
+      function: 
+      difficulty: 0
+      failNode: 0
+      objective: 
+    - text: I am.
+      nextNode: 25
+      function: 
+      difficulty: 0
+      failNode: 0
+      objective: 
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
+  - image: {fileID: 0}
+    name: Floyd Armstrong
+    message: No, I'm just saying someone else, who just happened to have access to
+      your revolver, and then on top of that, was also as sociopathic and driven.
+      Know anyone like that?
+    options: []
+    autoQuit: 1
+    autoTime: 8
+    autoNextIndex: 26
+    objective: 
+  - image: {fileID: 0}
+    name: Floyd Armstrong
+    message: I am. All the evidence points toward you. The police may have tried to
+      get rid of as much evidence as possible, but they're always going to miss something,
+      like, say, a casing that matches this revolver?
+    options: []
+    autoQuit: 0
+    autoTime: 10
+    autoNextIndex: 27
+    objective: 
+  - image: {fileID: 0}
+    name: Al Pacone
+    message: You're acting so clever, Armstrong. Trying to catch me in my own words.
+      You still don't have any proof to tie me to the tragic loss of your father,
+      do you?
+    options:
+    - text: I don't need it.
+      nextNode: 28
+      function: 
+      difficulty: 0
+      failNode: 0
+      objective: 
+    - text: I have all I need.
+      nextNode: 29
+      function: 
+      difficulty: 0
+      failNode: 0
+      objective: 
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
+  - image: {fileID: 0}
+    name: Al Pacone
+    message: How could they miss that?
+    options: []
+    autoQuit: 1
+    autoTime: 3
+    autoNextIndex: 30
+    objective: 
+  - image: {fileID: 0}
+    name: Floyd Armstrong
+    message: I don't need any evidence. This is personal. I know what you did, and
+      I've made peace with myself over what I have to do.
+    options: []
+    autoQuit: 1
+    autoTime: 8
+    autoNextIndex: 31
+    objective: 
+  - image: {fileID: 0}
+    name: Floyd Armstrong
+    message: I have all I need. I know what you did. No matter what, I'll always be
+      there to stand against you, Pacone. Are you ready to live with that?
+    options: []
+    autoQuit: 1
+    autoTime: 10
+    autoNextIndex: 32
+    objective: 
+  - image: {fileID: 0}
+    name: Frank Sotto
+    message: Boss?
+    options: []
+    autoQuit: 1
+    autoTime: 2
+    autoNextIndex: 33
+    objective: 
+  - image: {fileID: 0}
+    name: Al Pacone
+    message: You're going to kill me? Now you're thinking like I do. It's such a shame
+      that I have to kill you. Just like I killed your father!
+    options: []
+    autoQuit: 1
+    autoTime: 8
+    autoNextIndex: 0
+    objective: NeutralisePacone
+  - image: {fileID: 0}
+    name: Al Pacone
+    message: You're nothing, but if you're in my way, I will kill you, just like I
+      killed your father.
+    options: []
+    autoQuit: 1
+    autoTime: 6
+    autoNextIndex: 0
+    objective: NeutralisePacone
+  - image: {fileID: 0}
+    name: Floyd Armstrong
+    message: They didn't get everything, did they? You know that now. You know you've
+      failed!
+    options: []
+    autoQuit: 1
+    autoTime: 6
+    autoNextIndex: 34
+    objective: 
+  - image: {fileID: 0}
+    name: Al Pacone
+    message: I'll kill you, just like I killed everyone else who's got in my way!
+      Just like I killed your father!
+    options: []
+    autoQuit: 1
+    autoTime: 6
+    autoNextIndex: 0
+    objective: NeutralisePacone
