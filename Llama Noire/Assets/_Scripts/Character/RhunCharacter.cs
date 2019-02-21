@@ -42,6 +42,7 @@ public class RhunCharacter : MonoBehaviour {
 		} 
 	}
 	public void ToggleCursor(){
+		GameObject.Find("Camera Boom").GetComponent<CameraBoom>().enableInput = !GameObject.Find("Camera Boom").GetComponent<CameraBoom>().enableInput;
 		busy = !busy;
 		Cursor.visible = !Cursor.visible;
 		if(Cursor.lockState == CursorLockMode.Locked){
@@ -52,7 +53,11 @@ public class RhunCharacter : MonoBehaviour {
 		else
 			Cursor.lockState = CursorLockMode.Locked;
 	}
-
+	public void StopMoving(){
+		busy = !busy;
+		if(animator.GetBool("IsWalking"))
+			animator.SetBool("IsWalking", false);
+	}
 	public float GetAxisCustom(string axisName){
 		if(GameObject.FindGameObjectWithTag("Player").GetComponent<RhunCharacter>().busy)
 			return 0f;
