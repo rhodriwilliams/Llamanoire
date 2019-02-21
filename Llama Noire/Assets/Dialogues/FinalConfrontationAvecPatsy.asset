@@ -203,402 +203,539 @@ MonoBehaviour:
     autoNextIndex: 0
     objective: 
   - image: {fileID: 0}
-    name: 
-    message: 
+    name: Patsy McKenzie
+    message: I'm the best partner you ever had. You'd have gotten nowhere without
+      me.
     options: []
+    autoQuit: 1
+    autoTime: 8
+    autoNextIndex: 21
+    objective: 
+  - image: {fileID: 0}
+    name: Patsy McKenzie
+    message: I'm willing to bet on it. There are still good people in this city.
+    options: []
+    autoQuit: 1
+    autoTime: 7
+    autoNextIndex: 23
+    objective: 
+  - image: {fileID: 0}
+    name: Floyd Armstrong
+    message: Then why were you looking for it at the theatre? Doesn't seem right to
+      be frantically searching for it when you'd reported it missing. Unless, of course,
+      you knew what it had been used for, Pacone.
+    options: []
+    autoQuit: 1
+    autoTime: 12
+    autoNextIndex: 24
+    objective: 
+  - image: {fileID: 0}
+    name: Floyd Armstrong
+    message: When did you report it missing? My father was shot a full week ago. If
+      your account is true, then you still could have killed him, and then reported
+      the weapon missing. Seems awfully convenient for the murder weapon to go missing
+      without you noticing it.
+    options: []
+    autoQuit: 1
+    autoTime: 15
+    autoNextIndex: 25
+    objective: 
+  - image: {fileID: 0}
+    name: Al Pacone
+    message: That's cute. It's not going to help you, but still, cute.
+    options: []
+    autoQuit: 1
+    autoTime: 6
+    autoNextIndex: 22
+    objective: 
+  - image: {fileID: 0}
+    name: Floyd Armstrong
+    message: As long as I get to bring down the man that murdered my father, Pacone,
+      I'll be happy.
+    options: []
+    autoQuit: 1
+    autoTime: 6
+    autoNextIndex: 26
+    objective: 
+  - image: {fileID: 0}
+    name: Al Pacone
+    message: You're willing to bet your lives on it? Forgive me, but doesn't that
+      seem a little foolish?
+    options: []
+    autoQuit: 1
+    autoTime: 8
+    autoNextIndex: 22
+    objective: 
+  - image: {fileID: 0}
+    name: Al Pacone
+    message: You're stepping well out of line, boy. You better have come into my office
+      with a plan. You going to kill me to get what you want?
+    options:
+    - text: If I have to.
+      nextNode: 28
+      function: 
+      difficulty: 0
+      failNode: 0
+      objective: 
+    - text: I'm planning on it.
+      nextNode: 29
+      function: 
+      difficulty: 0
+      failNode: 0
+      objective: 
+    - text: I want real justice.
+      nextNode: 30
+      function: 
+      difficulty: 0
+      failNode: 0
+      objective: 
     autoQuit: 0
     autoTime: 0
     autoNextIndex: 0
     objective: 
   - image: {fileID: 0}
-    name: 
-    message: 
+    name: Al Pacone
+    message: 'Seems that way. You''re the detective, Armstrong; figure that one out. '
     options: []
+    autoQuit: 1
+    autoTime: 5
+    autoNextIndex: 27
+    objective: 
+  - image: {fileID: 0}
+    name: Al Pacone
+    message: And how are you going to go about that? You going to kill me, boy?
+    options:
+    - text: If I have to.
+      nextNode: 28
+      function: 
+      difficulty: 0
+      failNode: 0
+      objective: 
+    - text: I'm planning on it.
+      nextNode: 29
+      function: 
+      difficulty: 0
+      failNode: 0
+      objective: 
+    - text: I want real justice.
+      nextNode: 30
+      function: 
+      difficulty: 0
+      failNode: 0
+      objective: 
     autoQuit: 0
     autoTime: 0
     autoNextIndex: 0
     objective: 
   - image: {fileID: 0}
-    name: 
-    message: 
+    name: Floyd Armstrong
+    message: See, I think it was a crime of opportunity. You, or one of your more
+      upward thinking cronies, saw he was at your theatre, and took the initiative.
+      If it wasn't you, then you must be very proud.
     options: []
+    autoQuit: 1
+    autoTime: 14
+    autoNextIndex: 31
+    objective: 
+  - image: {fileID: 0}
+    name: Floyd Armstrong
+    message: If that's what it comes down to, Pacone, then I will. I don't want to
+      cross that line, but you've already pushed me closer than you want.
+    options: []
+    autoQuit: 1
+    autoTime: 10
+    autoNextIndex: 32
+    objective: 
+  - image: {fileID: 0}
+    name: Floyd Armstrong
+    message: It's the only way I can see getting revenge. The life of my father for
+      your life.
+    options: []
+    autoQuit: 1
+    autoTime: 6
+    autoNextIndex: 33
+    objective: 
+  - image: {fileID: 0}
+    name: Floyd Armstrong
+    message: The only way I'll get real justice is by putting you away, where you
+      can pay off every crime, not just the murder of my father.
+    options: []
+    autoQuit: 1
+    autoTime: 8
+    autoNextIndex: 34
+    objective: 
+  - image: {fileID: 0}
+    name: Patsy McKenzie
+    message: I bet you're just surprised that you're even a suspect considering how
+      much you're paying the SLPD.
+    options: []
+    autoQuit: 1
+    autoTime: 6
+    autoNextIndex: 35
+    objective: 
+  - image: {fileID: 0}
+    name: Al Pacone
+    message: So you're threatening me? You should think about your next actions very
+      carefully.
+    options: []
+    autoQuit: 1
+    autoTime: 6
+    autoNextIndex: 36
+    objective: 
+  - image: {fileID: 0}
+    name: Patsy McKenzie
+    message: Floyd, you don't have to do this. There's another way.
+    options: []
+    autoQuit: 1
+    autoTime: 5
+    autoNextIndex: 37
+    objective: 
+  - image: {fileID: 0}
+    name: Al Pacone
+    message: Oh, how honourable of you.
+    options: []
+    autoQuit: 1
+    autoTime: 5
+    autoNextIndex: 38
+    objective: 
+  - image: {fileID: 0}
+    name: Al Pacone
+    message: 'Patsy, it''s bad business for me to be surprised. I will not be caught
+      off guard. I had to plan for even this eventuality. If I didn''t I wouldn''t
+      have lasted this long, would I? '
+    options: []
+    autoQuit: 1
+    autoTime: 15
+    autoNextIndex: 39
+    objective: 
+  - image: {fileID: 0}
+    name: Patsy McKenzie
+    message: You don't have to kill him, Armstrong. We can bring him in, put him on
+      trial for what he's done.
+    options: []
+    autoQuit: 1
+    autoTime: 8
+    autoNextIndex: 40
+    objective: 
+  - image: {fileID: 0}
+    name: Floyd Armstrong
+    message: Of course there is. I just don't want to take it.
+    options: []
+    autoQuit: 1
+    autoTime: 6
+    autoNextIndex: 41
+    objective: 
+  - image: {fileID: 0}
+    name: Floyd Armstrong
+    message: It's the right thing to do. I truly hate you for what you did, but there
+      are others who have suffered like I have. I'm bringing you in for them.
+    options: []
+    autoQuit: 1
+    autoTime: 10
+    autoNextIndex: 42
+    objective: 
+  - image: {fileID: 0}
+    name: Floyd Armstrong
+    message: 'Well, there are two ways we can go about this. Either you''re put on
+      trial for your involvement, or you accept and understand that I don''t care
+      what you say now. I know the truth. '
+    options: []
+    autoQuit: 1
+    autoTime: 12
+    autoNextIndex: 43
+    objective: 
+  - image: {fileID: 0}
+    name: Floyd Armstrong
+    message: What happens next is up to our friend here.
+    options: []
+    autoQuit: 1
+    autoTime: 5
+    autoNextIndex: 44
+    objective: 
+  - image: {fileID: 0}
+    name: Frank Sotto
+    message: 'You ain''t gonna lay a finger on him, you little shit! '
+    options: []
+    autoQuit: 1
+    autoTime: 5
+    autoNextIndex: 45
+    objective: 
+  - image: {fileID: 0}
+    name: Al Pacone
+    message: What a hero. Just like your father was. We'll take that from you, just
+      like we did from him.
+    options: []
+    autoQuit: 1
+    autoTime: 8
+    autoNextIndex: 46
+    objective: 
+  - image: {fileID: 0}
+    name: Patsy McKenzie
+    message: Armstrong, you don't have to do this.
+    options: []
+    autoQuit: 1
+    autoTime: 5
+    autoNextIndex: 47
+    objective: 
+  - image: {fileID: 0}
+    name: Al Pacone
+    message: Up to me, Armstrong? The second you walked into this office, you became
+      a problem I could no longer avoid. I've become tired of this.
+    options:
+    - text: You're coming with us.
+      nextNode: 48
+      function: 
+      difficulty: 0
+      failNode: 0
+      objective: 
+    - text: You're as good as dead.
+      nextNode: 49
+      function: 
+      difficulty: 0
+      failNode: 0
+      objective: 
     autoQuit: 0
     autoTime: 0
     autoNextIndex: 0
     objective: 
   - image: {fileID: 0}
-    name: 
-    message: 
+    name: Floyd Armstrong
+    message: And who's going to stop me, Frank? You?
     options: []
+    autoQuit: 1
+    autoTime: 5
+    autoNextIndex: 51
+    objective: 
+  - image: {fileID: 0}
+    name: Floyd Armstrong
+    message: 'You don''t get to talk about him like that. '
+    options: []
+    autoQuit: 1
+    autoTime: 4
+    autoNextIndex: 52
+    objective: 
+  - image: {fileID: 0}
+    name: Floyd Armstrong
+    message: I know. He doesn't have to die. Even though that's all I want, that's
+      all he deserves, still, more than all of that, I need to see him finally behind
+      bars, for the years that he's done wrong.
+    options: []
+    autoQuit: 1
+    autoTime: 10
+    autoNextIndex: 52
+    objective: 
+  - image: {fileID: 0}
+    name: Floyd Armstrong
+    message: 'You''re coming with us. We''re doing this the right way. '
+    options: []
+    autoQuit: 1
+    autoTime: 5
+    autoNextIndex: 53
+    objective: 
+  - image: {fileID: 0}
+    name: Floyd Armstrong
+    message: You're as good as dead. I just hope it hurts.
+    options: []
+    autoQuit: 1
+    autoTime: 5
+    autoNextIndex: 54
+    objective: 
+  - image: {fileID: 0}
+    name: Floyd Armstrong
+    message: He's a murderer! He does nothing but take from this city. He's the head
+      of all of this.
+    options: []
+    autoQuit: 1
+    autoTime: 6
+    autoNextIndex: 55
+    objective: 
+  - image: {fileID: 0}
+    name: Patsy McKenzie
+    message: You don't have to do this, Floyd.
+    options:
+    - text: He's a murderer!
+      nextNode: 50
+      function: 
+      difficulty: 0
+      failNode: 0
+      objective: 
+    - text: I need this.
+      nextNode: 55
+      function: RandomChance
+      difficulty: 9
+      failNode: 56
+      objective: 
     autoQuit: 0
     autoTime: 0
     autoNextIndex: 0
     objective: 
   - image: {fileID: 0}
-    name: 
-    message: 
+    name: Al Pacone
+    message: 'Your father and I were partners, my boy. Partners for years. I carried
+      him to great heights. He was blinded to the truth of this business by his ambition.
+      He finally saw what we were, and he tried to leave. We couldn''t allow that. '
     options: []
+    autoQuit: 1
+    autoTime: 16
+    autoNextIndex: 57
+    objective: 
+  - image: {fileID: 0}
+    name: Patsy McKenzie
+    message: Al Pacone, you're under arrest. Stand right where you are.
+    options: []
+    autoQuit: 1
+    autoTime: 8
+    autoNextIndex: 0
+    objective: ArrestPacone
+  - image: {fileID: 0}
+    name: Patsy McKenzie
+    message: I can't be a part of this. There are rules that I just can't break.
+    options: []
+    autoQuit: 1
+    autoTime: 6
+    autoNextIndex: 58
+    objective: 
+  - image: {fileID: 0}
+    name: Patsy McKenzie
+    message: I can't be a part of this. There are rules that I just can't break.
+    options: []
+    autoQuit: 1
+    autoTime: 6
+    autoNextIndex: 59
+    objective: 
+  - image: {fileID: 0}
+    name: Floyd Armstrong
+    message: I need this. He has to die.
+    options: []
+    autoQuit: 1
+    autoTime: 5
+    autoNextIndex: 60
+    objective: 
+  - image: {fileID: 0}
+    name: Floyd Armstrong
+    message: His death was just business to you? You're a monster, Pacone.
+    options: []
+    autoQuit: 1
+    autoTime: 7
+    autoNextIndex: 61
+    objective: 
+  - image: {fileID: 0}
+    name: Floyd Armstrong
+    message: Then leave. I never needed you here anyway.
+    options: []
+    autoQuit: 1
+    autoTime: 5
+    autoNextIndex: 62
+    objective: 
+  - image: {fileID: 0}
+    name: Floyd Armstrong
+    message: Then leave. You were never here.
+    options: []
+    autoQuit: 1
+    autoTime: 5
+    autoNextIndex: 63
+    objective: 
+  - image: {fileID: 0}
+    name: 
+    message: I won't let you kill him. He'll suffer enough, in time, I promise. Just
+      don't kill him.
+    options: []
+    autoQuit: 0
+    autoTime: 7
+    autoNextIndex: 64
+    objective: 
+  - image: {fileID: 0}
+    name: Al Pacone
+    message: It was a waste. He was a loose-end waiting to happen.
+    options: []
+    autoQuit: 1
+    autoTime: 5
+    autoNextIndex: 65
+    objective: 
+  - image: {fileID: 0}
+    name: Al Pacone
+    message: You going to take me down all by yourself, boy?
+    options: []
+    autoQuit: 1
+    autoTime: 6
+    autoNextIndex: 66
+    objective: 
+  - image: {fileID: 0}
+    name: Al Pacone
+    message: 'So proud, aren''t you? You think I''ve already lost. '
+    options: []
+    autoQuit: 1
+    autoTime: 6
+    autoNextIndex: 66
+    objective: 
+  - image: {fileID: 0}
+    name: Floyd Armstrong
+    message: You can't stop me either. He killed the only family I had left! He has
+      to die!
+    options: []
+    autoQuit: 1
+    autoTime: 6
+    autoNextIndex: 67
+    objective: 
+  - image: {fileID: 0}
+    name: Patsy McKenzie
+    message: Is that how you justify it?
+    options:
+    - text: You're under arrest.
+      nextNode: 68
+      function: 
+      difficulty: 0
+      failNode: 0
+      objective: 
+    - text: You have to die, Pacone.
+      nextNode: 69
+      function: 
+      difficulty: 0
+      failNode: 0
+      objective: 
     autoQuit: 0
     autoTime: 0
     autoNextIndex: 0
     objective: 
   - image: {fileID: 0}
-    name: 
-    message: 
+    name: Floyd Armstrong
+    message: 'I just wanted revenge. You didn''t have to kill him. You''re the end
+      of all of this. '
     options: []
-    autoQuit: 0
-    autoTime: 0
+    autoQuit: 1
+    autoTime: 7
     autoNextIndex: 0
+    objective: ShootPacone
+  - image: {fileID: 0}
+    name: Patsy McKenzie
+    message: I'm sorry, Armstrong.
+    options: []
+    autoQuit: 1
+    autoTime: 3
+    autoNextIndex: 0
+    objective: KilledByPatsy
+  - image: {fileID: 0}
+    name: Floyd Armstrong
+    message: You're under arrest. Your reign is over, Pacone.
+    options: []
+    autoQuit: 1
+    autoTime: 6
+    autoNextIndex: 0
+    objective: ArrestPacone
+  - image: {fileID: 0}
+    name: Floyd Armstrong
+    message: You have to die, for what you did. This world is better off without you
+      in it.
+    options: []
+    autoQuit: 1
+    autoTime: 6
+    autoNextIndex: 70
     objective: 
   - image: {fileID: 0}
-    name: 
-    message: 
+    name: Al Pacone
+    message: I'll kill you myself. You will not take everything I have built!
     options: []
-    autoQuit: 0
-    autoTime: 0
+    autoQuit: 1
+    autoTime: 6
     autoNextIndex: 0
-    objective: 
-  - image: {fileID: 0}
-    name: 
-    message: 
-    options: []
-    autoQuit: 0
-    autoTime: 0
-    autoNextIndex: 0
-    objective: 
-  - image: {fileID: 0}
-    name: 
-    message: 
-    options: []
-    autoQuit: 0
-    autoTime: 0
-    autoNextIndex: 0
-    objective: 
-  - image: {fileID: 0}
-    name: 
-    message: 
-    options: []
-    autoQuit: 0
-    autoTime: 0
-    autoNextIndex: 0
-    objective: 
-  - image: {fileID: 0}
-    name: 
-    message: 
-    options: []
-    autoQuit: 0
-    autoTime: 0
-    autoNextIndex: 0
-    objective: 
-  - image: {fileID: 0}
-    name: 
-    message: 
-    options: []
-    autoQuit: 0
-    autoTime: 0
-    autoNextIndex: 0
-    objective: 
-  - image: {fileID: 0}
-    name: 
-    message: 
-    options: []
-    autoQuit: 0
-    autoTime: 0
-    autoNextIndex: 0
-    objective: 
-  - image: {fileID: 0}
-    name: 
-    message: 
-    options: []
-    autoQuit: 0
-    autoTime: 0
-    autoNextIndex: 0
-    objective: 
-  - image: {fileID: 0}
-    name: 
-    message: 
-    options: []
-    autoQuit: 0
-    autoTime: 0
-    autoNextIndex: 0
-    objective: 
-  - image: {fileID: 0}
-    name: 
-    message: 
-    options: []
-    autoQuit: 0
-    autoTime: 0
-    autoNextIndex: 0
-    objective: 
-  - image: {fileID: 0}
-    name: 
-    message: 
-    options: []
-    autoQuit: 0
-    autoTime: 0
-    autoNextIndex: 0
-    objective: 
-  - image: {fileID: 0}
-    name: 
-    message: 
-    options: []
-    autoQuit: 0
-    autoTime: 0
-    autoNextIndex: 0
-    objective: 
-  - image: {fileID: 0}
-    name: 
-    message: 
-    options: []
-    autoQuit: 0
-    autoTime: 0
-    autoNextIndex: 0
-    objective: 
-  - image: {fileID: 0}
-    name: 
-    message: 
-    options: []
-    autoQuit: 0
-    autoTime: 0
-    autoNextIndex: 0
-    objective: 
-  - image: {fileID: 0}
-    name: 
-    message: 
-    options: []
-    autoQuit: 0
-    autoTime: 0
-    autoNextIndex: 0
-    objective: 
-  - image: {fileID: 0}
-    name: 
-    message: 
-    options: []
-    autoQuit: 0
-    autoTime: 0
-    autoNextIndex: 0
-    objective: 
-  - image: {fileID: 0}
-    name: 
-    message: 
-    options: []
-    autoQuit: 0
-    autoTime: 0
-    autoNextIndex: 0
-    objective: 
-  - image: {fileID: 0}
-    name: 
-    message: 
-    options: []
-    autoQuit: 0
-    autoTime: 0
-    autoNextIndex: 0
-    objective: 
-  - image: {fileID: 0}
-    name: 
-    message: 
-    options: []
-    autoQuit: 0
-    autoTime: 0
-    autoNextIndex: 0
-    objective: 
-  - image: {fileID: 0}
-    name: 
-    message: 
-    options: []
-    autoQuit: 0
-    autoTime: 0
-    autoNextIndex: 0
-    objective: 
-  - image: {fileID: 0}
-    name: 
-    message: 
-    options: []
-    autoQuit: 0
-    autoTime: 0
-    autoNextIndex: 0
-    objective: 
-  - image: {fileID: 0}
-    name: 
-    message: 
-    options: []
-    autoQuit: 0
-    autoTime: 0
-    autoNextIndex: 0
-    objective: 
-  - image: {fileID: 0}
-    name: 
-    message: 
-    options: []
-    autoQuit: 0
-    autoTime: 0
-    autoNextIndex: 0
-    objective: 
-  - image: {fileID: 0}
-    name: 
-    message: 
-    options: []
-    autoQuit: 0
-    autoTime: 0
-    autoNextIndex: 0
-    objective: 
-  - image: {fileID: 0}
-    name: 
-    message: 
-    options: []
-    autoQuit: 0
-    autoTime: 0
-    autoNextIndex: 0
-    objective: 
-  - image: {fileID: 0}
-    name: 
-    message: 
-    options: []
-    autoQuit: 0
-    autoTime: 0
-    autoNextIndex: 0
-    objective: 
-  - image: {fileID: 0}
-    name: 
-    message: 
-    options: []
-    autoQuit: 0
-    autoTime: 0
-    autoNextIndex: 0
-    objective: 
-  - image: {fileID: 0}
-    name: 
-    message: 
-    options: []
-    autoQuit: 0
-    autoTime: 0
-    autoNextIndex: 0
-    objective: 
-  - image: {fileID: 0}
-    name: 
-    message: 
-    options: []
-    autoQuit: 0
-    autoTime: 0
-    autoNextIndex: 0
-    objective: 
-  - image: {fileID: 0}
-    name: 
-    message: 
-    options: []
-    autoQuit: 0
-    autoTime: 0
-    autoNextIndex: 0
-    objective: 
-  - image: {fileID: 0}
-    name: 
-    message: 
-    options: []
-    autoQuit: 0
-    autoTime: 0
-    autoNextIndex: 0
-    objective: 
-  - image: {fileID: 0}
-    name: 
-    message: 
-    options: []
-    autoQuit: 0
-    autoTime: 0
-    autoNextIndex: 0
-    objective: 
-  - image: {fileID: 0}
-    name: 
-    message: 
-    options: []
-    autoQuit: 0
-    autoTime: 0
-    autoNextIndex: 0
-    objective: 
-  - image: {fileID: 0}
-    name: 
-    message: 
-    options: []
-    autoQuit: 0
-    autoTime: 0
-    autoNextIndex: 0
-    objective: 
-  - image: {fileID: 0}
-    name: 
-    message: 
-    options: []
-    autoQuit: 0
-    autoTime: 0
-    autoNextIndex: 0
-    objective: 
-  - image: {fileID: 0}
-    name: 
-    message: 
-    options: []
-    autoQuit: 0
-    autoTime: 0
-    autoNextIndex: 0
-    objective: 
-  - image: {fileID: 0}
-    name: 
-    message: 
-    options: []
-    autoQuit: 0
-    autoTime: 0
-    autoNextIndex: 0
-    objective: 
-  - image: {fileID: 0}
-    name: 
-    message: 
-    options: []
-    autoQuit: 0
-    autoTime: 0
-    autoNextIndex: 0
-    objective: 
-  - image: {fileID: 0}
-    name: 
-    message: 
-    options: []
-    autoQuit: 0
-    autoTime: 0
-    autoNextIndex: 0
-    objective: 
-  - image: {fileID: 0}
-    name: 
-    message: 
-    options: []
-    autoQuit: 0
-    autoTime: 0
-    autoNextIndex: 0
-    objective: 
-  - image: {fileID: 0}
-    name: 
-    message: 
-    options: []
-    autoQuit: 0
-    autoTime: 0
-    autoNextIndex: 0
-    objective: 
-  - image: {fileID: 0}
-    name: 
-    message: 
-    options: []
-    autoQuit: 0
-    autoTime: 0
-    autoNextIndex: 0
-    objective: 
-  - image: {fileID: 0}
-    name: 
-    message: 
-    options: []
-    autoQuit: 0
-    autoTime: 0
-    autoNextIndex: 0
-    objective: 
-  - image: {fileID: 0}
-    name: 
-    message: 
-    options: []
-    autoQuit: 0
-    autoTime: 0
-    autoNextIndex: 0
-    objective: 
+    objective: NeutralisePacone
