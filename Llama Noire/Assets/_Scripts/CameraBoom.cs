@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class CameraBoom : MonoBehaviour {
-
+	public bool enableInput;
 	private GameObject player;
 	public float defaultSensitivity;
 	[HideInInspector]
@@ -18,7 +18,7 @@ public class CameraBoom : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if(!player.GetComponent<RhunCharacter>().busy){
+		if(enableInput){
 			transform.position = player.transform.position;
 
 			Vector3 curRot = transform.rotation.eulerAngles;
