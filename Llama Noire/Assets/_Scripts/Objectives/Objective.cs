@@ -5,6 +5,8 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "objectiveData", menuName = "Objectives/Objective", order = 1)]
 public class Objective : ScriptableObject {
 	public string objectiveName;
+	public string objectiveMessage;
+	public bool isHidden;
 	public bool bCompleted;
 	public int iCompleted;
 	/*

@@ -12,5 +12,7 @@ MonoBehaviour:
   m_Name: GetPastSotto
   m_EditorClassIdentifier: 
   objectiveName: GetPastSotto
+  objectiveMessage: 
+  isHidden: 1
   bCompleted: 0
   iCompleted: 0

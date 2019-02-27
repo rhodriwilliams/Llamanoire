@@ -30,10 +30,13 @@ public class SceneChanger : MonoBehaviour {
 
 	public void OnSceneLoaded(Scene scene, LoadSceneMode mode){
 		player = GameObject.FindGameObjectWithTag("Player");
-		Debug.Log("Came from " + cameFrom);
+		//Debug.Log("Came from " + cameFrom);
 		if(cameFrom != ""){
 			player.transform.position = GameObject.Find(cameFrom).transform.position;
 			player.transform.rotation = GameObject.Find(cameFrom).transform.rotation;
+		}
+		if(scene.name == "InteriorSpeakeasyWhitebox"){
+			GetComponent<ObjectiveManager>().SetHidden("GetUpstairs", true);
 		}
 	}
 }
