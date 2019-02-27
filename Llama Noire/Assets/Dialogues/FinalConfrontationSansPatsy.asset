@@ -16,7 +16,7 @@ MonoBehaviour:
     name: Frank Sotto
     message: Look boss, I got no idea where your revolver went, but we'll find it.
     options: []
-    autoQuit: 1
+    autoQuit: 0
     autoTime: 5
     autoNextIndex: 1
     objective: 
@@ -25,7 +25,7 @@ MonoBehaviour:
     message: I've got it right here. So, it's your revolver, Pacone? That makes this
       much simpler.
     options: []
-    autoQuit: 1
+    autoQuit: 0
     autoTime: 7
     autoNextIndex: 2
     objective: 
@@ -34,7 +34,7 @@ MonoBehaviour:
     message: Armstrong, what a surprise. Seems like you've caught me unprepared. Now,
       if you could return my weapon, I'd be grateful.
     options: []
-    autoQuit: 1
+    autoQuit: 0
     autoTime: 7
     autoNextIndex: 3
     objective: 
@@ -44,7 +44,7 @@ MonoBehaviour:
       starting to add up. He was a good, honest man, and you couldn't have that, could
       you? No good men on your streets.
     options: []
-    autoQuit: 1
+    autoQuit: 0
     autoTime: 12
     autoNextIndex: 4
     objective: 
@@ -84,7 +84,7 @@ MonoBehaviour:
     name: Floyd Armstrong
     message: He worked hard to get where he was, to make this city a better place.
     options: []
-    autoQuit: 1
+    autoQuit: 0
     autoTime: 10
     autoNextIndex: 8
     objective: 
@@ -94,7 +94,7 @@ MonoBehaviour:
       he tried to get out, probably spouting about making St. Llamis a better place.
       He just didn't have the stones to carry it through. It's a shame, really.
     options: []
-    autoQuit: 1
+    autoQuit: 0
     autoTime: 15
     autoNextIndex: 9
     objective: 
@@ -102,7 +102,7 @@ MonoBehaviour:
     name: Floyd Armstrong
     message: You regret what you did?
     options: []
-    autoQuit: 1
+    autoQuit: 0
     autoTime: 5
     autoNextIndex: 10
     objective: 
@@ -110,7 +110,7 @@ MonoBehaviour:
     name: Floyd Armstrong
     message: You killed him over cold feet?
     options: []
-    autoQuit: 1
+    autoQuit: 0
     autoTime: 5
     autoNextIndex: 11
     objective: 
@@ -119,7 +119,7 @@ MonoBehaviour:
     message: Oh, of course not. He had to go eventually. When he'd outlived his usefulness,
       and became a risk, that's when he was killed.
     options: []
-    autoQuit: 1
+    autoQuit: 0
     autoTime: 8
     autoNextIndex: 12
     objective: 
@@ -129,7 +129,7 @@ MonoBehaviour:
       That hesitation got him killed, not me. I doubt you would hesitate in the same
       way.
     options: []
-    autoQuit: 1
+    autoQuit: 0
     autoTime: 14
     autoNextIndex: 13
     objective: 
@@ -138,7 +138,7 @@ MonoBehaviour:
     message: He saw what he wasn't supposed to. Gotta get rid of the evidence, or
       it talks.
     options: []
-    autoQuit: 1
+    autoQuit: 0
     autoTime: 8
     autoNextIndex: 14
     objective: 
@@ -146,7 +146,7 @@ MonoBehaviour:
     name: Floyd Armstrong
     message: I won't serve under you.  I know you killed him.
     options: []
-    autoQuit: 1
+    autoQuit: 0
     autoTime: 8
     autoNextIndex: 15
     objective: 
@@ -155,7 +155,7 @@ MonoBehaviour:
     message: Shut it, Sotto. If your mouth gets us in any more hot water, I'll close
       it, permanently.
     options: []
-    autoQuit: 1
+    autoQuit: 0
     autoTime: 8
     autoNextIndex: 16
     objective: 
@@ -164,7 +164,7 @@ MonoBehaviour:
     message: 'That''s a shame. We could have moulded you into the man your father
       could never be. '
     options: []
-    autoQuit: 1
+    autoQuit: 0
     autoTime: 6
     autoNextIndex: 17
     objective: 
@@ -172,7 +172,7 @@ MonoBehaviour:
     name: Frank Sotto
     message: Sorry boss.
     options: []
-    autoQuit: 1
+    autoQuit: 0
     autoTime: 5
     autoNextIndex: 18
     objective: 
@@ -189,7 +189,7 @@ MonoBehaviour:
     message: 'What''s wrong Frank? Your leash on too tight? You''ve always been under
       his thumb. '
     options: []
-    autoQuit: 1
+    autoQuit: 0
     autoTime: 8
     autoNextIndex: 19
     objective: 
@@ -197,7 +197,7 @@ MonoBehaviour:
     name: Al Pacone
     message: Sotto, stand down. Don't let him antagonise you.
     options: []
-    autoQuit: 1
+    autoQuit: 0
     autoTime: 6
     autoNextIndex: 20
     objective: 
@@ -206,7 +206,7 @@ MonoBehaviour:
     message: See, Frank? You just do whatever he says. You really just gonna let him
       get away with that?
     options: []
-    autoQuit: 1
+    autoQuit: 0
     autoTime: 8
     autoNextIndex: 21
     objective: 
@@ -215,7 +215,7 @@ MonoBehaviour:
     message: I do what I want, when I want. Right now, I just really want to kill
       you.
     options: []
-    autoQuit: 1
+    autoQuit: 0
     autoTime: 6
     autoNextIndex: 22
     objective: 
@@ -225,7 +225,7 @@ MonoBehaviour:
       a man like my father. It takes someone cold and skilled, just like your boss
       over here.
     options: []
-    autoQuit: 1
+    autoQuit: 0
     autoTime: 10
     autoNextIndex: 23
     objective: 
@@ -255,7 +255,7 @@ MonoBehaviour:
       your revolver, and then on top of that, was also as sociopathic and driven.
       Know anyone like that?
     options: []
-    autoQuit: 1
+    autoQuit: 0
     autoTime: 8
     autoNextIndex: 26
     objective: 
@@ -295,7 +295,7 @@ MonoBehaviour:
     name: Al Pacone
     message: How could they miss that?
     options: []
-    autoQuit: 1
+    autoQuit: 0
     autoTime: 3
     autoNextIndex: 30
     objective: 
@@ -304,7 +304,7 @@ MonoBehaviour:
     message: I don't need any evidence. This is personal. I know what you did, and
       I've made peace with myself over what I have to do.
     options: []
-    autoQuit: 1
+    autoQuit: 0
     autoTime: 8
     autoNextIndex: 31
     objective: 
@@ -313,7 +313,7 @@ MonoBehaviour:
     message: I have all I need. I know what you did. No matter what, I'll always be
       there to stand against you, Pacone. Are you ready to live with that?
     options: []
-    autoQuit: 1
+    autoQuit: 0
     autoTime: 10
     autoNextIndex: 32
     objective: 
@@ -321,7 +321,7 @@ MonoBehaviour:
     name: Frank Sotto
     message: Boss?
     options: []
-    autoQuit: 1
+    autoQuit: 0
     autoTime: 2
     autoNextIndex: 33
     objective: 
@@ -348,7 +348,7 @@ MonoBehaviour:
     message: They didn't get everything, did they? You know that now. You know you've
       failed!
     options: []
-    autoQuit: 1
+    autoQuit: 0
     autoTime: 6
     autoNextIndex: 34
     objective: 

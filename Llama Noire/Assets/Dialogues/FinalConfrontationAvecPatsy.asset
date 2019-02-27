@@ -16,15 +16,16 @@ MonoBehaviour:
     name: Frank Sotto
     message: Look boss, I got no idea where your revolver went, but we'll find it.
     options: []
-    autoQuit: 1
+    autoQuit: 0
     autoTime: 5
     autoNextIndex: 1
     objective: 
   - image: {fileID: 0}
     name: Patsy McKenzie
-    message: Your revolver? Then this is a murder case on top of everything else.
+    message: Your revolver? So this is a murder case on top of everything I have on
+      you.
     options: []
-    autoQuit: 1
+    autoQuit: 0
     autoTime: 5
     autoNextIndex: 2
     objective: 
@@ -34,7 +35,7 @@ MonoBehaviour:
       to turn on me. Seems like that time is now. Your work for that second job you
       do hasn't gone unnoticed. And you know first hand what I do to traitors.
     options: []
-    autoQuit: 1
+    autoQuit: 0
     autoTime: 15
     autoNextIndex: 3
     objective: 
@@ -44,7 +45,7 @@ MonoBehaviour:
       St. Llamis police force, bribed away your problems, but you let evidence get
       away from you. You were sloppy, rusty. Even you can't get away with murder.
     options: []
-    autoQuit: 1
+    autoQuit: 0
     autoTime: 15
     autoNextIndex: 4
     objective: 
@@ -74,7 +75,7 @@ MonoBehaviour:
     name: Floyd Armstrong
     message: 'I know the difference between right and wrong, Pacone. Unlike you. '
     options: []
-    autoQuit: 1
+    autoQuit: 0
     autoTime: 5
     autoNextIndex: 7
     objective: 
@@ -84,7 +85,7 @@ MonoBehaviour:
       left at the theatre, the revolver, the casings; it's putting you away for a
       long time. Especially now we know it's your murder weapon.
     options: []
-    autoQuit: 1
+    autoQuit: 0
     autoTime: 13
     autoNextIndex: 8
     objective: 
@@ -94,7 +95,7 @@ MonoBehaviour:
       what's right and wrong, I just make the conscious decision to ignore it. We
       have to keep moving upwards.
     options: []
-    autoQuit: 1
+    autoQuit: 0
     autoTime: 12
     autoNextIndex: 9
     objective: 
@@ -110,7 +111,7 @@ MonoBehaviour:
     name: Patsy McKenzie
     message: You make me sick, Pacone.
     options: []
-    autoQuit: 1
+    autoQuit: 0
     autoTime: 4
     autoNextIndex: 11
     objective: 
@@ -121,7 +122,7 @@ MonoBehaviour:
       drove his son to murder. It was a few days ago when I reported my revolver as
       stolen to the proper authorities. Isn't that right, Sotto?
     options: []
-    autoQuit: 1
+    autoQuit: 0
     autoTime: 20
     autoNextIndex: 12
     objective: 
@@ -151,7 +152,7 @@ MonoBehaviour:
     message: Sure is, boss. If I remember right, you'd noticed it was missing when
       you went to clean it.
     options: []
-    autoQuit: 1
+    autoQuit: 0
     autoTime: 5
     autoNextIndex: 16
     objective: 
@@ -160,7 +161,7 @@ MonoBehaviour:
     message: Maybe we are, but we're used to having each other's back when the gloves
       are off, right Patsy?
     options: []
-    autoQuit: 1
+    autoQuit: 0
     autoTime: 6
     autoNextIndex: 17
     objective: 
@@ -169,7 +170,7 @@ MonoBehaviour:
     message: You think backup is gonna save you? Half this city works for me, what
       makes you think that anyone would let me go down?
     options: []
-    autoQuit: 1
+    autoQuit: 0
     autoTime: 7
     autoNextIndex: 18
     objective: 
@@ -177,7 +178,7 @@ MonoBehaviour:
     name: Floyd Armstrong
     message: We called backup. We're just here to stall you until they arrive.
     options: []
-    autoQuit: 1
+    autoQuit: 0
     autoTime: 4
     autoNextIndex: 14
     objective: 
@@ -207,7 +208,7 @@ MonoBehaviour:
     message: I'm the best partner you ever had. You'd have gotten nowhere without
       me.
     options: []
-    autoQuit: 1
+    autoQuit: 0
     autoTime: 8
     autoNextIndex: 21
     objective: 
@@ -215,7 +216,7 @@ MonoBehaviour:
     name: Patsy McKenzie
     message: I'm willing to bet on it. There are still good people in this city.
     options: []
-    autoQuit: 1
+    autoQuit: 0
     autoTime: 7
     autoNextIndex: 23
     objective: 
@@ -225,7 +226,7 @@ MonoBehaviour:
       be frantically searching for it when you'd reported it missing. Unless, of course,
       you knew what it had been used for, Pacone.
     options: []
-    autoQuit: 1
+    autoQuit: 0
     autoTime: 12
     autoNextIndex: 24
     objective: 
@@ -236,7 +237,7 @@ MonoBehaviour:
       the weapon missing. Seems awfully convenient for the murder weapon to go missing
       without you noticing it.
     options: []
-    autoQuit: 1
+    autoQuit: 0
     autoTime: 15
     autoNextIndex: 25
     objective: 
@@ -244,7 +245,7 @@ MonoBehaviour:
     name: Al Pacone
     message: That's cute. It's not going to help you, but still, cute.
     options: []
-    autoQuit: 1
+    autoQuit: 0
     autoTime: 6
     autoNextIndex: 22
     objective: 
@@ -253,7 +254,7 @@ MonoBehaviour:
     message: As long as I get to bring down the man that murdered my father, Pacone,
       I'll be happy.
     options: []
-    autoQuit: 1
+    autoQuit: 0
     autoTime: 6
     autoNextIndex: 26
     objective: 
@@ -262,7 +263,7 @@ MonoBehaviour:
     message: You're willing to bet your lives on it? Forgive me, but doesn't that
       seem a little foolish?
     options: []
-    autoQuit: 1
+    autoQuit: 0
     autoTime: 8
     autoNextIndex: 22
     objective: 
@@ -297,7 +298,7 @@ MonoBehaviour:
     name: Al Pacone
     message: 'Seems that way. You''re the detective, Armstrong; figure that one out. '
     options: []
-    autoQuit: 1
+    autoQuit: 0
     autoTime: 5
     autoNextIndex: 27
     objective: 
@@ -333,7 +334,7 @@ MonoBehaviour:
       upward thinking cronies, saw he was at your theatre, and took the initiative.
       If it wasn't you, then you must be very proud.
     options: []
-    autoQuit: 1
+    autoQuit: 0
     autoTime: 14
     autoNextIndex: 31
     objective: 
@@ -342,7 +343,7 @@ MonoBehaviour:
     message: If that's what it comes down to, Pacone, then I will. I don't want to
       cross that line, but you've already pushed me closer than you want.
     options: []
-    autoQuit: 1
+    autoQuit: 0
     autoTime: 10
     autoNextIndex: 32
     objective: 
@@ -351,7 +352,7 @@ MonoBehaviour:
     message: It's the only way I can see getting revenge. The life of my father for
       your life.
     options: []
-    autoQuit: 1
+    autoQuit: 0
     autoTime: 6
     autoNextIndex: 33
     objective: 
@@ -360,7 +361,7 @@ MonoBehaviour:
     message: The only way I'll get real justice is by putting you away, where you
       can pay off every crime, not just the murder of my father.
     options: []
-    autoQuit: 1
+    autoQuit: 0
     autoTime: 8
     autoNextIndex: 34
     objective: 
@@ -369,7 +370,7 @@ MonoBehaviour:
     message: I bet you're just surprised that you're even a suspect considering how
       much you're paying the SLPD.
     options: []
-    autoQuit: 1
+    autoQuit: 0
     autoTime: 6
     autoNextIndex: 35
     objective: 
@@ -378,7 +379,7 @@ MonoBehaviour:
     message: So you're threatening me? You should think about your next actions very
       carefully.
     options: []
-    autoQuit: 1
+    autoQuit: 0
     autoTime: 6
     autoNextIndex: 36
     objective: 
@@ -386,7 +387,7 @@ MonoBehaviour:
     name: Patsy McKenzie
     message: Floyd, you don't have to do this. There's another way.
     options: []
-    autoQuit: 1
+    autoQuit: 0
     autoTime: 5
     autoNextIndex: 37
     objective: 
@@ -394,7 +395,7 @@ MonoBehaviour:
     name: Al Pacone
     message: Oh, how honourable of you.
     options: []
-    autoQuit: 1
+    autoQuit: 0
     autoTime: 5
     autoNextIndex: 38
     objective: 
@@ -404,7 +405,7 @@ MonoBehaviour:
       off guard. I had to plan for even this eventuality. If I didn''t I wouldn''t
       have lasted this long, would I? '
     options: []
-    autoQuit: 1
+    autoQuit: 0
     autoTime: 15
     autoNextIndex: 39
     objective: 
@@ -413,7 +414,7 @@ MonoBehaviour:
     message: You don't have to kill him, Armstrong. We can bring him in, put him on
       trial for what he's done.
     options: []
-    autoQuit: 1
+    autoQuit: 0
     autoTime: 8
     autoNextIndex: 40
     objective: 
@@ -421,7 +422,7 @@ MonoBehaviour:
     name: Floyd Armstrong
     message: Of course there is. I just don't want to take it.
     options: []
-    autoQuit: 1
+    autoQuit: 0
     autoTime: 6
     autoNextIndex: 41
     objective: 
@@ -430,7 +431,7 @@ MonoBehaviour:
     message: It's the right thing to do. I truly hate you for what you did, but there
       are others who have suffered like I have. I'm bringing you in for them.
     options: []
-    autoQuit: 1
+    autoQuit: 0
     autoTime: 10
     autoNextIndex: 42
     objective: 
@@ -440,7 +441,7 @@ MonoBehaviour:
       trial for your involvement, or you accept and understand that I don''t care
       what you say now. I know the truth. '
     options: []
-    autoQuit: 1
+    autoQuit: 0
     autoTime: 12
     autoNextIndex: 43
     objective: 
@@ -448,7 +449,7 @@ MonoBehaviour:
     name: Floyd Armstrong
     message: What happens next is up to our friend here.
     options: []
-    autoQuit: 1
+    autoQuit: 0
     autoTime: 5
     autoNextIndex: 44
     objective: 
@@ -456,7 +457,7 @@ MonoBehaviour:
     name: Frank Sotto
     message: 'You ain''t gonna lay a finger on him, you little shit! '
     options: []
-    autoQuit: 1
+    autoQuit: 0
     autoTime: 5
     autoNextIndex: 45
     objective: 
@@ -465,7 +466,7 @@ MonoBehaviour:
     message: What a hero. Just like your father was. We'll take that from you, just
       like we did from him.
     options: []
-    autoQuit: 1
+    autoQuit: 0
     autoTime: 8
     autoNextIndex: 46
     objective: 
@@ -473,7 +474,7 @@ MonoBehaviour:
     name: Patsy McKenzie
     message: Armstrong, you don't have to do this.
     options: []
-    autoQuit: 1
+    autoQuit: 0
     autoTime: 5
     autoNextIndex: 47
     objective: 
@@ -502,7 +503,7 @@ MonoBehaviour:
     name: Floyd Armstrong
     message: And who's going to stop me, Frank? You?
     options: []
-    autoQuit: 1
+    autoQuit: 0
     autoTime: 5
     autoNextIndex: 51
     objective: 
@@ -510,7 +511,7 @@ MonoBehaviour:
     name: Floyd Armstrong
     message: 'You don''t get to talk about him like that. '
     options: []
-    autoQuit: 1
+    autoQuit: 0
     autoTime: 4
     autoNextIndex: 52
     objective: 
@@ -520,7 +521,7 @@ MonoBehaviour:
       all he deserves, still, more than all of that, I need to see him finally behind
       bars, for the years that he's done wrong.
     options: []
-    autoQuit: 1
+    autoQuit: 0
     autoTime: 10
     autoNextIndex: 52
     objective: 
@@ -528,7 +529,7 @@ MonoBehaviour:
     name: Floyd Armstrong
     message: 'You''re coming with us. We''re doing this the right way. '
     options: []
-    autoQuit: 1
+    autoQuit: 0
     autoTime: 5
     autoNextIndex: 53
     objective: 
@@ -536,7 +537,7 @@ MonoBehaviour:
     name: Floyd Armstrong
     message: You're as good as dead. I just hope it hurts.
     options: []
-    autoQuit: 1
+    autoQuit: 0
     autoTime: 5
     autoNextIndex: 54
     objective: 
@@ -545,7 +546,7 @@ MonoBehaviour:
     message: He's a murderer! He does nothing but take from this city. He's the head
       of all of this.
     options: []
-    autoQuit: 1
+    autoQuit: 0
     autoTime: 6
     autoNextIndex: 55
     objective: 
@@ -575,7 +576,7 @@ MonoBehaviour:
       him to great heights. He was blinded to the truth of this business by his ambition.
       He finally saw what we were, and he tried to leave. We couldn''t allow that. '
     options: []
-    autoQuit: 1
+    autoQuit: 0
     autoTime: 16
     autoNextIndex: 57
     objective: 
@@ -583,7 +584,7 @@ MonoBehaviour:
     name: Patsy McKenzie
     message: Al Pacone, you're under arrest. Stand right where you are.
     options: []
-    autoQuit: 1
+    autoQuit: 0
     autoTime: 8
     autoNextIndex: 0
     objective: ArrestPacone
@@ -591,7 +592,7 @@ MonoBehaviour:
     name: Patsy McKenzie
     message: I can't be a part of this. There are rules that I just can't break.
     options: []
-    autoQuit: 1
+    autoQuit: 0
     autoTime: 6
     autoNextIndex: 58
     objective: 
@@ -599,7 +600,7 @@ MonoBehaviour:
     name: Patsy McKenzie
     message: I can't be a part of this. There are rules that I just can't break.
     options: []
-    autoQuit: 1
+    autoQuit: 0
     autoTime: 6
     autoNextIndex: 59
     objective: 
@@ -607,7 +608,7 @@ MonoBehaviour:
     name: Floyd Armstrong
     message: I need this. He has to die.
     options: []
-    autoQuit: 1
+    autoQuit: 0
     autoTime: 5
     autoNextIndex: 60
     objective: 
@@ -615,7 +616,7 @@ MonoBehaviour:
     name: Floyd Armstrong
     message: His death was just business to you? You're a monster, Pacone.
     options: []
-    autoQuit: 1
+    autoQuit: 0
     autoTime: 7
     autoNextIndex: 61
     objective: 
@@ -623,7 +624,7 @@ MonoBehaviour:
     name: Floyd Armstrong
     message: Then leave. I never needed you here anyway.
     options: []
-    autoQuit: 1
+    autoQuit: 0
     autoTime: 5
     autoNextIndex: 62
     objective: 
@@ -631,7 +632,7 @@ MonoBehaviour:
     name: Floyd Armstrong
     message: Then leave. You were never here.
     options: []
-    autoQuit: 1
+    autoQuit: 0
     autoTime: 5
     autoNextIndex: 63
     objective: 
@@ -648,7 +649,7 @@ MonoBehaviour:
     name: Al Pacone
     message: It was a waste. He was a loose-end waiting to happen.
     options: []
-    autoQuit: 1
+    autoQuit: 0
     autoTime: 5
     autoNextIndex: 65
     objective: 
@@ -656,7 +657,7 @@ MonoBehaviour:
     name: Al Pacone
     message: You going to take me down all by yourself, boy?
     options: []
-    autoQuit: 1
+    autoQuit: 0
     autoTime: 6
     autoNextIndex: 66
     objective: 
@@ -664,7 +665,7 @@ MonoBehaviour:
     name: Al Pacone
     message: 'So proud, aren''t you? You think I''ve already lost. '
     options: []
-    autoQuit: 1
+    autoQuit: 0
     autoTime: 6
     autoNextIndex: 66
     objective: 
@@ -673,7 +674,7 @@ MonoBehaviour:
     message: You can't stop me either. He killed the only family I had left! He has
       to die!
     options: []
-    autoQuit: 1
+    autoQuit: 0
     autoTime: 6
     autoNextIndex: 67
     objective: 
@@ -702,7 +703,7 @@ MonoBehaviour:
     message: 'I just wanted revenge. You didn''t have to kill him. You''re the end
       of all of this. '
     options: []
-    autoQuit: 1
+    autoQuit: 0
     autoTime: 7
     autoNextIndex: 0
     objective: ShootPacone
@@ -727,7 +728,7 @@ MonoBehaviour:
     message: You have to die, for what you did. This world is better off without you
       in it.
     options: []
-    autoQuit: 1
+    autoQuit: 0
     autoTime: 6
     autoNextIndex: 70
     objective: 
