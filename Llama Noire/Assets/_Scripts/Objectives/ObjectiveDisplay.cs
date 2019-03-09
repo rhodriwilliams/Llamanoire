@@ -12,7 +12,7 @@ public class ObjectiveDisplay : MonoBehaviour {
 	}
 	
 	public void UpdateText(){
-		Debug.Log("Yeet");
+		
 		text.text = manager.PrintObjectives();
 	}
 }

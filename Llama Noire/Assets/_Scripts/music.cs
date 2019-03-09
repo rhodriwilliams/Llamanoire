@@ -31,7 +31,11 @@ public class Music : MonoBehaviour {
 	}
 
 	public void OnSceneLoaded(Scene scene, LoadSceneMode mode){
-		Debug.Log("Scene loaded: " + scene.name);
+		if(scene.name == "Apartment"){
+			source.Pause();
+		} else{
+			source.Play();
+		}
 		clappers = GameObject.FindGameObjectsWithTag("Clapping");
 		dancers = GameObject.FindGameObjectsWithTag("Dancing");
 		if(scene.name == "InteriorSpeakeasyWhitebox"){

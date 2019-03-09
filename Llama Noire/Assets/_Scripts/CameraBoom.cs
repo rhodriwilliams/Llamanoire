@@ -13,13 +13,13 @@ public class CameraBoom : MonoBehaviour {
 	public float minRot;
 	public bool inverted;
 	// Use this for initialization
-	void Start () {
+	void Awake () {
 		SceneManager.sceneLoaded += OnSceneLoaded;
 		player = GameObject.FindGameObjectWithTag("Player");
 	}
 	
 	void OnSceneLoaded(Scene scene, LoadSceneMode mode){
-		Debug.Log("Scene loaded");
+		Debug.Log("Scene loaded: " + scene.name);
 		player = GameObject.FindGameObjectWithTag("Player");
 		GetComponentInChildren<CinemachineVirtualCamera>().LookAt = player.transform;
 	}

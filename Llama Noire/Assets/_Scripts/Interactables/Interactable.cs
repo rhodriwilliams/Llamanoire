@@ -5,7 +5,7 @@ using UnityEngine;
 [RequireComponent(typeof(SphereCollider))]
 public class Interactable : MonoBehaviour {
 	public bool requireHover = true;
-	public ToolTip toolTip;
+	protected ToolTip toolTip;
 	public string objectName;
 	protected bool isHovering = false;
 	[HideInInspector]

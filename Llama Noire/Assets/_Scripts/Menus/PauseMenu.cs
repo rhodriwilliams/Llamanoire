@@ -7,7 +7,8 @@ public class PauseMenu : MonoBehaviour {
 	public bool isPaused = false;
 	public GameObject pauseMenu;
 	private RhunCharacter chara;
-	public ObjectiveDisplay display;
+	[SerializeField]
+	protected ObjectiveDisplay display;
 
 	void Start(){
 		chara = GameObject.FindGameObjectWithTag("Player").GetComponent<RhunCharacter>();
