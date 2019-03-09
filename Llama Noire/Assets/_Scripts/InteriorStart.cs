@@ -4,10 +4,9 @@ using UnityEngine;
 
 public class InteriorStart : MonoBehaviour {
 
-	// delete asap
 	void Start () {
 		GetComponent<RhunCharacter>().busy = false;
 		GetComponentInChildren<Animator>().SetBool("InMenu", false);
+		GameObject.FindGameObjectWithTag("Manager").GetComponent<ObjectiveManager>().SetBool("GetInSpeakeasy", true);
 	}
-
 }

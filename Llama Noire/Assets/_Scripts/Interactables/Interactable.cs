@@ -4,6 +4,7 @@ using UnityEngine;
 
 [RequireComponent(typeof(SphereCollider))]
 public class Interactable : MonoBehaviour {
+	public bool requireHover = true;
 	public ToolTip toolTip;
 	public string objectName;
 	protected bool isHovering = false;
@@ -17,18 +18,30 @@ public class Interactable : MonoBehaviour {
 		mainCamera = GameObject.FindGameObjectWithTag("MainCamera").transform;
 		toolTip = GameObject.FindGameObjectWithTag("ToolTip").GetComponent<ToolTip>();
 	}
-
-	void OnTriggerStay(Collider other){
-		if(other.gameObject == player){
-			if(Input.GetButtonDown("Interact") && isHovering)
-				Interact();
-			if(CameraIsPointingAt()){
-				isHovering = true;
+	void OnTriggerEnter(Collider other){
+		if(!requireHover){
+			if(other.gameObject == player){
 				if(!beingInteracted)
 					ShowTip();
-			} else if(isHovering){
-				toolTip.ClearTip();
-				isHovering = false;
+			}
+		}
+	}
+	void OnTriggerStay(Collider other){
+		if(other.gameObject == player){
+			if(requireHover){
+				if(Input.GetButtonDown("Interact") && isHovering)
+					Interact();
+				if(CameraIsPointingAt()){
+					isHovering = true;
+					if(!beingInteracted)
+						ShowTip();
+				} else if(isHovering){
+					toolTip.ClearTip();
+					isHovering = false;
+				}
+			} else {
+				if(Input.GetButtonDown("Interact"))
+					Interact();
 			}
 		}
 	}

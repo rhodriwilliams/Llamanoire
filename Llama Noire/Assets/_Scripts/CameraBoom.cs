@@ -1,7 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
+using Cinemachine;
 public class CameraBoom : MonoBehaviour {
 	public bool enableInput;
 	private GameObject player;
@@ -13,9 +14,15 @@ public class CameraBoom : MonoBehaviour {
 	public bool inverted;
 	// Use this for initialization
 	void Start () {
+		SceneManager.sceneLoaded += OnSceneLoaded;
 		player = GameObject.FindGameObjectWithTag("Player");
 	}
 	
+	void OnSceneLoaded(Scene scene, LoadSceneMode mode){
+		Debug.Log("Scene loaded");
+		player = GameObject.FindGameObjectWithTag("Player");
+		GetComponentInChildren<CinemachineVirtualCamera>().LookAt = player.transform;
+	}
 	// Update is called once per frame
 	void Update () {
 		if(enableInput){
