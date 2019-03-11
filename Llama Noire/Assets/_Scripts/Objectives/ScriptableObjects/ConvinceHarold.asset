@@ -12,5 +12,7 @@ MonoBehaviour:
   m_Name: ConvinceHarold
   m_EditorClassIdentifier: 
   objectiveName: ConvinceHarold
+  objectiveMessage: 
+  isHidden: 1
   bCompleted: 0
   iCompleted: 0

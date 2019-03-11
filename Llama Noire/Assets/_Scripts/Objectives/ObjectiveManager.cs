@@ -46,11 +46,31 @@ public class ObjectiveManager : MonoBehaviour {
 		}
 	}
 
+	public void SetHidden(string key, bool hidden){
+		foreach(Objective o in objectives){
+			if(o.objectiveName == key){
+				o.isHidden = hidden;
+				UpdateListeners(key);
+				return;
+			}
+		}
+	}
 	void UpdateListeners(string key){
 		foreach (ObjectiveListener ol in listeners){
 			if (ol.objective == key){
 				ol.UpdateObj(GetBool(key), GetInt(key));
 			}
 		}
+	}
+
+	public string PrintObjectives(){
+		string print = "Objectives: " + "\n";
+		foreach(Objective o in objectives){
+			if(!o.bCompleted && !o.isHidden){
+				print += o.objectiveMessage + "\n";
+
+			}
+		}
+		return print;
 	}
 }

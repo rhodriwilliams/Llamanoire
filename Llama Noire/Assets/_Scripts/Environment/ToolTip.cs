@@ -7,7 +7,7 @@ public class ToolTip : MonoBehaviour {
 
 	private Text text;
 
-	void Start () {
+	void Awake () {
 		text = gameObject.GetComponent<Text>();
 	}
 

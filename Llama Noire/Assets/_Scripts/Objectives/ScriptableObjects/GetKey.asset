@@ -12,5 +12,7 @@ MonoBehaviour:
   m_Name: GetKey
   m_EditorClassIdentifier: 
   objectiveName: GetKey
+  objectiveMessage: 
+  isHidden: 1
   bCompleted: 0
   iCompleted: 0

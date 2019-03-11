@@ -14,8 +14,12 @@ public class Music : MonoBehaviour {
 			isSinging = value;
 		}
 	}
+	public AudioClip oldClip;
 	public AudioClip newClip;
 	protected bool inside;
+
+	protected GameObject[] clappers;
+	protected GameObject[] dancers;
 
 	protected AudioSource source;
 	// Use this for initialization
@@ -27,7 +31,13 @@ public class Music : MonoBehaviour {
 	}
 
 	public void OnSceneLoaded(Scene scene, LoadSceneMode mode){
-		Debug.Log("Scene loaded: " + scene.name);
+		if(scene.name == "Apartment"){
+			source.Pause();
+		} else{
+			source.Play();
+		}
+		clappers = GameObject.FindGameObjectsWithTag("Clapping");
+		dancers = GameObject.FindGameObjectsWithTag("Dancing");
 		if(scene.name == "InteriorSpeakeasyWhitebox"){
 			inside = true;
 			GetComponent<AudioLowPassFilter>().enabled = false;
@@ -54,19 +64,34 @@ public class Music : MonoBehaviour {
 
 	void NewSong(){
 		isSinging = !isSinging;
-		GameObject[] clappers = GameObject.FindGameObjectsWithTag("Clapping");
-		GameObject[] dancers = GameObject.FindGameObjectsWithTag("Dancing");
+		if(!isSinging){
+			source.clip = oldClip;
+			source.volume = 0.25f;
+			source.time = 0.0f;
+			source.Play();
+		} else {
+			foreach(GameObject g in dancers){
+				g.GetComponent<Animator>().SetBool("SongPlaying", false);
+			}
+		}
+		foreach(GameObject g in clappers){
+			g.GetComponent<Animator>().SetTrigger("SongFinished");
+		}
+		
+	}
+	public void StartSinging(){
 		foreach(GameObject g in clappers){
 			g.GetComponent<Animator>().SetTrigger("SongFinished");
 		}
 		foreach(GameObject g in dancers){
-			g.GetComponent<Animator>().SetBool("SongPlaying", false);
+			g.GetComponent<Animator>().SetBool("SongPlaying", true);
 		}
-	}
-	public void StartSinging(){
-		Debug.Log("Got it");
+		//Debug.Log("Got it");
 		source.clip = newClip;
 		source.volume = 0.25f;
+		source.time = 0.0f;
 		source.Play();
+		float timeLeft = source.clip.length - source.time;
+		Invoke("NewSong", timeLeft);
 	}
 }

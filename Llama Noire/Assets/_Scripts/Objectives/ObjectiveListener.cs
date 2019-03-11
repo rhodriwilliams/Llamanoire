@@ -19,6 +19,8 @@ public class ObjectiveListener : MonoBehaviour {
 
 	}
 	void OnDestroy(){
-		GameObject.FindGameObjectWithTag("Manager").GetComponent<ObjectiveManager>().listeners.Remove(this);
+		if(GameObject.FindGameObjectWithTag("Manager")){
+			GameObject.FindGameObjectWithTag("Manager").GetComponent<ObjectiveManager>().listeners.Remove(this);
+		}
 	}
 }

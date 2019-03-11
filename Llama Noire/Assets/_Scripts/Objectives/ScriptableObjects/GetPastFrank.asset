@@ -12,5 +12,7 @@ MonoBehaviour:
   m_Name: GetPastFrank
   m_EditorClassIdentifier: 
   objectiveName: 
+  objectiveMessage: 
+  isHidden: 1
   bCompleted: 0
   iCompleted: 0

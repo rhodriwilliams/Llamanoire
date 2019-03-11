@@ -7,9 +7,11 @@ public class PauseMenu : MonoBehaviour {
 	public bool isPaused = false;
 	public GameObject pauseMenu;
 	private RhunCharacter chara;
+	[SerializeField]
+	protected ObjectiveDisplay display;
 
-	void Start(){
-		chara = GameObject.FindGameObjectWithTag("Player").GetComponent<RhunCharacter>();
+	void Awake(){
+		//chara = GameObject.FindGameObjectWithTag("Player").GetComponent<RhunCharacter>();
 		SceneManager.sceneLoaded += OnSceneLoaded;
 	}
 	public void OnSceneLoaded(Scene scene, LoadSceneMode mode){
@@ -24,12 +26,14 @@ public class PauseMenu : MonoBehaviour {
 					pauseMenu.SetActive(true);
 					isPaused = true;
 					AudioListener.pause = true;
+					display.UpdateText();
 				} else {
 					chara.ToggleCursor();
 					Time.timeScale = 1f;
 					pauseMenu.SetActive(false);
 					isPaused = false;
 					AudioListener.pause = false;
+					
 				}
 			}
 		}

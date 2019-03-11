@@ -12,5 +12,7 @@ MonoBehaviour:
   m_Name: GetRejected
   m_EditorClassIdentifier: 
   objectiveName: GetRejected
+  objectiveMessage: 
+  isHidden: 1
   bCompleted: 0
   iCompleted: 0
