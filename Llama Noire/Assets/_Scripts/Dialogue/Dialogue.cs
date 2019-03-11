@@ -46,6 +46,17 @@ public class Dialogue : MonoBehaviour {
 		animator = GetComponentInChildren<Animator>();
 		//StartDialogue();
 	}
+
+	void Update(){
+		if(nodeList[currentNode].options.Length == 0){
+			if(Input.anyKeyDown){
+				if(nodeList[currentNode].autoQuit)
+					ExitDialogue();
+				else
+					DisplayNode(nodeList[currentNode].autoNextIndex);
+			}
+		}
+	}
 	
 	void DialogueError(int node, string errorMessage){
 		Debug.LogWarning(dialogueTree.name + ", Dialogue Node " + node + ": " + errorMessage + ".");
@@ -88,6 +99,7 @@ public class Dialogue : MonoBehaviour {
 			for (int i = 0; i < 4; i++){
 				buttonTexts[i].transform.parent.gameObject.SetActive(false);
 			}
+			/*
 			if(!node.autoQuit){
 				//no auto quit, that's still ok
 				if(node.autoNextIndex == 0){
@@ -97,6 +109,7 @@ public class Dialogue : MonoBehaviour {
 				IEnumerator coroutine = LoadAfterSeconds(node.autoNextIndex, node.autoTime);
 				StartCoroutine(coroutine);
 			}
+			*/
 		} else {
 			for (int i = 0; i < 4; i++){
 				if(i < node.options.Length){

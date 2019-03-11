@@ -31,7 +31,6 @@ public class ObjectiveManager : MonoBehaviour {
 	}
 
 	public void SetBool(string key, bool complete){
-		Debug.Log("Objective Complete: " + key);
 		foreach(Objective o in currentObjectives){
 			if(o.objectiveName == key){
 				o.bCompleted = complete;
@@ -39,6 +38,7 @@ public class ObjectiveManager : MonoBehaviour {
 				return;
 			}
 		}
+		Debug.LogWarning("Objective " + key + " not found");
 	}
 
 	public void SetInt(string key, int complete){

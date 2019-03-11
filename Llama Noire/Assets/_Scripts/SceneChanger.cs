@@ -48,8 +48,10 @@ public class SceneChanger : MonoBehaviour {
 			player.GetComponentInChildren<Animator>().SetBool("InMenu", false);
 		}
 		if(scene.name == "InteriorSpeakeasyWhitebox"){
-		//	objectiveManager.SetHidden("GetUpstairs", false);
-		//	objectiveManager.SetBool("GetInside", true);
+			objectiveManager.SetHidden("GetUpstairs", false);
+			objectiveManager.SetBool("GetInSpeakeasy", true);
+		} else if(scene.name == "Tutorial"){
+			objectiveManager.SetBool("Sleep", true);
 		}
 	}
 }
