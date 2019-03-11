@@ -11,7 +11,7 @@ public class SceneChanger : MonoBehaviour {
 	protected ObjectiveManager objectiveManager;
 
 	void Awake(){
-		//player = GameObject.FindGameObjectWithTag("Player");
+		player = GameObject.FindGameObjectWithTag("Player");
 		fader = GameObject.FindGameObjectWithTag("FadeInOut").GetComponent<FadeInOut>();
 		SceneManager.sceneLoaded += OnSceneLoaded;
 		objectiveManager = GetComponent<ObjectiveManager>();

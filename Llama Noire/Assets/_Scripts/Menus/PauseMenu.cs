@@ -10,8 +10,8 @@ public class PauseMenu : MonoBehaviour {
 	[SerializeField]
 	protected ObjectiveDisplay display;
 
-	void Start(){
-		chara = GameObject.FindGameObjectWithTag("Player").GetComponent<RhunCharacter>();
+	void Awake(){
+		//chara = GameObject.FindGameObjectWithTag("Player").GetComponent<RhunCharacter>();
 		SceneManager.sceneLoaded += OnSceneLoaded;
 	}
 	public void OnSceneLoaded(Scene scene, LoadSceneMode mode){
