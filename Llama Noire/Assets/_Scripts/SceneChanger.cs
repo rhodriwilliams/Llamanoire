@@ -22,13 +22,13 @@ public class SceneChanger : MonoBehaviour {
 		cameFrom = _cameFrom;
 		player.GetComponent<RhunCharacter>().busy = true;
 		SceneManager.LoadSceneAsync(_sceneName);
-		fader.FadeOut();
+		fader.FadeOut(0.2f);
 	}
 	public void LoadScene(string _sceneName){
 		cameFrom = "";
 		player.GetComponent<RhunCharacter>().busy = true;
 		SceneManager.LoadSceneAsync(_sceneName);
-		fader.FadeOut();
+		fader.FadeOut(0.2f);
 	}
 
 	public void OnSceneLoaded(Scene scene, LoadSceneMode mode){

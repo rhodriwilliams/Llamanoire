@@ -15,10 +15,7 @@ public class Door : Interactable {
 		if(!anim.isPlaying){
 			if(!isOpen){
 				if(!isLocked){
-					isOpen = true;
-					anim.clip = anim.GetClip("Open");
-					anim.Play();
-					player.GetComponentInChildren<Animator>().SetTrigger("OpenDoor");
+					Open();
 				} else {
 					GetComponentInChildren<Lock>().Interact();
 				}
@@ -37,6 +34,12 @@ public class Door : Interactable {
 				StartCoroutine("OpenClose");
 			}
 		}
+	}
+	public void Open(){
+		isOpen = true;
+		anim.clip = anim.GetClip("Open");
+		anim.Play();
+		player.GetComponentInChildren<Animator>().SetTrigger("OpenDoor");
 	}
 	public IEnumerator OpenClose(){
 		AIUsing = true;

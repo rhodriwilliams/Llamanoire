@@ -50,7 +50,7 @@ public class Dialogue : MonoBehaviour {
 	void Update(){
 		if(instance){
 			if(nodeList[currentNode].options.Length == 0){
-				if(Input.anyKeyDown){
+				if(Input.anyKeyDown && !Input.GetButtonDown("Interact")){
 					if(nodeList[currentNode].autoQuit)
 						ExitDialogue();
 					else
