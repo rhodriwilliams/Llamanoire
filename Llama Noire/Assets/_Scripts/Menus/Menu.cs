@@ -15,6 +15,7 @@ public class Menu : MonoBehaviour {
 	public GameObject audioMenu;
 	public GameObject gameplayMenu;
 	public GameObject graphicsMenu;
+	//public GameObject crossHair;
 	void Start () {
 		hud = GameObject.FindGameObjectWithTag("HUD");
 		armstrong = GameObject.FindGameObjectWithTag("Player");

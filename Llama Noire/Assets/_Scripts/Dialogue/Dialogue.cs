@@ -48,12 +48,14 @@ public class Dialogue : MonoBehaviour {
 	}
 
 	void Update(){
-		if(nodeList[currentNode].options.Length == 0){
-			if(Input.anyKeyDown){
-				if(nodeList[currentNode].autoQuit)
-					ExitDialogue();
-				else
-					DisplayNode(nodeList[currentNode].autoNextIndex);
+		if(instance){
+			if(nodeList[currentNode].options.Length == 0){
+				if(Input.anyKeyDown){
+					if(nodeList[currentNode].autoQuit)
+						ExitDialogue();
+					else
+						DisplayNode(nodeList[currentNode].autoNextIndex);
+				}
 			}
 		}
 	}
@@ -124,12 +126,12 @@ public class Dialogue : MonoBehaviour {
 			
 		}
 		if(node.autoQuit){
-			IEnumerator coroutine = ExitAfterSeconds(node.autoTime);
-			StartCoroutine(coroutine);
+			//IEnumerator coroutine = ExitAfterSeconds(node.autoTime);
+			//StartCoroutine(coroutine);
 		} else if (node.autoTime > 0f){
 			//if autotime is set but autoquit is false, load the auto next
-			IEnumerator coroutine = LoadAfterSeconds(node.autoNextIndex, node.autoTime);
-			StartCoroutine(coroutine);
+			//IEnumerator coroutine = LoadAfterSeconds(node.autoNextIndex, node.autoTime);
+			//StartCoroutine(coroutine);
 		}
 		currentNode = nodeIndex;
 	}

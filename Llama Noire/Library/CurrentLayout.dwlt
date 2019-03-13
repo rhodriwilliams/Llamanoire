@@ -109,7 +109,7 @@ MonoBehaviour:
   m_MinSize: {x: 683, y: 492}
   m_MaxSize: {x: 14004, y: 14042}
   vertical: 0
-  controlID: 2717
+  controlID: 60
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -133,7 +133,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 2718
+  controlID: 61
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -157,7 +157,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 221}
   m_MaxSize: {x: 8006, y: 4021}
   vertical: 0
-  controlID: 2719
+  controlID: 62
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -176,8 +176,8 @@ MonoBehaviour:
     y: 0
     width: 384
     height: 630
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 13}
@@ -237,7 +237,7 @@ MonoBehaviour:
   - {fileID: 18}
   - {fileID: 19}
   m_Selected: 0
-  m_LastSelected: 1
+  m_LastSelected: 2
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -368,10 +368,10 @@ MonoBehaviour:
     height: 609
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
-    scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 62350000
-    m_LastClickedID: 0
-    m_ExpandedIDs: a4ddf6ff9ce4f6ffcc11f7ff6ab9f8ff5e5ff9ff8e8df9ff36f4faffe4c5fcffe6c5fcff98c9fcffe8d0fcffead0fcff82d4fcffcca4fdff5ceafdffb8baffffd6fafffff4ffffff00000000b65a0000f0b30200b0bb02004cae030008b2030014610600cc620600
+    scrollPos: {x: 0, y: 16}
+    m_SelectedIDs: d4b6ffff
+    m_LastClickedID: -18732
+    m_ExpandedIDs: d6b6ffffeccdffff7ef3ffffe4fbffff0000000084ae0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -390,7 +390,7 @@ MonoBehaviour:
       m_ClientGUIView: {fileID: 8}
     m_SearchString: 
   m_ExpandedScenes:
-  - Init
+  - ExteriorSpeakeasyWhitebox
   m_CurrenRootInstanceID: 0
   m_LockTracker:
     m_IsLocked: 0
@@ -421,14 +421,14 @@ MonoBehaviour:
     height: 609
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SceneLighting: 0
-  lastFramingTime: 3683.686941521798
+  lastFramingTime: 118.96728869665591
   m_2DMode: 0
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -55.647823, y: 6.1373777, z: -21.60472}
+    m_Target: {x: -7.0426254, y: -5.689129, z: -34.487675}
     speed: 2
-    m_Value: {x: -55.647823, y: 6.1373777, z: -21.60472}
+    m_Value: {x: -7.0426254, y: -5.689129, z: -34.487675}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -456,13 +456,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: 0.047852937, y: 0.78320223, z: -0.060746927, w: 0.6169394}
+    m_Target: {x: -0.40255296, y: -0.30520484, z: 0.14439614, w: -0.8508531}
     speed: 2
-    m_Value: {x: 0.047852937, y: 0.78320223, z: -0.060746927, w: 0.6169394}
+    m_Value: {x: -0.40255296, y: -0.30520484, z: 0.14439614, w: -0.8508531}
   m_Size:
-    m_Target: 30.143793
+    m_Target: 24.8636
     speed: 2
-    m_Value: 30.143793
+    m_Value: 24.8636
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -584,14 +584,14 @@ MonoBehaviour:
   m_LastFolders:
   - Assets/_Scenes
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: D:\Rhun\Llama Noire\Llama Noire
+  m_LastProjectPath: D:\Shitty Unity Games I make\LlamaNoireNew\Llama Noire
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 79}
-    m_SelectedIDs: c6320000
-    m_LastClickedID: 12998
-    m_ExpandedIDs: 00000000642e0000d8310000123200003232000096320000c6320000de3300000e340000ec340000683600007836000082390000503c00004e3d000000ca9a3b
+    m_SelectedIDs: 9c110000
+    m_LastClickedID: 4508
+    m_ExpandedIDs: 00000000380d0000ae100000e8100000081100006c1100009c110000b4120000e4120000c21300003e1500004e15000058180000261b0000241c000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -619,7 +619,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000642e0000d8310000123200003232000096320000c6320000de3300000e340000ec340000683600007836000082390000503c00004e3d000000ca9a3b
+    m_ExpandedIDs: 00000000380d0000ae100000e8100000081100006c1100009c110000b4120000e4120000c21300003e1500004e15000058180000261b0000241c0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
