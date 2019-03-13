@@ -13,8 +13,11 @@ public class Patsy : MonoBehaviour {
 	private NavMeshAgent agent;
 	private Animator anim;
 	protected bool goingToStage = false;
+
+	protected TalkativeNPC talkScript;
 	// Use this for initialization
 	void Start () {
+		talkScript = GetComponent<TalkativeNPC>();
 		music = GameObject.Find("music").GetComponent<Music>();
 		anim = GetComponent<Animator>();
 		agent = GetComponent<NavMeshAgent>();
@@ -49,11 +52,13 @@ public class Patsy : MonoBehaviour {
 				anim.SetBool("IsDancing", true);
 				music.StartSinging();
 				currentMode = PatsyMode.OnStage;
+				GetComponent<SphereCollider>().enabled = false;
 			}
 			break;
 		case PatsyMode.OnStage:
 			//if song is over, get off stage
 			if(!music.IsSinging){
+				GetComponent<SphereCollider>().enabled = true;
 				agent.SetDestination(otherWaypoints[0].position);
 				anim.SetBool("IsDancing", false);
 				currentMode = PatsyMode.OffStage;
@@ -69,26 +74,5 @@ public class Patsy : MonoBehaviour {
 		default:
 			break;
 		}
-		/*
-		if(agent.remainingDistance < 0.1f){
-			if(goingToStage){
-				Debug.Log("At stage");
-				anim.SetBool("IsDancing", true);
-				music.StartSinging();
-				goingToStage = false;
-			} else {
-				if(anim.GetBool("IsWalking")){
-					anim.SetBool("IsWalking", false);
-				}
-			}
-		} else if (!anim.GetBool("IsWalking")){
-			Debug.Log("Walking");
-			anim.SetBool("IsWalking", true);
-		}
-		if(music.IsSinging){
-			agent.SetDestination(singWaypoint.position);
-			goingToStage = true;
-		}
-		*/
 	}
 }

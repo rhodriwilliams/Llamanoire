@@ -27,7 +27,6 @@ public class Music : MonoBehaviour {
 		isSinging = false;
 		SceneManager.sceneLoaded += OnSceneLoaded;
 		source = GetComponent<AudioSource>();
-		source.time = 120f;
 	}
 
 	public void OnSceneLoaded(Scene scene, LoadSceneMode mode){

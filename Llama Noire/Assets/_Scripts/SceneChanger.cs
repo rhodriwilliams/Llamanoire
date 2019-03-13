@@ -9,25 +9,26 @@ public class SceneChanger : MonoBehaviour {
 	protected FadeInOut fader;
 	protected string cameFrom = "";
 	protected ObjectiveManager objectiveManager;
-
+	protected Tutorial tutScript;
 	void Awake(){
 		player = GameObject.FindGameObjectWithTag("Player");
 		fader = GameObject.FindGameObjectWithTag("FadeInOut").GetComponent<FadeInOut>();
 		SceneManager.sceneLoaded += OnSceneLoaded;
 		objectiveManager = GetComponent<ObjectiveManager>();
+		tutScript = GetComponent<Tutorial>();
 	}
 
 	public void LoadScene(string _sceneName, string _cameFrom){
 		cameFrom = _cameFrom;
 		player.GetComponent<RhunCharacter>().busy = true;
 		SceneManager.LoadSceneAsync(_sceneName);
-		fader.FadeOut();
+		fader.FadeOut(0.2f);
 	}
 	public void LoadScene(string _sceneName){
 		cameFrom = "";
 		player.GetComponent<RhunCharacter>().busy = true;
 		SceneManager.LoadSceneAsync(_sceneName);
-		fader.FadeOut();
+		fader.FadeOut(0.2f);
 	}
 
 	public void OnSceneLoaded(Scene scene, LoadSceneMode mode){
@@ -38,7 +39,7 @@ public class SceneChanger : MonoBehaviour {
 			player.transform.position = GameObject.Find(cameFrom).transform.position;
 			player.transform.rotation = GameObject.Find(cameFrom).transform.rotation;
 		}
-		if(scene.name != "Apartment"){
+		if(scene.name != "Apartment" && scene.name != "Tutorial"){
 			player.GetComponent<RhunCharacter>().busy = false;
 			player.GetComponentInChildren<Animator>().SetBool("InMenu", false);
 		} else if(cameFrom != ""){
@@ -48,8 +49,11 @@ public class SceneChanger : MonoBehaviour {
 			player.GetComponentInChildren<Animator>().SetBool("InMenu", false);
 		}
 		if(scene.name == "InteriorSpeakeasyWhitebox"){
-		//	objectiveManager.SetHidden("GetUpstairs", false);
-		//	objectiveManager.SetBool("GetInside", true);
+			objectiveManager.SetHidden("GetUpstairs", false);
+			objectiveManager.SetBool("GetInSpeakeasy", true);
+		} else if(scene.name == "Tutorial"){
+			objectiveManager.SetBool("Sleep", true);
+			tutScript.enabled = true;
 		}
 	}
 }

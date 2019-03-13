@@ -9,18 +9,22 @@ public class FadeInOut : MonoBehaviour {
 	protected Color targetColor;
 	public Image image;
 
-	public void FadeIn(){
+	protected float speed;
+
+	public void FadeIn(float _speed){
 		fading = true;
 		targetColor = Color.clear;
+		speed = _speed;
 	}
-	public void FadeOut(){
+	public void FadeOut(float _speed){
 		fading = true;
 		targetColor = Color.black;
+		speed = _speed;
 	}
 	void Update(){
 		if(fading){
 			if(image.color != targetColor){
-				image.color = Color.Lerp(image.color, targetColor, 0.2f);
+				image.color = Color.Lerp(image.color, targetColor, speed);
 			}
 			else {
 				fading = false;
@@ -33,7 +37,7 @@ public class FadeInOut : MonoBehaviour {
 	}
 	void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-		FadeIn();
+		FadeIn(0.2f);
     }
 
 }

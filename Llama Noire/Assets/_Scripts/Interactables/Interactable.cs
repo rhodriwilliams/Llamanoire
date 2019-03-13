@@ -72,4 +72,10 @@ public class Interactable : MonoBehaviour {
 			toolTip.ClearTip();
 		}
 	}
+	void OnDestroy(){
+		if(isHovering){
+			isHovering = false;
+			toolTip.ClearTip();
+		}
+	}
 }

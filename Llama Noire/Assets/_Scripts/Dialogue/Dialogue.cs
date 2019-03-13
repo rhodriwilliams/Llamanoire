@@ -46,6 +46,19 @@ public class Dialogue : MonoBehaviour {
 		animator = GetComponentInChildren<Animator>();
 		//StartDialogue();
 	}
+
+	void Update(){
+		if(instance){
+			if(nodeList[currentNode].options.Length == 0){
+				if(Input.anyKeyDown && !Input.GetButtonDown("Interact")){
+					if(nodeList[currentNode].autoQuit)
+						ExitDialogue();
+					else
+						DisplayNode(nodeList[currentNode].autoNextIndex);
+				}
+			}
+		}
+	}
 	
 	void DialogueError(int node, string errorMessage){
 		Debug.LogWarning(dialogueTree.name + ", Dialogue Node " + node + ": " + errorMessage + ".");
@@ -88,6 +101,7 @@ public class Dialogue : MonoBehaviour {
 			for (int i = 0; i < 4; i++){
 				buttonTexts[i].transform.parent.gameObject.SetActive(false);
 			}
+			/*
 			if(!node.autoQuit){
 				//no auto quit, that's still ok
 				if(node.autoNextIndex == 0){
@@ -97,6 +111,7 @@ public class Dialogue : MonoBehaviour {
 				IEnumerator coroutine = LoadAfterSeconds(node.autoNextIndex, node.autoTime);
 				StartCoroutine(coroutine);
 			}
+			*/
 		} else {
 			for (int i = 0; i < 4; i++){
 				if(i < node.options.Length){
@@ -111,12 +126,12 @@ public class Dialogue : MonoBehaviour {
 			
 		}
 		if(node.autoQuit){
-			IEnumerator coroutine = ExitAfterSeconds(node.autoTime);
-			StartCoroutine(coroutine);
+			//IEnumerator coroutine = ExitAfterSeconds(node.autoTime);
+			//StartCoroutine(coroutine);
 		} else if (node.autoTime > 0f){
 			//if autotime is set but autoquit is false, load the auto next
-			IEnumerator coroutine = LoadAfterSeconds(node.autoNextIndex, node.autoTime);
-			StartCoroutine(coroutine);
+			//IEnumerator coroutine = LoadAfterSeconds(node.autoNextIndex, node.autoTime);
+			//StartCoroutine(coroutine);
 		}
 		currentNode = nodeIndex;
 	}
