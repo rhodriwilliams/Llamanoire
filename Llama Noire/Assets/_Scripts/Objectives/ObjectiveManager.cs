@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 public class ObjectiveManager : MonoBehaviour {
@@ -6,7 +7,19 @@ public class ObjectiveManager : MonoBehaviour {
 	public List<ObjectiveListener> listeners = new List<ObjectiveListener>();
 	public List<Objective> objectives = new List<Objective>();
 	protected List<Objective> currentObjectives = new List<Objective>();
+	[SerializeField]
+	protected bool testing;
+	//[SerializeField]
+	protected string outputPath;
 
+    void Start()
+    {
+        //Get the path of the Game data folder
+      	outputPath = Application.dataPath;
+
+        //Output the Game data path to the console
+        Debug.Log("Path : " + outputPath);
+    }
 	void Awake(){
 		for(int i = 0; i < objectives.Count; i++){
 			currentObjectives.Add(Instantiate(objectives[i]));
@@ -81,5 +94,20 @@ public class ObjectiveManager : MonoBehaviour {
 			}
 		}
 		return print;
+	}
+
+	public void OnDestroy(){
+		if(testing){
+			//put all objectives + completed state into one array of strings, formatted as "objective name: completed/incomplete"
+			//print that string into a file in the build folder titled "test time/date.txt"
+			//yummy quantifiable data
+			//quantifiabalism
+			string[] objectiveStrings = new string[objectives.Count];
+			for(int i = 0; i < objectives.Count; i++){
+				objectiveStrings[i] = objectives[i].name + ": " + currentObjectives[i].bCompleted.ToString();
+			}
+			string newOutputPath = outputPath + "\\" + DateTime.Now.ToString("yyyyMMddHHmm") + ".txt";
+			System.IO.File.WriteAllLines(newOutputPath, objectiveStrings);
+		}
 	}
 }

@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9858b4990db6ccf419f6dda3bc4f300b, type: 3}
+  m_Name: Tutorial0
+  m_EditorClassIdentifier: 
+  nodes:
+  - image: {fileID: 0}
+    name: Tutorial Geoff
+    message: Hi, I am tutorial Geoff. Pressing any key will continue to my next line
+    options: []
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 1
+    objective: 
+  - image: {fileID: 0}
+    name: Tutorial Geoff
+    message: You can talk to me by selecting one of the options on the left.
+    options:
+    - text: I see
+      nextNode: 2
+      function: 
+      difficulty: 0
+      failNode: 0
+      objective: 
+    - text: Thank you Geoff
+      nextNode: 3
+      function: 
+      difficulty: 0
+      failNode: 0
+      objective: 
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
+  - image: {fileID: 0}
+    name: Tutorial Geoff
+    message: Goodbye
+    options: []
+    autoQuit: 1
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
+  - image: {fileID: 0}
+    name: Tutorial Geoff
+    message: 'You''re welcome
+
+'
+    options: []
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 2
+    objective: 
