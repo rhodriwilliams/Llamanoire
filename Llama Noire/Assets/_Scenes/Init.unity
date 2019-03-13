@@ -673,6 +673,7 @@ GameObject:
   - component: {fileID: 720740964}
   - component: {fileID: 720740963}
   - component: {fileID: 720740962}
+  - component: {fileID: 720740966}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Manager
@@ -701,7 +702,9 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 6f2634ed8e611f24e8abe05c18c98b11, type: 2}
   - {fileID: 11400000, guid: b052dddeebd05a046ab6e76447ac4fcd, type: 2}
   - {fileID: 11400000, guid: e72014a3d1ae4a84ebf5248ca71a7693, type: 2}
-  testing: 1
+  - {fileID: 11400000, guid: 1f8cda80018bb89438f89384c67e0b75, type: 2}
+  - {fileID: 11400000, guid: ba39a79fd89ac9a498a2b4e89675986d, type: 2}
+  testing: 0
 --- !u!114 &720740962
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -749,6 +752,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &720740966
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 720740960}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b83a70cb2f6eb1f409f65e795421fa63, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tutorialCam: {fileID: 0}
+  creditCanvas: {fileID: 0}
+  helperText: {fileID: 0}
 --- !u!1 &776973032
 GameObject:
   m_ObjectHideFlags: 0
