@@ -14,23 +14,15 @@ MonoBehaviour:
   nodes:
   - image: {fileID: 0}
     name: Harold Zubron
-    message: Armstrong? What are you doing here?
+    message: State your business.
     options:
-    - text: I'm here to drink.
+    - text: "I\u2019m here to see Patsy."
       nextNode: 1
       function: 
       difficulty: 0
       failNode: 0
       objective: 
-    autoQuit: 0
-    autoTime: 0
-    autoNextIndex: 0
-    objective: 
-  - image: {fileID: 0}
-    name: Harold Zubron
-    message: Now, I know that isn't the case. You want my advice?
-    options:
-    - text: Not really.
+    - text: My friends just went in.
       nextNode: 2
       function: 
       difficulty: 0
@@ -41,90 +33,157 @@ MonoBehaviour:
     autoNextIndex: 0
     objective: 
   - image: {fileID: 0}
-    name: Harold Zubron
-    message: Leave it. What's done is done.
-    options:
-    - text: I can't leave it.
-      nextNode: 3
-      function: 
-      difficulty: 0
-      failNode: 0
-      objective: 
-    - text: Fine, it's over. [Lie]
-      nextNode: 3
-      function: RandomChance
-      difficulty: 5
-      failNode: 4
-      objective: 
-    - text: He'll get what he deserves.
-      nextNode: 4
-      function: 
-      difficulty: 0
-      failNode: 0
-      objective: 
-    - text: '...'
-      nextNode: 3
-      function: 
-      difficulty: 0
-      failNode: 0
-      objective: 
+    name: Floyd Armstrong
+    message: "I\u2019m here to see Patsy. She's working tonight isn't she?"
+    options: []
     autoQuit: 0
-    autoTime: 0
-    autoNextIndex: 0
+    autoTime: 6
+    autoNextIndex: 3
+    objective: 
+  - image: {fileID: 0}
+    name: Floyd Armstrong
+    message: My friends just went in. I'm with them.
+    options: []
+    autoQuit: 0
+    autoTime: 6
+    autoNextIndex: 4
     objective: 
   - image: {fileID: 0}
     name: Harold Zubron
-    message: Just don't get hurt in there, Armstrong.
+    message: You some kind of creep?
     options: []
-    autoQuit: 1
-    autoTime: 1
-    autoNextIndex: 0
-    objective: ConvinceHarold
+    autoQuit: 0
+    autoTime: 4
+    autoNextIndex: 5
+    objective: 
   - image: {fileID: 0}
     name: Harold Zubron
-    message: You're not going in with that attitude. I appreciate the loyalty to your
-      pop, but getting killed ain't gonna bring him back.
+    message: See, I know everybody who gets in here, and I seriously doubt you're
+      associated with them. Now why don't you tell me who you are?
     options:
-    - text: Funny, I thought it would.
-      nextNode: 5
-      function: 
-      difficulty: 0
-      failNode: 0
-      objective: 
-    - text: I know that.
+    - text: The name's Floyd.
       nextNode: 6
       function: 
       difficulty: 0
       failNode: 0
       objective: 
-    - text: Let me in.
+    - text: I work in the city.
       nextNode: 7
       function: 
       difficulty: 0
       failNode: 0
       objective: 
-    - text: '...'
-      nextNode: 8
-      function: ExitDialogue
-      difficulty: 0
-      failNode: 0
-      objective: GetRejected
     autoQuit: 0
     autoTime: 0
     autoNextIndex: 0
     objective: 
   - image: {fileID: 0}
+    name: Floyd Armstrong
+    message: No, of course not! We used to be colleagues. She invited me to come see
+      her.
+    options: []
+    autoQuit: 0
+    autoTime: 6
+    autoNextIndex: 8
+    objective: 
+  - image: {fileID: 0}
+    name: Floyd Armstrong
+    message: The name's Floyd.
+    options: []
+    autoQuit: 0
+    autoTime: 3
+    autoNextIndex: 9
+    objective: 
+  - image: {fileID: 0}
+    name: Floyd Armstrong
+    message: I just work in the city. I'm looking for a place to unwind.
+    options: []
+    autoQuit: 0
+    autoTime: 5
+    autoNextIndex: 10
+    objective: 
+  - image: {fileID: 0}
     name: Harold Zubron
-    message: You've got a deathwish if you think you're gonna take on Pacone.
+    message: Ah, of course. Floyd Armstrong. The name's Harold. Harold Zubron.
+    options: []
+    autoQuit: 0
+    autoTime: 6
+    autoNextIndex: 11
+    objective: 
+  - image: {fileID: 0}
+    name: Harold Zubron
+    message: 'I didn''t ask your name. I asked who you are. '
+    options: []
+    autoQuit: 0
+    autoTime: 6
+    autoNextIndex: 12
+    objective: 
+  - image: {fileID: 0}
+    name: Harold Zubron
+    message: And you think you found it with this alleyway?
+    options: []
+    autoQuit: 0
+    autoTime: 5
+    autoNextIndex: 13
+    objective: 
+  - image: {fileID: 0}
+    name: Floyd Armstrong
+    message: You know who I am?
+    options: []
+    autoQuit: 0
+    autoTime: 5
+    autoNextIndex: 14
+    objective: 
+  - image: {fileID: 0}
+    name: Floyd Armstrong
+    message: Oh, I just work in the city.
+    options: []
+    autoQuit: 0
+    autoTime: 5
+    autoNextIndex: 15
+    objective: 
+  - image: {fileID: 0}
+    name: Floyd Armstrong
+    message: Some colleagues of mine said this was the best place to relax after a
+      hard week. They said they'd meet me here.
+    options: []
+    autoQuit: 0
+    autoTime: 9
+    autoNextIndex: 16
+    objective: 
+  - image: {fileID: 0}
+    name: Harold Zubron
+    message: I make it my business to know everyone. Especially those like you. Any
+      trouble, and it's Patsy's neck on the line. Got that?
     options:
-    - text: My life doesn't matter here.
-      nextNode: 9
+    - text: Why punish her?
+      nextNode: 17
       function: 
       difficulty: 0
       failNode: 0
       objective: 
-    - text: Pacone won't get away with what he's done.
-      nextNode: 10
+    - text: There won't be any trouble.
+      nextNode: 18
+      function: RandomChance
+      difficulty: 7
+      failNode: 19
+      objective: 
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
+  - image: {fileID: 0}
+    name: Harold Zubron
+    message: Doing what? Never seen you here before.
+    options:
+    - text: Civil engineering.
+      nextNode: 20
+      function: 
+      difficulty: 0
+      failNode: 0
+      objective: 
+    - text: I'm a private eye.
+      nextNode: 21
       function: 
       difficulty: 0
       failNode: 0
@@ -135,50 +194,167 @@ MonoBehaviour:
     objective: 
   - image: {fileID: 0}
     name: Harold Zubron
-    message: Don't do anything you'll regret.
+    message: But they're not here.
+    options: []
+    autoQuit: 0
+    autoTime: 4
+    autoNextIndex: 22
+    objective: 
+  - image: {fileID: 0}
+    name: Floyd Armstrong
+    message: Of course. But why punish her for what I do?
+    options: []
+    autoQuit: 0
+    autoTime: 7
+    autoNextIndex: 23
+    objective: 
+  - image: {fileID: 0}
+    name: Floyd Armstrong
+    message: There won't be any trouble.
+    options: []
+    autoQuit: 0
+    autoTime: 5
+    autoNextIndex: 24
+    objective: 
+  - image: {fileID: 0}
+    name: Floyd Armstrong
+    message: There won't be any trouble.
+    options: []
+    autoQuit: 0
+    autoTime: 5
+    autoNextIndex: 25
+    objective: 
+  - image: {fileID: 0}
+    name: Floyd Armstrong
+    message: Civil engineering. I'm in civil engineering.
+    options: []
+    autoQuit: 0
+    autoTime: 6
+    autoNextIndex: 26
+    objective: 
+  - image: {fileID: 0}
+    name: Floyd Armstrong
+    message: I'm a private eye. I just want to unwind.
+    options: []
+    autoQuit: 0
+    autoTime: 6
+    autoNextIndex: 27
+    objective: 
+  - image: {fileID: 0}
+    name: Floyd Armstrong
+    message: Like I said, they've already gone in.
+    options: []
+    autoQuit: 0
+    autoTime: 5
+    autoNextIndex: 28
+    objective: 
+  - image: {fileID: 0}
+    name: Harold Zubron
+    message: It isn't an issue if you aren't an issue. You gonna be an issue?
+    options:
+    - text: No promises.
+      nextNode: 29
+      function: 
+      difficulty: 0
+      failNode: 0
+      objective: 
+    - text: I won't be.
+      nextNode: 30
+      function: 
+      difficulty: 0
+      failNode: 0
+      objective: 
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
+  - image: {fileID: 0}
+    name: Harold Zubron
+    message: There better not be. I'll be watching you, Floyd.
     options: []
     autoQuit: 1
-    autoTime: 2
+    autoTime: 7
     autoNextIndex: 0
     objective: ConvinceHarold
   - image: {fileID: 0}
     name: Harold Zubron
-    message: Not a chance. Get out of here, Armstrong.
+    message: I don't believe you. Get out of here, Armstrong.
     options: []
     autoQuit: 1
-    autoTime: 1
+    autoTime: 7
     autoNextIndex: 0
     objective: GetRejected
   - image: {fileID: 0}
     name: Harold Zubron
-    message: I didn't mean to upset you. Look, you should probably go home. Drinking
-      here isn't going to do you any good.
+    message: You one of Brad's boys?
+    options: []
+    autoQuit: 0
+    autoTime: 5
+    autoNextIndex: 31
+    objective: 
+  - image: {fileID: 0}
+    name: Harold Zubron
+    message: Thought as much. We don't want your type round here. Get out of here,
+      Floyd.
     options: []
     autoQuit: 1
-    autoTime: 1
+    autoTime: 8
     autoNextIndex: 0
     objective: GetRejected
   - image: {fileID: 0}
     name: Harold Zubron
-    message: Don't make a mess in there.
+    message: You better not make me regret this. If only because I feel sorry for
+      you. Go in.
     options: []
     autoQuit: 1
-    autoTime: 1
+    autoTime: 9
+    autoNextIndex: 0
+    objective: ConvinceHarold
+  - image: {fileID: 0}
+    name: Floyd Armstrong
+    message: No promises.
+    options: []
+    autoQuit: 0
+    autoTime: 2
+    autoNextIndex: 32
+    objective: 
+  - image: {fileID: 0}
+    name: Floyd Armstrong
+    message: I won't be.
+    options: []
+    autoQuit: 0
+    autoTime: 2
+    autoNextIndex: 33
+    objective: 
+  - image: {fileID: 0}
+    name: Floyd Armstrong
+    message: Only started recently.
+    options: []
+    autoQuit: 0
+    autoTime: 3
+    autoNextIndex: 34
+    objective: 
+  - image: {fileID: 0}
+    name: Harold Zubron
+    message: Then you're not getting in. Piss off, Armstrong.
+    options: []
+    autoQuit: 1
+    autoTime: 8
+    autoNextIndex: 0
+    objective: GetRejected
+  - image: {fileID: 0}
+    name: Harold Zubron
+    message: Good to hear. Enjoy your night.
+    options: []
+    autoQuit: 1
+    autoTime: 7
     autoNextIndex: 0
     objective: ConvinceHarold
   - image: {fileID: 0}
     name: Harold Zubron
-    message: I'm out of a job if you go through with this. You're not getting in.
+    message: Good man. Enjoy your night, Floyd, wasn't it?
     options: []
     autoQuit: 1
-    autoTime: 1
-    autoNextIndex: 0
-    objective: GetRejected
-  - image: {fileID: 0}
-    name: Harold Zubron
-    message: Yeah boiiii
-    options: []
-    autoQuit: 1
-    autoTime: 2
+    autoTime: 8
     autoNextIndex: 0
     objective: ConvinceHarold

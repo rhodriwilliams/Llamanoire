@@ -9,11 +9,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9858b4990db6ccf419f6dda3bc4f300b, type: 3}
-  m_Name: NewTree
+  m_Name: HaroldReattemptFail
   m_EditorClassIdentifier: 
   nodes:
   - image: {fileID: 0}
-    name: Harold
+    name: Harold Zubron
     message: What are you still doing here Armstrong? I told you, get lost.
     options: []
     autoQuit: 1
