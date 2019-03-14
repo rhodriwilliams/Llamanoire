@@ -27,6 +27,8 @@ public class RhunCharacter : MonoBehaviour {
 			Vector3 right = mainCamera.right * Input.GetAxis("Horizontal");
 			Vector3 movement = (forward + right);
 			movement = movement.normalized;
+			animator.SetFloat("Input X", Input.GetAxis("Horizontal"));
+			animator.SetFloat("Input Y", Input.GetAxis("Vertical"));
 			controller.SimpleMove(movement * speed);
 
 			if(movement.magnitude > 0){
