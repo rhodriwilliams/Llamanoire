@@ -19,11 +19,11 @@ public class SplashScreen : MonoBehaviour {
 		} else if(targetColor == Color.white){
 			targetColor = Color.clear;
 		} else {
-			SceneManager.LoadSceneAsync("Apartment");
+			
 			foreach(GameObject go in objectsToEnable){
 				go.SetActive(true);
 			}
-			Destroy(transform.parent.gameObject);
+			SceneManager.LoadScene("Apartment");
 		}
 	}
 	public void OnSceneLoaded(Scene scene, LoadSceneMode mode){

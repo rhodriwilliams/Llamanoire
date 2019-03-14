@@ -5,12 +5,14 @@ using UnityEngine;
 public class ObjectiveListener : MonoBehaviour {
 	public string objective;
 	public int iTarget;
-
+	protected ObjectiveManager manager;
 	void Start(){
-		GameObject.FindGameObjectWithTag("Manager").GetComponent<ObjectiveManager>().listeners.Add(this);
+		manager = GameObject.FindGameObjectWithTag("Manager").GetComponent<ObjectiveManager>();
+		manager.listeners.Add(this);
+		UpdateObj(manager.GetBool(objective), manager.GetInt(objective));
 	}
 	public void UpdateObj(bool b, int i){
-		Debug.Log("ye");
+		//Debug.Log("ye");
 		if(b || (i >= iTarget && iTarget > 0)){
 			CompleteObjective();
 		}

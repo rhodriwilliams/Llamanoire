@@ -47,5 +47,6 @@ public class Lock : Interactable {
 	}
 	protected void LockUnlock(){
 		door.isLocked = !door.isLocked;
+		door.Open();
 	}
 }
