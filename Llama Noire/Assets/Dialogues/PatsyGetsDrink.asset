@@ -1,0 +1,438 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9858b4990db6ccf419f6dda3bc4f300b, type: 3}
+  m_Name: PatsyGetsDrink
+  m_EditorClassIdentifier: 
+  nodes:
+  - image: {fileID: 0}
+    name: Patsy McKenzie
+    message: What a gentleman, Armstrong.
+    options: []
+    autoQuit: 0
+    autoTime: 4
+    autoNextIndex: 1
+    objective: 
+  - image: {fileID: 0}
+    name: Floyd Armstrong
+    message: Thought you could use a drink. You looked good up there.
+    options: []
+    autoQuit: 0
+    autoTime: 7
+    autoNextIndex: 2
+    objective: 
+  - image: {fileID: 0}
+    name: Patsy McKenzie
+    message: Oh, it's a surprise to hear a compliment from you. And after you got
+      me a drink? Definitely a pleasant surprise. What do you want?
+    options:
+    - text: I need your help.
+      nextNode: 3
+      function: 
+      difficulty: 0
+      failNode: 0
+      objective: 
+    - text: My father's killer.
+      nextNode: 4
+      function: 
+      difficulty: 0
+      failNode: 0
+      objective: 
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
+  - image: {fileID: 0}
+    name: Floyd Armstrong
+    message: I need your help.
+    options: []
+    autoQuit: 0
+    autoTime: 4
+    autoNextIndex: 5
+    objective: 
+  - image: {fileID: 0}
+    name: Floyd Armstrong
+    message: My father's killer. I'm hunting a few leads.
+    options: []
+    autoQuit: 0
+    autoTime: 7
+    autoNextIndex: 6
+    objective: 
+  - image: {fileID: 0}
+    name: Patsy McKenzie
+    message: And my help don't come for free. You can't buy my services with one drink,
+      Floyd, come on.
+    options: []
+    autoQuit: 0
+    autoTime: 10
+    autoNextIndex: 7
+    objective: 
+  - image: {fileID: 0}
+    name: Patsy McKenzie
+    message: And you need my help? It's only been a week. You need time to grieve.
+    options: []
+    autoQuit: 0
+    autoTime: 9
+    autoNextIndex: 8
+    objective: 
+  - image: {fileID: 0}
+    name: Floyd Armstrong
+    message: I thought I'd ask nicely. Appeal to your nostalgia.
+    options: []
+    autoQuit: 0
+    autoTime: 6
+    autoNextIndex: 9
+    objective: 
+  - image: {fileID: 0}
+    name: Floyd Armstrong
+    message: I'm so close. I followed Al Pacone here from the crime scene.
+    options: []
+    autoQuit: 0
+    autoTime: 7
+    autoNextIndex: 10
+    objective: 
+  - image: {fileID: 0}
+    name: Patsy McKenzie
+    message: We had good times, Armstrong, we worked well together. But you let me
+      go.
+    options: []
+    autoQuit: 0
+    autoTime: 8
+    autoNextIndex: 11
+    objective: 
+  - image: {fileID: 0}
+    name: Patsy McKenzie
+    message: Well, he does own both the theatre and here. Armstrong, you're clutching
+      at straws. I'm sorry about your loss. You need a break.
+    options: []
+    autoQuit: 0
+    autoTime: 15
+    autoNextIndex: 12
+    objective: 
+  - image: {fileID: 0}
+    name: Floyd Armstrong
+    message: You deserved better. Now, you're working this case, whatever it is.
+    options: []
+    autoQuit: 0
+    autoTime: 7
+    autoNextIndex: 13
+    objective: 
+  - image: {fileID: 0}
+    name: Floyd Armstrong
+    message: I need closure. I keep finding more clues, but never get any closer.
+      Pacone was looking for something important there. Something that would incriminate
+      him.
+    options: []
+    autoQuit: 0
+    autoTime: 19
+    autoNextIndex: 14
+    objective: 
+  - image: {fileID: 0}
+    name: Patsy McKenzie
+    message: Quiet! I'm working right now.
+    options: []
+    autoQuit: 0
+    autoTime: 4
+    autoNextIndex: 15
+    objective: 
+  - image: {fileID: 0}
+    name: Patsy McKenzie
+    message: You think he killed your father?
+    options: []
+    autoQuit: 0
+    autoTime: 7
+    autoNextIndex: 16
+    objective: 
+  - image: {fileID: 0}
+    name: Floyd Armstrong
+    message: You're investigating him, aren't you?
+    options: []
+    autoQuit: 0
+    autoTime: 5
+    autoNextIndex: 17
+    objective: 
+  - image: {fileID: 0}
+    name: Floyd Armstrong
+    message: That's why I'm here.
+    options: []
+    autoQuit: 0
+    autoTime: 4
+    autoNextIndex: 18
+    objective: 
+  - image: {fileID: 0}
+    name: Patsy McKenzie
+    message: Of course.
+    options: []
+    autoQuit: 0
+    autoTime: 3
+    autoNextIndex: 19
+    objective: 
+  - image: {fileID: 0}
+    name: Patsy McKenzie
+    message: Of course. Murder wouldn't surprise me with his list of crimes, but your
+      father was a man of the people, it just doesn't make sense why he'd put everything
+      at risk for that.
+    options: []
+    autoQuit: 0
+    autoTime: 19
+    autoNextIndex: 20
+    objective: 
+  - image: {fileID: 0}
+    name: Floyd Armstrong
+    message: I have to find out how involved he was with my father's murder.
+    options: []
+    autoQuit: 0
+    autoTime: 8
+    autoNextIndex: 21
+    objective: 
+  - image: {fileID: 0}
+    name: Floyd Armstrong
+    message: That's what I need to find out.
+    options: []
+    autoQuit: 0
+    autoTime: 5
+    autoNextIndex: 21
+    objective: 
+  - image: {fileID: 0}
+    name: Patsy McKenzie
+    message: Well, what do you know?
+    options:
+    - text: The police are covering it up.
+      nextNode: 22
+      function: 
+      difficulty: 0
+      failNode: 0
+      objective: 
+    - text: I've found the murder weapon.
+      nextNode: 23
+      function: 
+      difficulty: 0
+      failNode: 0
+      objective: 
+    - text: I can't tell you.
+      nextNode: 24
+      function: 
+      difficulty: 0
+      failNode: 0
+      objective: 
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
+  - image: {fileID: 0}
+    name: Floyd Armstrong
+    message: I know the police are covering up the truth. They scrubbed the crime
+      scene.
+    options: []
+    autoQuit: 0
+    autoTime: 10
+    autoNextIndex: 25
+    objective: 
+  - image: {fileID: 0}
+    name: Floyd Armstrong
+    message: I found the murder weapon. It's Pacone's. He doesn't know I have it.
+      I need to confront him with it.
+    options: []
+    autoQuit: 0
+    autoTime: 13
+    autoNextIndex: 26
+    objective: 
+  - image: {fileID: 0}
+    name: Floyd Armstrong
+    message: It's not personal, Patsy. I just can't tell you. So many people work
+      for him, I don't know who to trust.
+    options: []
+    autoQuit: 0
+    autoTime: 13
+    autoNextIndex: 27
+    objective: 
+  - image: {fileID: 0}
+    name: Patsy McKenzie
+    message: Already?
+    options: []
+    autoQuit: 0
+    autoTime: 2
+    autoNextIndex: 28
+    objective: 
+  - image: {fileID: 0}
+    name: Patsy McKenzie
+    message: Is that what he was looking for?
+    options: []
+    autoQuit: 0
+    autoTime: 5
+    autoNextIndex: 29
+    objective: 
+  - image: {fileID: 0}
+    name: Patsy McKenzie
+    message: I can't say I'm not offended, but it's smart. Sometimes it feels like
+      half the city works for Pacone, and the other half for the Goatfather. For old
+      time's sake, I can unlock the door for you. Just, please, don't get hurt in
+      there.
+    options: []
+    autoQuit: 1
+    autoTime: 20
+    autoNextIndex: 0
+    objective: GetKey
+  - image: {fileID: 0}
+    name: Floyd Armstrong
+    message: That's exactly what I said. Why would they have scrubbed the crime scene
+      down so quickly if they hadn't found any evidence?
+    options: []
+    autoQuit: 0
+    autoTime: 15
+    autoNextIndex: 30
+    objective: 
+  - image: {fileID: 0}
+    name: Floyd Armstrong
+    message: It can incriminate him for sure. But with the number of police officers
+      working for him, I can't just take it to them.
+    options: []
+    autoQuit: 0
+    autoTime: 16
+    autoNextIndex: 31
+    objective: 
+  - image: {fileID: 0}
+    name: Patsy McKenzie
+    message: 'Because they''re working for him. He doesn''t think there''s any risk.
+      Pacone took out the man of the people, and thinks for sure he got away with
+      it. '
+    options: []
+    autoQuit: 0
+    autoTime: 18
+    autoNextIndex: 32
+    objective: 
+  - image: {fileID: 0}
+    name: Patsy McKenzie
+    message: Well, there's always the Department. We work above them.
+    options: []
+    autoQuit: 0
+    autoTime: 8
+    autoNextIndex: 33
+    objective: 
+  - image: {fileID: 0}
+    name: Floyd Armstrong
+    message: I'll kill him.
+    options: []
+    autoQuit: 0
+    autoTime: 3
+    autoNextIndex: 34
+    objective: 
+  - image: {fileID: 0}
+    name: Floyd Armstrong
+    message: We?
+    options: []
+    autoQuit: 0
+    autoTime: 1
+    autoNextIndex: 35
+    objective: 
+  - image: {fileID: 0}
+    name: Patsy McKenzie
+    message: No, we can do this right. We can bring him in. I just need to call back-up.
+      Wait here? We can't kill him.
+    options:
+    - text: I can't promise that.
+      nextNode: 36
+      function: 
+      difficulty: 0
+      failNode: 0
+      objective: 
+    - text: Sure.
+      nextNode: 37
+      function: 
+      difficulty: 0
+      failNode: 0
+      objective: 
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 0
+    objective: 
+  - image: {fileID: 0}
+    name: Patsy McKenzie
+    message: We. Look, if you think you can bring him down with that as evidence,
+      I trust you. We've just got to stall him. I'm going to call back-up, and then
+      we can bring him down together. Just wait here.
+    options: []
+    autoQuit: 1
+    autoTime: 22
+    autoNextIndex: 0
+    objective: PatsyBackup
+  - image: {fileID: 0}
+    name: Floyd Armstrong
+    message: I can't promise that I won't. Patsy, I can do this on my own. I just
+      need to get to him.
+    options: []
+    autoQuit: 0
+    autoTime: 13
+    autoNextIndex: 38
+    objective: 
+  - image: {fileID: 0}
+    name: Floyd Armstrong
+    message: Sure, we'll do it your way.
+    options: []
+    autoQuit: 0
+    autoTime: 5
+    autoNextIndex: 39
+    objective: 
+  - image: {fileID: 0}
+    name: Patsy McKenzie
+    message: You'll be a criminal, Armstrong. We'll have to bring you in. Can you
+      live with that?
+    options:
+    - text: I'll do what has to be done.
+      nextNode: 40
+      function: RandomChance
+      difficulty: 8
+      failNode: 41
+      objective: 
+    autoQuit: 0
+    autoTime: 11
+    autoNextIndex: 40
+    objective: 
+  - image: {fileID: 0}
+    name: Patsy McKenzie
+    message: Wait here, I won't be long.
+    options: []
+    autoQuit: 1
+    autoTime: 6
+    autoNextIndex: 0
+    objective: PatsyBackup
+  - image: {fileID: 0}
+    name: Floyd Armstrong
+    message: I'll do what has to be done.
+    options: []
+    autoQuit: 0
+    autoTime: 6
+    autoNextIndex: 42
+    objective: 
+  - image: {fileID: 0}
+    name: Floyd Armstrong
+    message: I'll do what has to be done.
+    options: []
+    autoQuit: 0
+    autoTime: 6
+    autoNextIndex: 43
+    objective: 
+  - image: {fileID: 0}
+    name: Patsy McKenzie
+    message: Don't make me regret letting you up there. Please?
+    options: []
+    autoQuit: 1
+    autoTime: 9
+    autoNextIndex: 0
+    objective: GetKey
+  - image: {fileID: 0}
+    name: Patsy McKenzie
+    message: You'd be getting in the way of everything we're trying to do to bring
+      him down. I can't let that happen.
+    options: []
+    autoQuit: 1
+    autoTime: 15
+    autoNextIndex: 0
+    objective: PatsyLeaves
