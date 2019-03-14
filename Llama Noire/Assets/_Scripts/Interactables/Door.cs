@@ -35,7 +35,7 @@ public class Door : Interactable {
 			}
 		}
 	}
-	public void Open(){
+	public virtual void Open(){
 		isOpen = true;
 		anim.clip = anim.GetClip("Open");
 		anim.Play();

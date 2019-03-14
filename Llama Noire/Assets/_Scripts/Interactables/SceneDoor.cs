@@ -14,13 +14,7 @@ public class SceneDoor : Door {
 		if(!anim.isPlaying){
 			if(!isOpen){
 				if(!isLocked){
-					isOpen = true;
-					if(anim){
-						anim.clip = anim.GetClip("Open");
-						anim.Play();
-					}
-					player.GetComponentInChildren<Animator>().SetTrigger("OpenDoor");
-					sceneChanger.LoadScene(nextScene, entrance);
+					Open();
 				} else {
 					GetComponentInChildren<Lock>().Interact();
 				}
@@ -34,5 +28,14 @@ public class SceneDoor : Door {
 				}
 			}
 		}
+	}
+	public override void Open(){
+		isOpen = true;
+		if(anim){
+			anim.clip = anim.GetClip("Open");
+			anim.Play();
+		}
+		player.GetComponentInChildren<Animator>().SetTrigger("OpenDoor");
+		sceneChanger.LoadScene(nextScene, entrance);
 	}
 }
