@@ -16,9 +16,9 @@ public class InterestingObject : Interactable {
 	private Quaternion currentRotation;
 	private Quaternion initialRotation;
 	private float x = 0f;
+	public string objectiveName;
 
-
-
+	public bool pickup;
 	void Start(){
 		initialRotation = transform.rotation;
 
@@ -49,7 +49,9 @@ public class InterestingObject : Interactable {
 				toolTip.ClearTip();
 				player.gameObject.GetComponent<RhunCharacter>().ToggleCursor();
 				virtualCamera.Priority = 100;
-
+				if(objectiveName != ""){
+					GameObject.FindGameObjectWithTag("Manager").GetComponent<ObjectiveManager>().SetBool(objectiveName, true);
+				}
 				x = 0f;
 				currentRotation = transform.rotation;
 				startLocation = transform.position;
@@ -59,11 +61,14 @@ public class InterestingObject : Interactable {
 			beingInteracted = false;
 			player.gameObject.GetComponent<RhunCharacter>().ToggleCursor();
 			virtualCamera.Priority = 0;
-
+			if(pickup){
+				Destroy(gameObject);
+			} else {
 			x = 0f;
-			currentRotation = transform.rotation;
-			startLocation = transform.position;
-			targetLocation = initialLocation;
+				currentRotation = transform.rotation;
+				startLocation = transform.position;
+				targetLocation = initialLocation;
+			}
 		}
 	}
 }
