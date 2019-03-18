@@ -11,7 +11,11 @@ public class CharacterGen : MonoBehaviour {
 	[SerializeField]
 	protected Material[] shirts;
 	[SerializeField]
+	protected Material[] suitShirts;
+	[SerializeField]
 	protected Material[] trousers;
+	[SerializeField]
+	protected Material[] suitTrousers;
 	[SerializeField]
 	protected Material[] furs;
 
@@ -24,14 +28,22 @@ public class CharacterGen : MonoBehaviour {
 		int[] materialIndexes; // shirt, trousers, fur
 		int clothesIndex = Random.Range(0, clothes.Length);
 		if(clothesIndex == 0){
-			materialIndexes = new int[] {1, 0 ,2};
+			materialIndexes = new int[] {2, 0 , 1};
+			filter.mesh = Instantiate(clothes[clothesIndex]);
+			Material[] newMaterials = new Material[3];
+			newMaterials[materialIndexes[0]] = Instantiate(suitShirts[Random.Range(0, suitShirts.Length)]);
+			newMaterials[materialIndexes[1]] = Instantiate(suitTrousers[Random.Range(0, suitTrousers.Length)]);
+			newMaterials[materialIndexes[2]] = Instantiate(furs[Random.Range(0, furs.Length)]);
+			_renderer.materials = newMaterials;
 		} else {
 			materialIndexes = new int[] {1, 2, 0};
+			filter.mesh = Instantiate(clothes[clothesIndex]);
+			Material[] newMaterials = new Material[3];
+			newMaterials[materialIndexes[0]] = Instantiate(shirts[Random.Range(0, shirts.Length)]);
+			newMaterials[materialIndexes[1]] = Instantiate(trousers[Random.Range(0, trousers.Length)]);
+			newMaterials[materialIndexes[2]] = Instantiate(furs[Random.Range(0, furs.Length)]);
+			_renderer.materials = newMaterials;
 		}
-		filter.mesh = clothes[clothesIndex];
-		_renderer.materials[materialIndexes[0]] = shirts[Random.Range(0, shirts.Length)];
-		_renderer.materials[materialIndexes[1]] = trousers[Random.Range(0, trousers.Length)];
-		_renderer.materials[materialIndexes[2]] = furs[Random.Range(0, furs.Length)];
 	}
 	
 	// Update is called once per frame
