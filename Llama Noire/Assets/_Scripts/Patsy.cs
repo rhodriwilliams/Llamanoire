@@ -41,9 +41,12 @@ public class Patsy : MonoBehaviour {
 		case PatsyMode.BackStage:
 			//if song is over, go to stage
 			if(music.IsSinging){
-				anim.SetBool("IsWalking", true);
-				agent.SetDestination(singWaypoint.position);
-				currentMode = PatsyMode.ToStage;
+				if(!GetComponent<TalkativeNPC>().beingInteracted){
+					anim.SetBool("IsWalking", true);
+					agent.SetDestination(singWaypoint.position);
+					currentMode = PatsyMode.ToStage;
+					GetComponent<SphereCollider>().enabled = false;
+				}
 			}
 			break;
 		case PatsyMode.ToStage:
@@ -52,13 +55,13 @@ public class Patsy : MonoBehaviour {
 				anim.SetBool("IsDancing", true);
 				music.StartSinging();
 				currentMode = PatsyMode.OnStage;
-				GetComponent<SphereCollider>().enabled = false;
+				
 			}
 			break;
 		case PatsyMode.OnStage:
 			//if song is over, get off stage
 			if(!music.IsSinging){
-				GetComponent<SphereCollider>().enabled = true;
+				
 				agent.SetDestination(otherWaypoints[0].position);
 				anim.SetBool("IsDancing", false);
 				currentMode = PatsyMode.OffStage;
@@ -67,6 +70,7 @@ public class Patsy : MonoBehaviour {
 		case PatsyMode.OffStage:
 			//if backstage, switch to backstage
 			if(agent.remainingDistance < 0.1){
+				GetComponent<SphereCollider>().enabled = true;
 				anim.SetBool("IsWalking", false);
 				currentMode = PatsyMode.BackStage;
 			}
