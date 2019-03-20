@@ -17,13 +17,14 @@ public class Dialogue : MonoBehaviour {
 	private Text speakerName;
 	private Text message;
 	private Image image;
+	private GameObject skipMessage;
 	public Text[] buttonTexts = new Text[4];
 	public List<DialogueNode> nodeList = new List<DialogueNode>();
 
 	private ObjectiveManager objMan;
 
 	private int currentNode;
-
+	protected bool canSkip = false;
 	public void SwitchDialogue(ScriptableDialogueTree newTree){
 		ScriptableDialogueTree tree = Instantiate(newTree);
 		nodeList.Clear();
@@ -39,6 +40,7 @@ public class Dialogue : MonoBehaviour {
 		}
 	}
 	void Start(){
+		
 		objMan = GameObject.FindGameObjectWithTag("Manager").GetComponent<ObjectiveManager>();
 
 		SwitchDialogue(dialogueTree);
@@ -50,11 +52,13 @@ public class Dialogue : MonoBehaviour {
 	void Update(){
 		if(instance){
 			if(nodeList[currentNode].options.Length == 0){
-				if(Input.anyKeyDown && !Input.GetButtonDown("Interact")){
+				if(Input.anyKeyDown && canSkip){
 					if(nodeList[currentNode].autoQuit)
 						ExitDialogue();
-					else
+					else{
+						canSkip = false;
 						DisplayNode(nodeList[currentNode].autoNextIndex);
+					}
 				}
 			}
 		}
@@ -74,7 +78,9 @@ public class Dialogue : MonoBehaviour {
 		speakerName = GameObject.Find("_DialogueName").GetComponent<Text>();
 		message = GameObject.Find("_DialogueMessage").GetComponent<Text>();
 		image = GameObject.Find("_DialogueImage").GetComponent<Image>();
+		skipMessage = GameObject.Find("_SkipMessage");
 
+		
 		//find the buttons and set up
 		GameObject[] dbs = new GameObject[4];
 		for (int i = 0; i < 4; i++){
@@ -90,48 +96,21 @@ public class Dialogue : MonoBehaviour {
 		DisplayNode(0);
 	}
 	public void DisplayNode(int nodeIndex){
+		canSkip = false;
+		skipMessage.SetActive(false);
+		
 		//get node from list and display it
 		DialogueNode node = nodeList[nodeIndex];
 		image.sprite = node.image;
 		speakerName.text = node.name;
 		message.text = node.message;
 
-		if(node.options.Length == 0){
-			//no options, that's ok
-			for (int i = 0; i < 4; i++){
-				buttonTexts[i].transform.parent.gameObject.SetActive(false);
-			}
-			/*
-			if(!node.autoQuit){
-				//no auto quit, that's still ok
-				if(node.autoNextIndex == 0){
-					//someone probably forgot to set the auto next. but that's ok.
-					DialogueError(nodeIndex, "No options or auto quit and auto next index is 0. Did you forget something?");
-				}
-				IEnumerator coroutine = LoadAfterSeconds(node.autoNextIndex, node.autoTime);
-				StartCoroutine(coroutine);
-			}
-			*/
-		} else {
-			for (int i = 0; i < 4; i++){
-				if(i < node.options.Length){
-					//set the option buttons' texts
-					buttonTexts[i].transform.parent.gameObject.SetActive(true);
-					buttonTexts[i].text = node.options[i].text;
-				} else {
-					//disable all buttons without options
-					buttonTexts[i].transform.parent.gameObject.SetActive(false);
-				}
-			}
-			
+		for (int i = 0; i < 4; i++){
+			buttonTexts[i].transform.parent.gameObject.SetActive(false);
 		}
-		if(node.autoQuit){
-			//IEnumerator coroutine = ExitAfterSeconds(node.autoTime);
-			//StartCoroutine(coroutine);
-		} else if (node.autoTime > 0f){
-			//if autotime is set but autoquit is false, load the auto next
-			//IEnumerator coroutine = LoadAfterSeconds(node.autoNextIndex, node.autoTime);
-			//StartCoroutine(coroutine);
+		if (node.autoTime > 0f){
+			IEnumerator coroutine = CanSkip(node.autoTime, node.options);
+			StartCoroutine(coroutine);
 		}
 		currentNode = nodeIndex;
 	}
@@ -194,5 +173,25 @@ public class Dialogue : MonoBehaviour {
 	IEnumerator ExitAfterSeconds(float waitTime){
 		yield return new WaitForSeconds(waitTime);
 		ExitDialogue();
+	}
+	IEnumerator CanSkip(float waitTime, DialogueOption[] options){
+		yield return new WaitForSeconds(waitTime);
+		canSkip = true;
+		if(options.Length == 0){
+			skipMessage.SetActive(true);
+			//no options, that's ok
+		} else {
+			for (int i = 0; i < 4; i++){
+				if(i < options.Length){
+					//set the option buttons' texts
+					buttonTexts[i].transform.parent.gameObject.SetActive(true);
+					buttonTexts[i].text = options[i].text;
+				} else {
+					//disable all buttons without options
+					buttonTexts[i].transform.parent.gameObject.SetActive(false);
+				}
+			}
+			
+		} 
 	}
 }
