@@ -13,48 +13,66 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodes:
   - image: {fileID: 0}
-    name: Tutorial Geoff
-    message: Hi, I am tutorial Geoff. Pressing any key will continue to my next line
-    options: []
-    autoQuit: 0
-    autoTime: 0
-    autoNextIndex: 1
-    objective: 
-  - image: {fileID: 0}
-    name: Tutorial Geoff
-    message: You can talk to me by selecting one of the options on the left.
+    name: Geoff Tutori
+    message: Hey Floyd. I know this doesn't make much sense, but you need to get out
+      of here. You're so close. Do you understand me?
     options:
-    - text: I see
+    - text: Yes.
+      nextNode: 1
+      function: 
+      difficulty: 0
+      failNode: 0
+      objective: 
+    - text: I'm not sure.
       nextNode: 2
       function: 
       difficulty: 0
       failNode: 0
       objective: 
-    - text: Thank you Geoff
-      nextNode: 3
-      function: 
-      difficulty: 0
-      failNode: 0
-      objective: 
     autoQuit: 0
     autoTime: 0
     autoNextIndex: 0
     objective: 
   - image: {fileID: 0}
-    name: Tutorial Geoff
-    message: Goodbye
+    name: Floyd Armstrong
+    message: Yes. I understand you. What do I need to do next?
+    options: []
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 3
+    objective: 
+  - image: {fileID: 0}
+    name: Floyd Armstrong
+    message: I'm not sure. What do I need to do?
+    options: []
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 3
+    objective: 
+  - image: {fileID: 0}
+    name: Geoff Tutori
+    message: Exactly what you're doing. You've got the evidence you need. You found
+      the murder weapon. Find Patsy, she was always able to help you.
+    options: []
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 4
+    objective: 
+  - image: {fileID: 0}
+    name: Floyd Armstrong
+    message: But I haven't spoken to her since she left. She won't help me.
+    options: []
+    autoQuit: 0
+    autoTime: 0
+    autoNextIndex: 5
+    objective: 
+  - image: {fileID: 0}
+    name: Geoff Tutori
+    message: It doesn't matter. You'll need allies if you're going to figure out Pacone's
+      involvement in all this. You need to wake up and finish your work. Avenge your
+      father's death.
     options: []
     autoQuit: 1
     autoTime: 0
     autoNextIndex: 0
-    objective: 
-  - image: {fileID: 0}
-    name: Tutorial Geoff
-    message: 'You''re welcome
-
-'
-    options: []
-    autoQuit: 0
-    autoTime: 0
-    autoNextIndex: 2
-    objective: 
+    objective: TutorialDialogueComplete
