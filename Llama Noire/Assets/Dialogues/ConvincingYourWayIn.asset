@@ -176,7 +176,7 @@ MonoBehaviour:
     name: Harold Zubron
     message: Doing what? Never seen you here before.
     options:
-    - text: Civil engineering.
+    - text: Civil engineering. [Lie]
       nextNode: 20
       function: 
       difficulty: 0
