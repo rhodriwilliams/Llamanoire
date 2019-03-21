@@ -39,7 +39,7 @@ public class SceneChanger : MonoBehaviour {
 			player.transform.position = GameObject.Find(cameFrom).transform.position;
 			player.transform.rotation = GameObject.Find(cameFrom).transform.rotation;
 		}
-		if(scene.name != "Apartment" && scene.name != "Tutorial"){
+		if(scene.name != "Tutorial"){
 			player.GetComponent<RhunCharacter>().busy = false;
 			player.GetComponentInChildren<Animator>().SetBool("InMenu", false);
 		} else if(cameFrom != ""){

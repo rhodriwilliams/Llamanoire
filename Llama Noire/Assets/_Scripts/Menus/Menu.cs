@@ -19,7 +19,7 @@ public class Menu : MonoBehaviour {
 	void Start () {
 		hud = GameObject.FindGameObjectWithTag("HUD");
 		armstrong = GameObject.FindGameObjectWithTag("Player");
-		
+		hud.SetActive(false);
 	}
 	
 	public void Play(){

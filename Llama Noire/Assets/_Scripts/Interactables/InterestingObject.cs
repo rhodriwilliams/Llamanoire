@@ -46,29 +46,30 @@ public class InterestingObject : Interactable {
 
 	public override void Interact(){
 		if(!beingInteracted){
-			//if(isHovering){
-			beingInteracted = true;
-			toolTip.ClearTip();
-			player.gameObject.GetComponent<RhunCharacter>().ToggleCursor();
-			virtualCamera.Priority = 100;
-			if(objectiveName != ""){
-				GameObject.FindGameObjectWithTag("Manager").GetComponent<ObjectiveManager>().SetBool(objectiveName, true);
-			}
-			x = 0f;
-			currentRotation = transform.rotation;
-			startLocation = transform.position;
-			targetLocation = inspectTransform.position;
-		} else {
-			beingInteracted = false;
-			player.gameObject.GetComponent<RhunCharacter>().ToggleCursor();
-			virtualCamera.Priority = 0;
-			if(pickup){
-				Destroy(gameObject);
-			} else {
+			if(isHovering){
+				beingInteracted = true;
+				toolTip.ClearTip();
+				player.gameObject.GetComponent<RhunCharacter>().ToggleCursor();
+				virtualCamera.Priority = 100;
+				if(objectiveName != ""){
+						GameObject.FindGameObjectWithTag("Manager").GetComponent<ObjectiveManager>().SetBool(objectiveName, true);
+				}
 				x = 0f;
 				currentRotation = transform.rotation;
 				startLocation = transform.position;
-				targetLocation = initialLocation;
+				targetLocation = inspectTransform.position;
+			} else {
+				beingInteracted = false;
+				player.gameObject.GetComponent<RhunCharacter>().ToggleCursor();
+				virtualCamera.Priority = 0;
+				if(pickup){
+					Destroy(gameObject);
+				} else {
+					x = 0f;
+						currentRotation = transform.rotation;
+					startLocation = transform.position;
+					targetLocation = initialLocation;
+				}
 			}
 		}
 	}
