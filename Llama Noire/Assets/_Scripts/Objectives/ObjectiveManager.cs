@@ -11,6 +11,7 @@ public class ObjectiveManager : MonoBehaviour {
 	protected bool testing;
 	//[SerializeField]
 	protected string outputPath;
+	protected ObjectiveDisplay display;
 
     void Start()
     {
@@ -19,6 +20,9 @@ public class ObjectiveManager : MonoBehaviour {
 
         //Output the Game data path to the console
         Debug.Log("Path : " + outputPath);
+
+		display = GameObject.Find("Objective").GetComponent<ObjectiveDisplay>();
+		display.UpdateText();
     }
 	void Awake(){
 		for(int i = 0; i < objectives.Count; i++){
@@ -83,6 +87,7 @@ public class ObjectiveManager : MonoBehaviour {
 				ol.UpdateObj(GetBool(ol.objective), GetInt(ol.objective));
 			}
 		}
+		display.UpdateText();
 	}
 
 	public string PrintObjectives(){

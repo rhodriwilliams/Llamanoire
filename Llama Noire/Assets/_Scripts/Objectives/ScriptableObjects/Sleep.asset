@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Name: Sleep
   m_EditorClassIdentifier: 
   objectiveName: Sleep
-  objectiveMessage: Go to Sleep (Optional)
+  objectiveMessage: Go to Sleep
   isHidden: 0
   bCompleted: 0
   iCompleted: 0

@@ -26,7 +26,7 @@ public class PauseMenu : MonoBehaviour {
 					pauseMenu.SetActive(true);
 					isPaused = true;
 					AudioListener.pause = true;
-					display.UpdateText();
+					//display.UpdateText();
 				} else {
 					chara.ToggleCursor();
 					Time.timeScale = 1f;

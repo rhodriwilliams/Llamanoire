@@ -13,6 +13,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectiveName: FindPacone
   objectiveMessage: Find Al Pacone
-  hidden: 0
+  isHidden: 1
   bCompleted: 0
   iCompleted: 0

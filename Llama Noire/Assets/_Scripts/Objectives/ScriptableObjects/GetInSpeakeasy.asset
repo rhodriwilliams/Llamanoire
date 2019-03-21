@@ -13,6 +13,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectiveName: GetInSpeakeasy
   objectiveMessage: Get Inside the Speakeasy
-  hidden: 0
+  isHidden: 1
   bCompleted: 0
   iCompleted: 0

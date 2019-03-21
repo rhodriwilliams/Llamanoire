@@ -68,7 +68,7 @@ MonoBehaviour:
       failNode: 0
       objective: 
     autoQuit: 0
-    autoTime: 0
+    autoTime: 3
     autoNextIndex: 0
     objective: 
   - image: {fileID: 0}
@@ -246,7 +246,7 @@ MonoBehaviour:
       failNode: 0
       objective: 
     autoQuit: 0
-    autoTime: 0
+    autoTime: 3
     autoNextIndex: 0
     objective: 
   - image: {fileID: 0}
@@ -288,7 +288,7 @@ MonoBehaviour:
       failNode: 0
       objective: 
     autoQuit: 0
-    autoTime: 0
+    autoTime: 3
     autoNextIndex: 0
     objective: 
   - image: {fileID: 0}

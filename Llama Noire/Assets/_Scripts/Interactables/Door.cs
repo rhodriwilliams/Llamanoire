@@ -34,6 +34,11 @@ public class Door : Interactable {
 				StartCoroutine("OpenClose");
 			}
 		}
+		if(other.gameObject == player){
+			if(!beingInteracted){
+				ShowTip();
+			}
+		}
 	}
 	public virtual void Open(){
 		isOpen = true;

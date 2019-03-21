@@ -46,7 +46,7 @@ MonoBehaviour:
       failNode: 0
       objective: 
     autoQuit: 0
-    autoTime: 0
+    autoTime: 3
     autoNextIndex: 0
     objective: 
   - image: {fileID: 0}
@@ -159,7 +159,7 @@ MonoBehaviour:
       failNode: 0
       objective: 
     autoQuit: 0
-    autoTime: 0
+    autoTime: 3
     autoNextIndex: 0
     objective: 
   - image: {fileID: 0}
@@ -251,7 +251,7 @@ MonoBehaviour:
       failNode: 0
       objective: 
     autoQuit: 0
-    autoTime: 0
+    autoTime: 3
     autoNextIndex: 0
     objective: 
   - image: {fileID: 0}
@@ -271,7 +271,7 @@ MonoBehaviour:
       failNode: 0
       objective: 
     autoQuit: 0
-    autoTime: 0
+    autoTime: 3
     autoNextIndex: 0
     objective: 
   - image: {fileID: 0}
@@ -473,7 +473,7 @@ MonoBehaviour:
       failNode: 0
       objective: 
     autoQuit: 0
-    autoTime: 0
+    autoTime: 3
     autoNextIndex: 0
     objective: 
   - image: {fileID: 0}
@@ -483,7 +483,7 @@ MonoBehaviour:
       we can bring him down together. Just wait here.
     options: []
     autoQuit: 1
-    autoTime: 20
+    autoTime: 10
     autoNextIndex: 0
     objective: PatsyBackup
   - image: {fileID: 0}
@@ -531,7 +531,7 @@ MonoBehaviour:
       failNode: 56
       objective: 
     autoQuit: 0
-    autoTime: 0
+    autoTime: 3
     autoNextIndex: 0
     objective: 
   - image: {fileID: 0}
@@ -550,7 +550,7 @@ MonoBehaviour:
       I can''t let you do that. I''m sorry.'
     options: []
     autoQuit: 1
-    autoTime: 30
+    autoTime: 10
     autoNextIndex: 0
     objective: PatsyLeaves
   - image: {fileID: 0}

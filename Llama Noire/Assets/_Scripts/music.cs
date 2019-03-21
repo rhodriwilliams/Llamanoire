@@ -32,7 +32,7 @@ public class Music : MonoBehaviour {
 	public void OnSceneLoaded(Scene scene, LoadSceneMode mode){
 		if(scene.name == "Apartment"){
 			source.Pause();
-		} else{
+		} else if (!source.isPlaying){
 			source.Play();
 		}
 		clappers = GameObject.FindGameObjectsWithTag("Clapping");
@@ -46,6 +46,13 @@ public class Music : MonoBehaviour {
 			
 			float timeLeft = source.clip.length - source.time;
 			Invoke("NewSong", timeLeft);
+		} else {
+			inside = false;
+			GetComponent<AudioLowPassFilter>().enabled = true;
+			source.spatialBlend = 0.887f;
+			source.loop  = true;
+			source.volume = 0.538f;
+			CancelInvoke();
 		}
 	}
 	void Update(){

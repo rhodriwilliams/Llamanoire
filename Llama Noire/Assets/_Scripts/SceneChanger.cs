@@ -54,6 +54,11 @@ public class SceneChanger : MonoBehaviour {
 		} else if(scene.name == "Tutorial"){
 			objectiveManager.SetBool("Sleep", true);
 			tutScript.enabled = true;
+		} else if (scene.name == "Apartment"){
+			if(objectiveManager.GetBool("Sleep")){
+				objectiveManager.SetHidden("GetInSpeakeasy", false);
+				objectiveManager.SetHidden("FindPacone", false);
+			}
 		}
 	}
 }

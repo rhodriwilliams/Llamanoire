@@ -32,31 +32,32 @@ public class InterestingObject : Interactable {
 			transform.rotation = Quaternion.Lerp(currentRotation, initialRotation, x);
 			x += Time.deltaTime;
 		}
-	}
-
-
-	void OnMouseDrag(){
 		if(beingInteracted)
 			transform.Rotate(0f, - Input.GetAxis("Mouse X") * rotateSpeed,  Input.GetAxis("Mouse Y") * rotateSpeed, Space.World);
 	}
 
+	/*
+	void OnMouseDrag(){
+		if(beingInteracted)
+			transform.Rotate(0f, - Input.GetAxis("Mouse X") * rotateSpeed,  Input.GetAxis("Mouse Y") * rotateSpeed, Space.World);
+	}
+	*/
 
 
 	public override void Interact(){
 		if(!beingInteracted){
-			if(isHovering){
-				beingInteracted = true;
-				toolTip.ClearTip();
-				player.gameObject.GetComponent<RhunCharacter>().ToggleCursor();
-				virtualCamera.Priority = 100;
-				if(objectiveName != ""){
-					GameObject.FindGameObjectWithTag("Manager").GetComponent<ObjectiveManager>().SetBool(objectiveName, true);
-				}
-				x = 0f;
-				currentRotation = transform.rotation;
-				startLocation = transform.position;
-				targetLocation = inspectTransform.position;
+			//if(isHovering){
+			beingInteracted = true;
+			toolTip.ClearTip();
+			player.gameObject.GetComponent<RhunCharacter>().ToggleCursor();
+			virtualCamera.Priority = 100;
+			if(objectiveName != ""){
+				GameObject.FindGameObjectWithTag("Manager").GetComponent<ObjectiveManager>().SetBool(objectiveName, true);
 			}
+			x = 0f;
+			currentRotation = transform.rotation;
+			startLocation = transform.position;
+			targetLocation = inspectTransform.position;
 		} else {
 			beingInteracted = false;
 			player.gameObject.GetComponent<RhunCharacter>().ToggleCursor();
@@ -64,7 +65,7 @@ public class InterestingObject : Interactable {
 			if(pickup){
 				Destroy(gameObject);
 			} else {
-			x = 0f;
+				x = 0f;
 				currentRotation = transform.rotation;
 				startLocation = transform.position;
 				targetLocation = initialLocation;

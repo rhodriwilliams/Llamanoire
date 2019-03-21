@@ -175,7 +175,7 @@ public class Dialogue : MonoBehaviour {
 		ExitDialogue();
 	}
 	IEnumerator CanSkip(float waitTime, DialogueOption[] options){
-		yield return new WaitForSeconds(waitTime);
+		yield return new WaitForSeconds(waitTime / 2f);
 		canSkip = true;
 		if(options.Length == 0){
 			skipMessage.SetActive(true);
