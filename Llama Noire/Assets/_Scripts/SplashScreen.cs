@@ -23,7 +23,7 @@ public class SplashScreen : MonoBehaviour {
 			foreach(GameObject go in objectsToEnable){
 				go.SetActive(true);
 			}
-			SceneManager.LoadScene("Apartment");
+			SceneManager.LoadScene("Tutorial");
 		}
 	}
 	public void OnSceneLoaded(Scene scene, LoadSceneMode mode){
