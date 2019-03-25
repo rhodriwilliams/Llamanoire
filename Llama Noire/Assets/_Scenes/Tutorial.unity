@@ -310,6 +310,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f40fe98ccd5ece4aba9fe32d0709609, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  requireHover: 1
   objectName: Finish Tutorial
   beingInteracted: 0
   isLocked: 0
@@ -14707,6 +14708,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cc25ec9bda02b84fadc1af77e374b73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  requireHover: 1
   objectName: Door
   beingInteracted: 0
   isLocked: 1
@@ -22578,6 +22580,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88f5ada8090ca0e4899ab030c6949c6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  requireHover: 1
   objectName: Geoff Tutori
   beingInteracted: 0
 --- !u!4 &1495489897
@@ -29659,7 +29662,7 @@ Prefab:
         type: 2}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 403d20ba0571e4f418bc1928133205fd, type: 2}
+      objectReference: {fileID: 2100000, guid: a57339bd6f3753c47a0de0ede7454e67, type: 2}
     - target: {fileID: 4989710377674456, guid: a8d3d737dfefb174987606f57bf7d60f, type: 2}
       propertyPath: m_LocalRotation.x
       value: -0.3247134
