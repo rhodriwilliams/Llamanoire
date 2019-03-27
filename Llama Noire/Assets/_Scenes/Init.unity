@@ -490,8 +490,8 @@ RectTransform:
   - {fileID: 1318431645}
   - {fileID: 1306866052}
   - {fileID: 1683151647}
-  - {fileID: 1888889471}
   - {fileID: 1295462169}
+  - {fileID: 1888889471}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1113,7 +1113,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 0}
   m_Children: []
   m_Father: {fileID: 239486310}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
@@ -1840,7 +1840,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 239486310}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -1934,8 +1934,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7989d9a247d29de4c97d64a1e1c1dc38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  oldClip: {fileID: 0}
-  newClip: {fileID: 0}
+  oldClip: {fileID: 8300000, guid: c9f44fd86beb31a4cb868123fa0274d1, type: 3}
+  newClip: {fileID: 8300000, guid: e27fd6b6071590144b6178e27920ce54, type: 3}
 --- !u!169 &2034126664
 AudioLowPassFilter:
   m_ObjectHideFlags: 0

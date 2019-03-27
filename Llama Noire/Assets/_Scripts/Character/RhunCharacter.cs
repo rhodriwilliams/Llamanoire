@@ -29,7 +29,7 @@ public class RhunCharacter : MonoBehaviour {
 			movement = movement.normalized;
 			animator.SetFloat("Input X", Input.GetAxis("Horizontal"));
 			animator.SetFloat("Input Y", Input.GetAxis("Vertical"));
-			controller.SimpleMove(movement * speed);
+			controller.SimpleMove(movement * speed * Time.deltaTime);
 
 			if(movement.magnitude > 0){
 				if(!animator.GetBool("IsWalking"))

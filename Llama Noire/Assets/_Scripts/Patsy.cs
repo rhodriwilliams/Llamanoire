@@ -42,6 +42,7 @@ public class Patsy : MonoBehaviour {
 			//if song is over, go to stage
 			if(music.IsSinging){
 				if(!GetComponent<TalkativeNPC>().beingInteracted){
+					anim.SetFloat("Input Y", 1f);
 					anim.SetBool("IsWalking", true);
 					agent.SetDestination(singWaypoint.position);
 					currentMode = PatsyMode.ToStage;
