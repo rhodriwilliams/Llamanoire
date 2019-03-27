@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using Cinemachine;
 public class InterestingObject : Interactable {
 
@@ -17,7 +18,8 @@ public class InterestingObject : Interactable {
 	private Quaternion initialRotation;
 	private float x = 0f;
 	public string objectiveName;
-
+	[TextArea]
+	public string flavourText;
 	public bool pickup;
 	void Start(){
 		initialRotation = transform.rotation;
@@ -47,6 +49,9 @@ public class InterestingObject : Interactable {
 	public override void Interact(){
 		if(!beingInteracted){
 			if(isHovering){
+				if(flavourText != ""){
+					GameObject.Find("FlavourText").GetComponent<Text>().text = flavourText;
+				}
 				beingInteracted = true;
 				toolTip.ClearTip();
 				player.gameObject.GetComponent<RhunCharacter>().ToggleCursor();
@@ -58,18 +63,21 @@ public class InterestingObject : Interactable {
 				currentRotation = transform.rotation;
 				startLocation = transform.position;
 				targetLocation = inspectTransform.position;
+			} 
+		}else {
+			if(flavourText != ""){
+				GameObject.Find("FlavourText").GetComponent<Text>().text = "";
+			}
+			beingInteracted = false;
+			player.gameObject.GetComponent<RhunCharacter>().ToggleCursor();
+			virtualCamera.Priority = 0;
+			if(pickup){
+				Destroy(gameObject);
 			} else {
-				beingInteracted = false;
-				player.gameObject.GetComponent<RhunCharacter>().ToggleCursor();
-				virtualCamera.Priority = 0;
-				if(pickup){
-					Destroy(gameObject);
-				} else {
-					x = 0f;
-						currentRotation = transform.rotation;
-					startLocation = transform.position;
-					targetLocation = initialLocation;
-				}
+				x = 0f;
+					currentRotation = transform.rotation;
+				startLocation = transform.position;
+				targetLocation = initialLocation;
 			}
 		}
 	}

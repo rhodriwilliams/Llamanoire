@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.UI;
 public class Lock : Interactable {
 	protected Door door;
 	protected HasKey keyScript;
@@ -9,6 +9,8 @@ public class Lock : Interactable {
 	protected GameObject lockpickingMinigame;
 	[SerializeField]
 	protected int difficulty;
+	[TextArea]
+	public string flavourText;
 
 	void Start(){
 		keyScript = GetComponent<HasKey>();
@@ -27,6 +29,9 @@ public class Lock : Interactable {
 				} else {
 					if(door.isLocked){ //no need to lockpick a door shut
 						//instantiate the lockpicking minigame and pause the game
+						if(flavourText != ""){
+							GameObject.Find("FlavourText").GetComponent<Text>().text = flavourText;
+						}
 						GameObject newMinigame = Instantiate(lockpickingMinigame, Vector3.zero, Quaternion.identity);
 						newMinigame.GetComponent<Lockpicking>().LockScript = this;
 						newMinigame.GetComponent<Lockpicking>().Setup(difficulty);
@@ -39,6 +44,9 @@ public class Lock : Interactable {
 	}
 	public void LockpickingComplete(bool successful){
 		//called by the minigame object when lockpicking is over
+		if(flavourText != ""){
+			GameObject.Find("FlavourText").GetComponent<Text>().text = "";
+		}
 		beingInteracted = false;
 		player.gameObject.GetComponent<RhunCharacter>().ToggleCursor();
 		if(successful){
