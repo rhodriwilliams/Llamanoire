@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class ConvinceHarold : ObjectiveListener {
 	public TalkativeNPC dialogue;
+	public bool isFrank = false;
 	protected override void CompleteObjective(){
 		GetComponent<BoxCollider>().isTrigger = true;
 		Destroy(gameObject);
@@ -13,6 +14,10 @@ public class ConvinceHarold : ObjectiveListener {
 		Debug.Log("Collision!");
 		if(other.tag == "Player"){
 			dialogue.Interact();
+			if(isFrank){
+				manager.SetBool("FindPacone", true);
+				manager.SetBool("GetUpstairs", true);
+			}
 		}
 	}
 }

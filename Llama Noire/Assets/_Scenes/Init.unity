@@ -704,6 +704,9 @@ MonoBehaviour:
   - {fileID: 11400000, guid: e72014a3d1ae4a84ebf5248ca71a7693, type: 2}
   - {fileID: 11400000, guid: 1f8cda80018bb89438f89384c67e0b75, type: 2}
   - {fileID: 11400000, guid: ba39a79fd89ac9a498a2b4e89675986d, type: 2}
+  - {fileID: 11400000, guid: 3f9febe6c99c10940bee1d2f30a62407, type: 2}
+  - {fileID: 11400000, guid: 3bcfb2442a04bc9449b30e674d934bd5, type: 2}
+  - {fileID: 11400000, guid: 34846207395d5444fac52d82b71d4dfa, type: 2}
   testing: 1
 --- !u!114 &720740962
 MonoBehaviour:
@@ -798,8 +801,8 @@ MonoBehaviour:
   enableInput: 0
   defaultSensitivity: 3
   sensitivity: 1.6
-  maxRot: 80
-  minRot: -80
+  maxRot: 89
+  minRot: -89
   inverted: 0
 --- !u!4 &776973035
 Transform:

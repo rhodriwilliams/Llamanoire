@@ -4,12 +4,14 @@ using UnityEngine;
 using UnityEngine.AI;
 public class Patsy : MonoBehaviour {
 
-	protected enum PatsyMode {None, BackStage, ToStage, OnStage, OffStage};
+	protected enum PatsyMode {None, BackStage, ToStage, OnStage, OffStage, GoingBackup, GoingUpstairs};
 	[SerializeField]
 	protected PatsyMode currentMode = PatsyMode.None;
 	protected Music music;
 	public Transform singWaypoint;
 	public Transform[] otherWaypoints;
+	public Transform backupWaypoint;
+	public Transform upstairsWaypoint;
 	private NavMeshAgent agent;
 	private Animator anim;
 	protected bool goingToStage = false;
@@ -37,6 +39,7 @@ public class Patsy : MonoBehaviour {
 	}
 	
 	void Update () {
+		Debug.Log((transform.position - agent.destination).magnitude);
 		switch(currentMode){
 		case PatsyMode.BackStage:
 			//if song is over, go to stage
@@ -52,7 +55,7 @@ public class Patsy : MonoBehaviour {
 			break;
 		case PatsyMode.ToStage:
 			//if at stage, switch to onstage
-			if(agent.remainingDistance < 0.1){
+			if((transform.position - agent.destination).magnitude < 0.1){
 				anim.SetBool("IsDancing", true);
 				music.StartSinging();
 				currentMode = PatsyMode.OnStage;
@@ -70,14 +73,44 @@ public class Patsy : MonoBehaviour {
 			break;
 		case PatsyMode.OffStage:
 			//if backstage, switch to backstage
-			if(agent.remainingDistance < 0.1){
+			if((transform.position - agent.destination).magnitude < 0.1){
 				GetComponent<SphereCollider>().enabled = true;
 				anim.SetBool("IsWalking", false);
 				currentMode = PatsyMode.BackStage;
 			}
 			break;
+		case PatsyMode.GoingBackup:
+			if((transform.position - agent.destination).magnitude < 0.1){
+				StartCoroutine("WaitForBackup");
+				anim.SetBool("IsWalking", false);
+				currentMode = PatsyMode.None;
+			}
+			break;
+		case PatsyMode.GoingUpstairs:
+			if((transform.position - agent.destination).magnitude < 0.1){
+				currentMode = PatsyMode.None;
+				anim.SetBool("IsWalking", false);
+				GameObject.FindGameObjectWithTag("Manager").GetComponent<ObjectiveManager>().SetBool("PatsyUpstairs", true);
+			}
+			break;
 		default:
 			break;
 		}
+	}
+
+	public void GetBackup(){
+		agent.SetDestination(backupWaypoint.position);
+		anim.SetBool("IsWalking", true);
+		currentMode = PatsyMode.GoingBackup;
+	}
+
+	public IEnumerator WaitForBackup(){
+		Debug.Log("Do the art stuff");
+		GetComponentInChildren<SkinnedMeshRenderer>().enabled = false;
+		yield return new WaitForSeconds(5f);
+		GetComponentInChildren<SkinnedMeshRenderer>().enabled = true;
+		agent.SetDestination(upstairsWaypoint.position);
+		anim.SetBool("IsWalking", true);
+		currentMode = PatsyMode.GoingUpstairs;
 	}
 }
