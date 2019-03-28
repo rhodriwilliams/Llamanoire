@@ -21,7 +21,7 @@ public class RhunCharacter : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void FixedUpdate () {
 		if(!busy){
 			Vector3 forward = mainCamera.forward * Input.GetAxis("Vertical");
 			Vector3 right = mainCamera.right * Input.GetAxis("Horizontal");

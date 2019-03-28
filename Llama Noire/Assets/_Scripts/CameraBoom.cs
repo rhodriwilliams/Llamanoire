@@ -24,7 +24,7 @@ public class CameraBoom : MonoBehaviour {
 		GetComponentInChildren<CinemachineVirtualCamera>().LookAt = player.transform;
 	}
 	// Update is called once per frame
-	void Update () {
+	void FixedUpdate () {
 		if(enableInput){
 			transform.position = player.transform.position;
 

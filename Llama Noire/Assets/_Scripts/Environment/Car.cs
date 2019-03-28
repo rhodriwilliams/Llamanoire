@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Car : MonoBehaviour {
 
-	public float distance;
+	public float lifeTime;
 	public float maxSpeed;
 
 	public float acceleration;
@@ -13,56 +13,41 @@ public class Car : MonoBehaviour {
 	public float targetSpeed;
 	[HideInInspector]
 	public float curSpeed;
-	private float distanceTraveled;
 
+	protected Rigidbody rb;
+	[SerializeField]
+	protected bool somethingInFront;
 	void Start(){
+		rb = GetComponent<Rigidbody>();
 		targetSpeed = maxSpeed;
 		curSpeed = targetSpeed;
+		rb.velocity = transform.forward * maxSpeed;
+		Destroy(gameObject, lifeTime);
 	}
 	void Update () {
-		if(curSpeed < targetSpeed){
-			curSpeed = Mathf.Clamp(curSpeed + acceleration * Time.deltaTime, 0f, targetSpeed);
-		} else if(curSpeed > targetSpeed){
-			curSpeed = Mathf.Clamp(curSpeed - acceleration * Time.deltaTime, targetSpeed, maxSpeed);
+		rb.AddTorque(0f, 0f, 0f);
+
+		if(somethingInFront){
+			if(rb.velocity.magnitude > 0.2){
+				Debug.Log(rb.velocity.magnitude);
+				rb.AddForce(transform.forward * - acceleration);
+			} else {
+				rb.velocity = Vector3.zero;
+			}
 		}
-		if(distanceTraveled < distance){
-			transform.position += transform.forward * (curSpeed * Time.deltaTime);
-			distanceTraveled += curSpeed * Time.deltaTime;
-		} else {
-			Destroy(gameObject);
+		else if (rb.velocity.magnitude < maxSpeed){
+			rb.AddForce(transform.forward * acceleration);
 		}
-		/*
-		if(!isStopping){
-			if(curSpeed < speed)
-				curSpeed = Mathf.Clamp(curSpeed + acceleration * Time.deltaTime, 0f, speed);
-		} else {
-			if(curSpeed > 0)
-				curSpeed = Mathf.Clamp(curSpeed - acceleration * Time.deltaTime, 0f, speed);
-		}
-		
-		*/
 	}
 
 	void OnTriggerEnter(Collider other){
-		if(other.tag == "Player")
-			targetSpeed = 0f;
-		else if (other.tag == "Car" && !other.isTrigger){
-			targetSpeed = other.gameObject.GetComponent<Car>().curSpeed;
-		}
+		if(other.tag == "Player" || other.tag == "Car")
+			somethingInFront = true;
 	}
 
+
 	void OnTriggerExit(Collider other){
-		RaycastHit hit;
-		Ray ray = new Ray(transform.position, other.transform.position - transform.position);
-		if(Physics.Raycast(ray, out hit, 500f)){
-			if(hit.collider == other){
-//				Debug.Log("I'm outta here");
-				targetSpeed = maxSpeed;
-			} else {
-				Debug.Log(hit.collider);
-			}
-		} else {
-			Debug.Log("?");
-		}
+		if(other.tag == "Player")
+			somethingInFront = false;
 	}
 }

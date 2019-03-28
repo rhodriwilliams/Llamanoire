@@ -84,7 +84,7 @@ public class ObjectiveManager : MonoBehaviour {
 					ol.UpdateObj(GetBool(key), GetInt(key));
 				}
 				if(ol.objective == ""){
-					ol.UpdateObj(true, 0);
+					ol.UpdateObj(false, 0);
 				}
 			} else {
 				ol.UpdateObj(GetBool(ol.objective), GetInt(ol.objective));
