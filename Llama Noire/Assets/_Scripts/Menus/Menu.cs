@@ -11,6 +11,7 @@ public class Menu : MonoBehaviour {
 	public CinemachineVirtualCamera menuCam;
 	public CinemachineVirtualCamera optionsCam;
 	public CinemachineVirtualCamera creditsCam;
+	public GameObject openingCredits;
 	
 	public GameObject audioMenu;
 	public GameObject gameplayMenu;
@@ -25,6 +26,7 @@ public class Menu : MonoBehaviour {
 	public void Play(){
 		if(mainMenu){
 			hud.SetActive(true);
+			openingCredits.SetActive(false);
 			menuCam.Priority = 0;
 			armstrong.GetComponent<RhunCharacter>().ToggleCursor();
 			armstrong.GetComponentInChildren<Animator>().SetBool("InMenu", false);

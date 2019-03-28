@@ -1,0 +1,54 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9858b4990db6ccf419f6dda3bc4f300b, type: 3}
+  m_Name: GettingADrink
+  m_EditorClassIdentifier: 
+  nodes:
+  - image: {fileID: 0}
+    name: Floyd Armstrong
+    message: Hey, can I get two drinks please?
+    options: []
+    autoQuit: 0
+    autoTime: 3
+    autoNextIndex: 1
+    objective: 
+  - image: {fileID: 0}
+    name: Lucius
+    message: No problem sir, what would you like?
+    options: []
+    autoQuit: 0
+    autoTime: 3
+    autoNextIndex: 2
+    objective: 
+  - image: {fileID: 0}
+    name: Floyd Armstrong
+    message: House choice, please.
+    options: []
+    autoQuit: 0
+    autoTime: 2
+    autoNextIndex: 3
+    objective: 
+  - image: {fileID: 0}
+    name: Lucius
+    message: That'll be eight fifty.
+    options: []
+    autoQuit: 0
+    autoTime: 1
+    autoNextIndex: 4
+    objective: 
+  - image: {fileID: 0}
+    name: Floyd Armstrong
+    message: Cheers.
+    options: []
+    autoQuit: 1
+    autoTime: 1
+    autoNextIndex: 0
+    objective: GetDrink

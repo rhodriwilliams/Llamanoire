@@ -13,7 +13,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodes:
   - image: {fileID: 0}
-    name: Bartender
+    name: Lucius
     message: Hey, no customers behind the bar!
     options: []
     autoQuit: 1
