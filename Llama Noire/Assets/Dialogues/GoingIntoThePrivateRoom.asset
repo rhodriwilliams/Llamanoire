@@ -13,7 +13,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodes:
   - image: {fileID: 0}
-    name: Bartender
+    name: Bruno
     message: Hey! This is a private room, get out of here!
     options: []
     autoQuit: 1
