@@ -80,9 +80,12 @@ public class ObjectiveManager : MonoBehaviour {
 	void UpdateListeners(string key){
 		foreach (ObjectiveListener ol in listeners){
 			if(key != ""){
-			if (ol.objective == key){
-				ol.UpdateObj(GetBool(key), GetInt(key));
-			}
+				if (ol.objective == key){
+					ol.UpdateObj(GetBool(key), GetInt(key));
+				}
+				if(ol.objective == ""){
+					ol.UpdateObj(true, 0);
+				}
 			} else {
 				ol.UpdateObj(GetBool(ol.objective), GetInt(ol.objective));
 			}

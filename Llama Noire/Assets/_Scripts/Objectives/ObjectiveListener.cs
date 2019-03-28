@@ -11,7 +11,7 @@ public class ObjectiveListener : MonoBehaviour {
 		manager.listeners.Add(this);
 		UpdateObj(manager.GetBool(objective), manager.GetInt(objective));
 	}
-	public void UpdateObj(bool b, int i){
+	public virtual void UpdateObj(bool b, int i){
 		//Debug.Log("ye");
 		if(b || (i >= iTarget && iTarget > 0)){
 			CompleteObjective();
