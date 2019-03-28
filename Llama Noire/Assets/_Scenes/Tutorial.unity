@@ -7612,7 +7612,7 @@ MonoBehaviour:
   dialogueTree: {fileID: 11400000, guid: de81963377ce7d04b9d1c9678b720c87, type: 2}
   dialoguePrefab: {fileID: 1010091087610626, guid: 76b9cf7c027978e4b844473ed03c4163,
     type: 2}
-  dialoguePos: {x: 0, y: -200, z: 0}
+  dialoguePos: {x: 0, y: -540, z: 0}
   animationBools: []
   buttonTexts:
   - {fileID: 0}
@@ -21586,14 +21586,14 @@ Transform:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 961576774}
-  m_LocalRotation: {x: 0.45935747, y: -0.20456582, z: 0.15282214, w: -0.85075784}
-  m_LocalPosition: {x: -7.15, y: -19.22, z: -14.39}
+  m_LocalRotation: {x: 0.47184017, y: -0.18672086, z: 0.18615423, w: -0.8413375}
+  m_LocalPosition: {x: -7.1500635, y: -19.220219, z: -14.390307}
   m_LocalScale: {x: 2.8090556, y: 2.8090563, z: 2.809056}
   m_Children:
   - {fileID: 292362315}
   m_Father: {fileID: 337978610}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -45.979004, y: 44.661003, z: -40.137}
+  m_LocalEulerAnglesHint: {x: -46.422, y: 45.285004, z: -45.236004}
 --- !u!1 &963436924
 GameObject:
   m_ObjectHideFlags: 0
@@ -31960,7 +31960,7 @@ MonoBehaviour:
   dialogueTree: {fileID: 11400000, guid: 68ac993523ef7bb45bbedad4ce8da7aa, type: 2}
   dialoguePrefab: {fileID: 1010091087610626, guid: 76b9cf7c027978e4b844473ed03c4163,
     type: 2}
-  dialoguePos: {x: 0, y: -200, z: 0}
+  dialoguePos: {x: 0, y: -540, z: 0}
   animationBools:
   - StartDancing
   buttonTexts:

@@ -4035,7 +4035,7 @@ MonoBehaviour:
   dialogueTree: {fileID: 11400000, guid: cbf6ad5983d860544aced4222397994e, type: 2}
   dialoguePrefab: {fileID: 1010091087610626, guid: 76b9cf7c027978e4b844473ed03c4163,
     type: 2}
-  dialoguePos: {x: 0, y: -200, z: 0}
+  dialoguePos: {x: 0, y: -540, z: 0}
   animationBools: []
   buttonTexts:
   - {fileID: 0}
@@ -19612,7 +19612,7 @@ MonoBehaviour:
   dialogueTree: {fileID: 11400000, guid: 78e15b7cfad0d5d4cb157f944403cdb0, type: 2}
   dialoguePrefab: {fileID: 1010091087610626, guid: 76b9cf7c027978e4b844473ed03c4163,
     type: 2}
-  dialoguePos: {x: 0, y: -200, z: 0}
+  dialoguePos: {x: 0, y: -540, z: 0}
   animationBools: []
   buttonTexts:
   - {fileID: 0}
@@ -24813,7 +24813,7 @@ MonoBehaviour:
   dialogueTree: {fileID: 11400000, guid: 48a1179a15131ff40a355f517862e4c0, type: 2}
   dialoguePrefab: {fileID: 1010091087610626, guid: 76b9cf7c027978e4b844473ed03c4163,
     type: 2}
-  dialoguePos: {x: 0, y: -200, z: 0}
+  dialoguePos: {x: 0, y: -540, z: 0}
   animationBools: []
   buttonTexts:
   - {fileID: 0}
