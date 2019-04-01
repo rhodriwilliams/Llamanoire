@@ -10,7 +10,7 @@ public class TalkativeNPC : Interactable{
 		dialogue = gameObject.GetComponent<Dialogue>();
 	}
 	public override void Interact(){
-		if(!beingInteracted){
+		if(!beingInteracted && !player.GetComponent<RhunCharacter>().busy){
 			dialogue.StartDialogue();
 			player.GetComponent<RhunCharacter>().ToggleCursor();
 			toolTip.ClearTip();

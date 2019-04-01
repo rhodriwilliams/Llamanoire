@@ -29,6 +29,15 @@ public class ObjectiveManager : MonoBehaviour {
 			currentObjectives.Add(Instantiate(objectives[i]));
 		}
 	}
+
+	public bool IsHidden(string key){
+		foreach(Objective o in currentObjectives){
+			if(o.objectiveName == key){
+				return o.isHidden;
+			}
+		}
+		return false;
+	}
 	public bool GetBool(string key){
 		foreach(Objective o in currentObjectives){
 			if(o.objectiveName == key){

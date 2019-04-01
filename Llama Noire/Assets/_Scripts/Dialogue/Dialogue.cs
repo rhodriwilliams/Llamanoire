@@ -109,7 +109,7 @@ public class Dialogue : MonoBehaviour {
 			buttonTexts[i].transform.parent.gameObject.SetActive(false);
 		}
 		if (node.autoTime > 0f){
-			IEnumerator coroutine = CanSkip(node.autoTime, node.options);
+			IEnumerator coroutine = CanSkip(2f, node.options);
 			StartCoroutine(coroutine);
 		}
 		currentNode = nodeIndex;

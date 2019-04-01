@@ -49,16 +49,21 @@ public class SceneChanger : MonoBehaviour {
 			player.GetComponentInChildren<Animator>().SetBool("InMenu", false);
 		}
 		if(scene.name == "InteriorSpeakeasyWhitebox"){
-			objectiveManager.SetHidden("GetUpstairs", false);
+			//objectiveManager.SetHidden("GetUpstairs", false);
+			objectiveManager.SetHidden("SpeakToPatsy", false);
+			objectiveManager.SetHidden("GetDrink", false);
 			objectiveManager.SetBool("GetInSpeakeasy", true);
 		} else if(scene.name == "Tutorial"){
-			objectiveManager.SetBool("Sleep", true);
+			//objectiveManager.SetBool("Sleep", true);
 			//tutScript.enabled = true;
 		} else if (scene.name == "Apartment"){
-			if(objectiveManager.GetBool("Sleep")){
-				objectiveManager.SetHidden("GetInSpeakeasy", false);
-				objectiveManager.SetHidden("FindPacone", false);
-			}
+			//if(objectiveManager.GetBool("Sleep")){
+			objectiveManager.SetHidden("InvestigateScene", true);
+			objectiveManager.SetHidden("FindWeapon", true);
+			objectiveManager.SetBool("FindWayOut", true);
+			objectiveManager.SetHidden("GetInSpeakeasy", false);
+			//objectiveManager.SetHidden("FindPacone", false);
+			//}
 		}
 	}
 }
