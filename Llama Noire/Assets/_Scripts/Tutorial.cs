@@ -13,14 +13,20 @@ public class Tutorial : MonoBehaviour {
 	protected int tutorialState = 0;
 	[SerializeField]
 	protected Text helperText;
+	protected ObjectiveManager manager;
 	void Start(){
+		/*
 		helperText = GameObject.Find("HelperText").GetComponent<Text>();
 		player = GameObject.FindGameObjectWithTag("Player");
 		tutorialCam = GameObject.Find("TutorialCam").GetComponent<CinemachineVirtualCamera>();
 		creditCanvas = GameObject.Find("Title");
+	
 		Invoke("BeginHelp", 5f);
+		*/
+			manager = GameObject.FindGameObjectWithTag("Manager").GetComponent<ObjectiveManager>();
 	}
 	void Update () {
+		/*
 		switch(tutorialState){
 		case 0:
 			if(Input.anyKeyDown){
@@ -43,6 +49,11 @@ public class Tutorial : MonoBehaviour {
 			break;
 		default:
 			break;
+		}*/
+		if(manager.IsHidden("FindWayOut")){
+			if(manager.GetBool("InvestigateScene") && manager.GetBool("FindWeapon")){
+				manager.SetHidden("FindWayOut", false);
+			}
 		}
 	}
 	void BeginHelp(){

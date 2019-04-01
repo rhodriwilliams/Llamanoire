@@ -16,7 +16,7 @@ public class ConvinceHarold : ObjectiveListener {
 			dialogue.Interact();
 			if(isFrank){
 				manager.SetBool("FindPacone", true);
-				manager.SetBool("GetUpstairs", true);
+				//manager.SetBool("GetUpstairs", true);
 			}
 		}
 	}

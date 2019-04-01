@@ -105,7 +105,7 @@ public class Patsy : MonoBehaviour {
 	}
 
 	public IEnumerator WaitForBackup(){
-		Debug.Log("Do the art stuff");
+		//Debug.Log("Do the art stuff");
 		GetComponentInChildren<SkinnedMeshRenderer>().enabled = false;
 		yield return new WaitForSeconds(5f);
 		GetComponentInChildren<SkinnedMeshRenderer>().enabled = true;
