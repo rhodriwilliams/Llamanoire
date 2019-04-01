@@ -12892,6 +12892,94 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3.3803465, y: 2.7026927, z: 2.1129355}
   m_Center: {x: -0.012666819, y: 1.3578995, z: 0.06606202}
+--- !u!1001 &362502742
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4490676596613134, guid: f99d76f40835973499b2921603353c0f, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0.37465805
+      objectReference: {fileID: 0}
+    - target: {fileID: 4490676596613134, guid: f99d76f40835973499b2921603353c0f, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 1.8544
+      objectReference: {fileID: 0}
+    - target: {fileID: 4490676596613134, guid: f99d76f40835973499b2921603353c0f, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -39.911167
+      objectReference: {fileID: 0}
+    - target: {fileID: 4490676596613134, guid: f99d76f40835973499b2921603353c0f, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4490676596613134, guid: f99d76f40835973499b2921603353c0f, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0.9972279
+      objectReference: {fileID: 0}
+    - target: {fileID: 4490676596613134, guid: f99d76f40835973499b2921603353c0f, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4490676596613134, guid: f99d76f40835973499b2921603353c0f, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0.07440754
+      objectReference: {fileID: 0}
+    - target: {fileID: 4490676596613134, guid: f99d76f40835973499b2921603353c0f, type: 2}
+      propertyPath: m_RootOrder
+      value: 152
+      objectReference: {fileID: 0}
+    - target: {fileID: 4490676596613134, guid: f99d76f40835973499b2921603353c0f, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 1.0697527
+      objectReference: {fileID: 0}
+    - target: {fileID: 4490676596613134, guid: f99d76f40835973499b2921603353c0f, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 1.0633712
+      objectReference: {fileID: 0}
+    - target: {fileID: 23849326292893434, guid: f99d76f40835973499b2921603353c0f,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 02d1517f191bd8c46a062df33b4ae046, type: 2}
+    - target: {fileID: 1024179707678192, guid: f99d76f40835973499b2921603353c0f, type: 2}
+      propertyPath: m_Name
+      value: Door (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4490676596613134, guid: f99d76f40835973499b2921603353c0f, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 171.466
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 114857650624515996, guid: f99d76f40835973499b2921603353c0f, type: 2}
+    - {fileID: 114424264139731846, guid: f99d76f40835973499b2921603353c0f, type: 2}
+  m_SourcePrefab: {fileID: 100100000, guid: f99d76f40835973499b2921603353c0f, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!1 &362502743 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1741666404871966, guid: f99d76f40835973499b2921603353c0f,
+    type: 2}
+  m_PrefabInternal: {fileID: 362502742}
+--- !u!114 &362502744
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 362502743}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f40fe98ccd5ece4aba9fe32d0709609, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  requireHover: 1
+  objectName: Finish Tutorial
+  beingInteracted: 0
+  isLocked: 0
+  isOpen: 0
+  nextScene: InteriorSpeakeasyWhitebox
+  entrance: 
 --- !u!1 &362723868
 GameObject:
   m_ObjectHideFlags: 0

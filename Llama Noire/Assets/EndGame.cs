@@ -28,6 +28,7 @@ public class EndGame : ObjectiveListener {
 		}
 	}
 	protected override void CompleteObjective(){
+		GameObject.FindGameObjectWithTag("Player").GetComponent<RhunCharacter>().ToggleCursor();
 		endSplash.SetActive(true);
 		splashText.text = endTexts[ending];
 	}

@@ -39,7 +39,7 @@ public class Patsy : MonoBehaviour {
 	}
 	
 	void Update () {
-		Debug.Log((transform.position - agent.destination).magnitude);
+		//Debug.Log((transform.position - agent.destination).magnitude);
 		switch(currentMode){
 		case PatsyMode.BackStage:
 			//if song is over, go to stage
