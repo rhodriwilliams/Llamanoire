@@ -160,7 +160,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1024179707678192, guid: f99d76f40835973499b2921603353c0f, type: 2}
       propertyPath: m_Name
-      value: Door (3)
+      value: TELEPORTDOOR
       objectReference: {fileID: 0}
     - target: {fileID: 4490676596613134, guid: f99d76f40835973499b2921603353c0f, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -272,6 +272,10 @@ Prefab:
     - target: {fileID: 4647245461354024, guid: f99d76f40835973499b2921603353c0f, type: 2}
       propertyPath: m_LocalPosition.z
       value: -0.091
+      objectReference: {fileID: 0}
+    - target: {fileID: 1024179707678192, guid: f99d76f40835973499b2921603353c0f, type: 2}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114424264139731846, guid: f99d76f40835973499b2921603353c0f, type: 2}
@@ -21938,10 +21942,10 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: '
 
+    Jamie Vickers
 
-    Francesca Rice
 
-    as Patsy McKenzie'
+    Arlen Barrett'
 --- !u!222 &582328058
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -23293,12 +23297,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: '
-
-
-    Das Gnome Presents
-
-'
+  m_Text: "\n\nA Das Gnome \nProduction\n"
 --- !u!222 &623372863
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -24978,7 +24977,13 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "\n\nTom Gerbicz \nas Floyd Armstrong"
+  m_Text: '
+
+
+    Rhun Jones
+
+
+    Rhodri Williams'
 --- !u!222 &662245574
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -57997,7 +58002,7 @@ MonoBehaviour:
   m_Text: '
 
 
-    in'
+    Present'
 --- !u!222 &1553157787
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -77140,7 +77145,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: 9d9b60e5990b6c74fa84745f9fd85834, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.1896565
+      value: 3.77
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9d9b60e5990b6c74fa84745f9fd85834, type: 3}
       propertyPath: m_LocalPosition.y
@@ -77148,7 +77153,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9d9b60e5990b6c74fa84745f9fd85834, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -32.201946
+      value: -31
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9d9b60e5990b6c74fa84745f9fd85834, type: 3}
       propertyPath: m_LocalRotation.x
@@ -78949,9 +78954,7 @@ MonoBehaviour:
 
     and
 
-    Stephen Ogbeiwi
-
-    as Al Pacone'
+    Callum Tai'
 --- !u!222 &2063137470
 CanvasRenderer:
   m_ObjectHideFlags: 0
