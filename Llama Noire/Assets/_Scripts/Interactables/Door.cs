@@ -1,14 +1,17 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+[RequireComponent (typeof(AudioSource))]
 public class Door : Interactable {
 	public bool isLocked;
 	public bool isOpen;
 	protected Animation anim;
 	protected bool AIUsing = false;
+	protected AudioSource source;
 
 	void Start(){
 		anim = transform.parent.GetComponent<Animation>();
+		source = GetComponent<AudioSource>();
 	}
 	public override void Interact(){
 		if(!anim.isPlaying){
@@ -40,6 +43,7 @@ public class Door : Interactable {
 		}
 	}
 	public virtual void Open(){
+		source.Play();
 		isOpen = true;
 		anim.clip = anim.GetClip("Open");
 		anim.Play();

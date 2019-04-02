@@ -55,7 +55,7 @@ public class Patsy : MonoBehaviour {
 			break;
 		case PatsyMode.ToStage:
 			//if at stage, switch to onstage
-			if((transform.position - agent.destination).magnitude < 0.1){
+			if((transform.position - agent.destination).magnitude < 0.1f){
 				anim.SetBool("IsDancing", true);
 				music.StartSinging();
 				currentMode = PatsyMode.OnStage;
@@ -73,21 +73,21 @@ public class Patsy : MonoBehaviour {
 			break;
 		case PatsyMode.OffStage:
 			//if backstage, switch to backstage
-			if((transform.position - agent.destination).magnitude < 0.1){
+			if((transform.position - agent.destination).magnitude < 0.1f){
 				GetComponent<SphereCollider>().enabled = true;
 				anim.SetBool("IsWalking", false);
 				currentMode = PatsyMode.BackStage;
 			}
 			break;
 		case PatsyMode.GoingBackup:
-			if((transform.position - agent.destination).magnitude < 0.1){
+			if((transform.position - agent.destination).magnitude < 0.1f){
 				StartCoroutine("WaitForBackup");
 				anim.SetBool("IsWalking", false);
 				currentMode = PatsyMode.None;
 			}
 			break;
 		case PatsyMode.GoingUpstairs:
-			if((transform.position - agent.destination).magnitude < 0.1){
+			if((transform.position - agent.destination).magnitude < 1f){
 				currentMode = PatsyMode.None;
 				anim.SetBool("IsWalking", false);
 				GameObject.FindGameObjectWithTag("Manager").GetComponent<ObjectiveManager>().SetBool("PatsyUpstairs", true);
