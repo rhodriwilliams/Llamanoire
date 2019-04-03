@@ -14,7 +14,8 @@ public class Music : MonoBehaviour {
 			isSinging = value;
 		}
 	}
-	public AudioClip oldClip;
+	public AudioClip[] clipsToUse;
+	protected AudioClip oldClip;
 	public AudioClip newClip;
 	protected bool inside;
 
@@ -28,7 +29,8 @@ public class Music : MonoBehaviour {
 		isSinging = false;
 		SceneManager.sceneLoaded += OnSceneLoaded;
 		source = GetComponent<AudioSource>();
-		
+		oldClip = clipsToUse[Random.Range(0, clipsToUse.Length)];
+		source.clip = oldClip;
 	}
 
 	public void OnSceneLoaded(Scene scene, LoadSceneMode mode){
