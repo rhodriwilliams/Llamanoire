@@ -72,6 +72,11 @@ public class Music : MonoBehaviour {
 
 			}
 		}
+
+		IsWalking
+		IsDancing
+		OpenDoor
+		
 		*/
 	}
 
@@ -79,6 +84,7 @@ public class Music : MonoBehaviour {
 		isSinging = !isSinging;
 		if(!isSinging){
 			source.clip = oldClip;
+			source.loop = true;
 			source.volume = 0.25f;
 			source.time = 0.0f;
 			source.Play();

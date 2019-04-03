@@ -22286,8 +22286,8 @@ Animator:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 888398186}
   m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: d0f3c8f4720cdf1498a432286ce4702d, type: 3}
-  m_Controller: {fileID: 9100000, guid: 8207036838f59e945b0a49e0f0e5614e, type: 2}
+  m_Avatar: {fileID: 9000000, guid: 3e482b15a78619f40b5a8265d23401bb, type: 3}
+  m_Controller: {fileID: 9100000, guid: 8ae2216c014b12e4a8ad7e0d3ded8256, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
@@ -26466,7 +26466,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ddee9e40fd5b7974da6b7318d063c542, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  requireHover: 1
+  requireHover: 0
   objectName: Dance
   beingInteracted: 0
 --- !u!4 &1077028424
