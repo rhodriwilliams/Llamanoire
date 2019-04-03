@@ -1942,16 +1942,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   clipsToUse:
-  - {fileID: 8300000, guid: b6eb83c3b1aaa704e9541e2e21fb2462, type: 3}
-  - {fileID: 8300000, guid: 70112d9727e68434a8d8adbedd04b7fb, type: 3}
-  - {fileID: 8300000, guid: 15ffdc4973be9af49935baa66c29ac40, type: 3}
-  - {fileID: 8300000, guid: fdb0d8f937dff79458eacfd466f8cf86, type: 3}
   - {fileID: 8300000, guid: 3911f8b03b125f148ad33b05c53bad5d, type: 3}
   - {fileID: 8300000, guid: 55fafba35b61e5644af46f8f5953c07e, type: 3}
   - {fileID: 8300000, guid: 8ca8825673574a946a37692c1626cc44, type: 3}
   - {fileID: 8300000, guid: 9cef81d65362ee740ab01468d7fa5356, type: 3}
   - {fileID: 8300000, guid: c9f44fd86beb31a4cb868123fa0274d1, type: 3}
-  newClip: {fileID: 0}
+  newClip: {fileID: 8300000, guid: e27fd6b6071590144b6178e27920ce54, type: 3}
 --- !u!169 &2034126664
 AudioLowPassFilter:
   m_ObjectHideFlags: 0

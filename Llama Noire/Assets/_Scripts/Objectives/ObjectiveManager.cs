@@ -103,14 +103,18 @@ public class ObjectiveManager : MonoBehaviour {
 	}
 
 	public string PrintObjectives(){
-		string print = "Objectives: " + "\n";
+		string print = "";
 		foreach(Objective o in currentObjectives){
 			if(!o.bCompleted && !o.isHidden){
 				print += o.objectiveMessage + "\n";
 
 			}
 		}
-		return print;
+		if(print != ""){
+			print = "Objectives: " + "\n" + print;
+			return print;
+		}
+		return "";
 	}
 
 	public void OnDestroy(){

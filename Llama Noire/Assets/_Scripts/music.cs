@@ -104,6 +104,7 @@ public class Music : MonoBehaviour {
 		//Debug.Log("Got it");
 		source.clip = newClip;
 		source.volume = 0.25f;
+		source.spatialBlend = 0.8f;
 		source.time = 0.0f;
 		source.Play();
 		float timeLeft = source.clip.length - source.time;

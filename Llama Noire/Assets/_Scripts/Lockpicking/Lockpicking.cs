@@ -23,8 +23,17 @@ public class Lockpicking : MonoBehaviour {
 	[SerializeField]
 	protected float innerRadius;
 	protected float turned;
+	protected AudioSource source;
+
+	[SerializeField]
+	protected AudioClip lockStartSound;
+	[SerializeField]
+	protected AudioClip lockLoop;
+	[SerializeField]
+	protected AudioClip lockWinSound;
 
 	public void Setup(int numToSpawn){
+		source = GetComponent<AudioSource>();
 		//instantiate pick object
 		pick = Instantiate(pickPrefab, transform.position, Quaternion.identity);
 		pick.GetComponent<Pick>().LpScript= this;
@@ -49,6 +58,11 @@ public class Lockpicking : MonoBehaviour {
 		}
 	}
 	void Update () {
+		if(!source.isPlaying){
+			StartLoop();
+		} else if(source.clip == lockLoop){
+			source.volume = Mathf.Abs(Input.GetAxis("Horizontal"));
+		}
 		//rotate with horizontal input axis
 		if(turned - Input.GetAxis("Horizontal") > 0){
 			transform.Rotate(0f, 0f, -Input.GetAxis("Horizontal"));
@@ -56,6 +70,9 @@ public class Lockpicking : MonoBehaviour {
 		}
 		if(turned >= 360f){
 			//end minigame after full rotation
+			source.clip = lockWinSound;
+			source.loop = false;
+			source.Play();
 			lockScript.LockpickingComplete(true);
 			Destroy(pick);
 			Destroy(gameObject);
@@ -66,5 +83,10 @@ public class Lockpicking : MonoBehaviour {
 		lockScript.LockpickingComplete(false);
 		Destroy(pick);
 		Destroy(gameObject);
+	}
+	void StartLoop(){
+		source.clip = lockLoop;
+		source.loop = true;
+		source.Play();
 	}
 }
