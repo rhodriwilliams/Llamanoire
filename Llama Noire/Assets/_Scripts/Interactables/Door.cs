@@ -8,7 +8,7 @@ public class Door : Interactable {
 	protected Animation anim;
 	protected bool AIUsing = false;
 	protected AudioSource source;
-
+	public bool isPatsyDoor = false;
 	void Start(){
 		anim = transform.parent.GetComponent<Animation>();
 		source = GetComponent<AudioSource>();
@@ -17,6 +17,7 @@ public class Door : Interactable {
 		if(!anim.isPlaying){
 			if(!isOpen){
 				if(!isLocked){
+					
 					Open();
 				} else {
 					GetComponentInChildren<Lock>().Interact();
@@ -43,6 +44,12 @@ public class Door : Interactable {
 		}
 	}
 	public virtual void Open(){
+		if(isPatsyDoor){
+			ObjectiveManager man = GameObject.FindGameObjectWithTag("Manager").GetComponent<ObjectiveManager>();
+			man.SetHidden("GetDrink", true);
+			man.SetHidden("SpeakToPatsy", true);
+			man.SetHidden("FindPacone", false);
+		}
 		source.Play();
 		isOpen = true;
 		anim.clip = anim.GetClip("Open");

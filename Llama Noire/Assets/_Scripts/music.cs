@@ -14,7 +14,8 @@ public class Music : MonoBehaviour {
 			isSinging = value;
 		}
 	}
-	public AudioClip oldClip;
+	public AudioClip[] clipsToUse;
+	protected AudioClip oldClip;
 	public AudioClip newClip;
 	protected bool inside;
 
@@ -28,7 +29,8 @@ public class Music : MonoBehaviour {
 		isSinging = false;
 		SceneManager.sceneLoaded += OnSceneLoaded;
 		source = GetComponent<AudioSource>();
-		
+		oldClip = clipsToUse[Random.Range(0, clipsToUse.Length)];
+		source.clip = oldClip;
 	}
 
 	public void OnSceneLoaded(Scene scene, LoadSceneMode mode){
@@ -70,6 +72,11 @@ public class Music : MonoBehaviour {
 
 			}
 		}
+
+		IsWalking
+		IsDancing
+		OpenDoor
+		
 		*/
 	}
 
@@ -77,6 +84,7 @@ public class Music : MonoBehaviour {
 		isSinging = !isSinging;
 		if(!isSinging){
 			source.clip = oldClip;
+			source.loop = true;
 			source.volume = 0.25f;
 			source.time = 0.0f;
 			source.Play();
@@ -102,6 +110,7 @@ public class Music : MonoBehaviour {
 		//Debug.Log("Got it");
 		source.clip = newClip;
 		source.volume = 0.25f;
+		source.spatialBlend = 0.8f;
 		source.time = 0.0f;
 		source.Play();
 		float timeLeft = source.clip.length - source.time;
