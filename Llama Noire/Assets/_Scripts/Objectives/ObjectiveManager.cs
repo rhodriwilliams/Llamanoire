@@ -77,6 +77,16 @@ public class ObjectiveManager : MonoBehaviour {
 		}
 	}
 
+	public void IncrementInt(string key){
+		foreach(Objective o in currentObjectives){
+			if(o.objectiveName == key){
+				o.iCompleted++;
+				UpdateListeners(key);
+				return;
+			}
+		}
+	}
+
 	public void SetHidden(string key, bool hidden){
 		foreach(Objective o in currentObjectives){
 			if(o.objectiveName == key){
