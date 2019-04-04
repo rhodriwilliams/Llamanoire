@@ -129,7 +129,7 @@ public class ObjectiveManager : MonoBehaviour {
 
 	public void OnDestroy(){
 		if(testing){
-			//put all objectives + completed state into one array of strings, formatted as "objective name: completed/incomplete"
+			//put all objectives + completed state into one array of strings, formatted as "objective name: TRUE/FALSE"
 			//print that string into a file in the build folder titled "test time/date.txt"
 			//yummy quantifiable data
 			//quantifiabalism

@@ -158,10 +158,7 @@ public class Dialogue : MonoBehaviour {
 	}
 
 	public void Animation(DialogueOption o){
-		//if(!animator.GetBool(animationBools[o.difficulty])){
-		//	Debug.Log("Yeah boi");
-		//	animator.SetBool(animationBools[o.difficulty], true);
-		//}
+
 		animator.SetTrigger(animationBools[o.difficulty]);
 		DisplayNode(o.nextNode);
 	}

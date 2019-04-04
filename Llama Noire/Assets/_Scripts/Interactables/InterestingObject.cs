@@ -22,7 +22,9 @@ public class InterestingObject : Interactable {
 	public string flavourText;
 	public bool pickup;
 	protected bool hasInspected;
+	protected float colliderSize;
 	void Start(){
+		colliderSize = GetComponent<SphereCollider>().radius;
 		initialRotation = transform.rotation;
 
 		initialLocation = transform.position;
@@ -50,6 +52,7 @@ public class InterestingObject : Interactable {
 	public override void Interact(){
 		if(!beingInteracted){
 			if(isHovering){
+				GetComponent<SphereCollider>().radius = colliderSize * 10f;
 				if(flavourText != ""){
 					GameObject.Find("FlavourText").GetComponent<Text>().text = flavourText;
 				}
@@ -70,6 +73,7 @@ public class InterestingObject : Interactable {
 				targetLocation = inspectTransform.position;
 			} 
 		}else {
+			GetComponent<SphereCollider>().radius = colliderSize;
 			if(flavourText != ""){
 				GameObject.Find("FlavourText").GetComponent<Text>().text = "";
 			}
