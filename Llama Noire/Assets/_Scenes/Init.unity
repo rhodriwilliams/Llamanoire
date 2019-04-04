@@ -713,7 +713,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: bc8202bf22f7280428e9191b0eb915a6, type: 2}
   - {fileID: 11400000, guid: 1f6db25b0096be347841812b2affff74, type: 2}
   - {fileID: 11400000, guid: 662556785d6d3ed45895b0ced1926c80, type: 2}
-  testing: 0
+  testing: 1
 --- !u!114 &720740962
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1067,7 +1067,7 @@ MonoBehaviour:
   text: {fileID: 1295462167}
   cluesText: {fileID: 0}
   manager: {fileID: 720740961}
-  maxClues: 0
+  maxClues: 12
 --- !u!114 &1295462167
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2095,7 +2095,6 @@ GameObject:
   - component: {fileID: 2057841177}
   - component: {fileID: 2057841180}
   - component: {fileID: 2057841179}
-  - component: {fileID: 2057841178}
   m_Layer: 5
   m_Name: Clues
   m_TagString: Untagged
@@ -2122,21 +2121,6 @@ RectTransform:
   m_AnchoredPosition: {x: -313, y: -88}
   m_SizeDelta: {x: 69.9, y: 44.7}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &2057841178
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2057841176}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: de1b5426f9c0a7644b15b4226261285a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  text: {fileID: 2057841179}
-  cluesText: {fileID: 0}
-  manager: {fileID: 720740961}
-  maxClues: 0
 --- !u!114 &2057841179
 MonoBehaviour:
   m_ObjectHideFlags: 0

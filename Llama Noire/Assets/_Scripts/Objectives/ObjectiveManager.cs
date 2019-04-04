@@ -135,8 +135,13 @@ public class ObjectiveManager : MonoBehaviour {
 			//quantifiabalism
 			string[] objectiveStrings = new string[objectives.Count];
 			for(int i = 0; i < objectives.Count; i++){
-				objectiveStrings[i] = objectives[i].name + ": " + currentObjectives[i].bCompleted.ToString();
+				if(objectives[i].name != "Clues"){
+					objectiveStrings[i] = objectives[i].name + ": " + currentObjectives[i].bCompleted.ToString();
+				} else {
+					objectiveStrings[i] = "Clues found: " + currentObjectives[i].iCompleted.ToString();
+				}
 			}
+
 			string newOutputPath = outputPath + "\\" + DateTime.Now.ToString("yyyyMMddHHmm") + ".txt";
 			System.IO.File.WriteAllLines(newOutputPath, objectiveStrings);
 		}

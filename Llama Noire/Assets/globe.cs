@@ -5,6 +5,6 @@ using UnityEngine;
 public class globe : Interactable {
 
 	public override void Interact(){
-		GetComponent<Rigidbody>().AddTorque(0f, 1000f, 0f);
+		GetComponent<Rigidbody>().AddRelativeTorque(0f, 1000f, 0f);
 	}
 }
