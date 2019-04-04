@@ -21,6 +21,7 @@ public class InterestingObject : Interactable {
 	[TextArea]
 	public string flavourText;
 	public bool pickup;
+	protected bool hasInspected;
 	void Start(){
 		initialRotation = transform.rotation;
 
@@ -51,6 +52,10 @@ public class InterestingObject : Interactable {
 			if(isHovering){
 				if(flavourText != ""){
 					GameObject.Find("FlavourText").GetComponent<Text>().text = flavourText;
+				}
+				if(!hasInspected){
+					hasInspected = true;
+					GameObject.FindGameObjectWithTag("Manager").GetComponent<ObjectiveManager>().IncrementInt("Clues");
 				}
 				beingInteracted = true;
 				toolTip.ClearTip();

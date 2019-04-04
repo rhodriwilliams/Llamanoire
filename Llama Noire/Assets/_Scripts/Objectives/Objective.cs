@@ -9,6 +9,7 @@ public class Objective : ScriptableObject {
 	public bool isHidden;
 	public bool bCompleted;
 	public int iCompleted;
+	public int iToComplete;
 	/*
 	public Objective(string name, bool complete){
 		objectiveName = name;
