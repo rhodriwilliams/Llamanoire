@@ -7,6 +7,6 @@ public class DialogueSwitcher : ObjectiveListener {
 	public ScriptableDialogueTree newTree;
 	protected override void CompleteObjective(){
 		GetComponent<Dialogue>().SwitchDialogue(newTree);
-		Debug.Log("I agree");
+		//Debug.Log("I agree");
 	}
 }

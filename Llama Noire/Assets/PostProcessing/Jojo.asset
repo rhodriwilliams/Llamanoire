@@ -71,19 +71,19 @@ MonoBehaviour:
   depthOfField:
     m_Enabled: 1
     m_Settings:
-      focusDistance: 10
-      aperture: 5.6
-      focalLength: 50
+      focusDistance: 3.08
+      aperture: 5.1
+      focalLength: 62
       useCameraFov: 0
-      kernelSize: 1
+      kernelSize: 0
   motionBlur:
-    m_Enabled: 0
+    m_Enabled: 1
     m_Settings:
-      shutterAngle: 270
+      shutterAngle: 247
       sampleCount: 10
       frameBlending: 0
   eyeAdaptation:
-    m_Enabled: 1
+    m_Enabled: 0
     m_Settings:
       lowPercent: 45
       highPercent: 95
@@ -100,16 +100,16 @@ MonoBehaviour:
     m_Enabled: 1
     m_Settings:
       bloom:
-        intensity: 0.57
+        intensity: 0.91
         threshold: 0.9
         softKnee: 1
-        radius: 2.35
+        radius: 1.78
         antiFlicker: 1
       lensDirt:
         texture: {fileID: 0}
         intensity: 3
   colorGrading:
-    m_Enabled: 1
+    m_Enabled: 0
     m_Settings:
       tonemapping:
         tonemapper: 2
@@ -127,10 +127,10 @@ MonoBehaviour:
         saturation: 2
         contrast: 1.036
       channelMixer:
-        red: {x: 0, y: 1, z: 0}
-        green: {x: 0, y: 0, z: 1}
-        blue: {x: 1, y: 0, z: 0}
-        currentEditingChannel: 0
+        red: {x: 0, y: 0.08, z: 0}
+        green: {x: 0, y: 0, z: 0.18}
+        blue: {x: 0.12, y: 0, z: 0}
+        currentEditingChannel: 2
       colorWheels:
         mode: 1
         log:
@@ -305,10 +305,10 @@ MonoBehaviour:
       lut: {fileID: 0}
       contribution: 1
   chromaticAberration:
-    m_Enabled: 0
+    m_Enabled: 1
     m_Settings:
       spectralTexture: {fileID: 0}
-      intensity: 0.1
+      intensity: 0.411
   grain:
     m_Enabled: 0
     m_Settings:
@@ -322,7 +322,7 @@ MonoBehaviour:
       mode: 0
       color: {r: 0, g: 0, b: 0, a: 1}
       center: {x: 0.5, y: 0.5}
-      intensity: 0.45
+      intensity: 0.437
       smoothness: 0.2
       roundness: 1
       mask: {fileID: 0}

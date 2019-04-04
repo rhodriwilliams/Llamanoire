@@ -12,8 +12,9 @@ public class Interactable : MonoBehaviour {
 	public bool beingInteracted = false;
 	protected GameObject player;
 	protected Transform mainCamera;
-
+	protected int playerLayer;
 	void Awake(){
+		playerLayer = 1 << 10;
 		player = GameObject.FindGameObjectWithTag("Player");
 		mainCamera = GameObject.FindGameObjectWithTag("MainCamera").transform;
 		toolTip = GameObject.FindGameObjectWithTag("ToolTip").GetComponent<ToolTip>();
@@ -51,7 +52,7 @@ public class Interactable : MonoBehaviour {
 
 	protected bool CameraIsPointingAt(){
 		RaycastHit hit;
-		if(Physics.Raycast(mainCamera.position, mainCamera.forward, out hit, 100f)){
+		if(Physics.Raycast(mainCamera.position, mainCamera.forward, out hit, 100f, ~playerLayer)){
 			return (hit.collider.gameObject == gameObject);
 		} else {
 			return false;

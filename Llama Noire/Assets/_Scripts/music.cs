@@ -49,7 +49,7 @@ public class Music : MonoBehaviour {
 			GetComponent<AudioLowPassFilter>().enabled = false;
 			source.spatialBlend = 0f;
 			source.loop = false;
-			source.volume = 0.4f;
+			//source.volume = 0.4f;
 			
 			float timeLeft = source.clip.length - source.time;
 			Invoke("NewSong", timeLeft);
@@ -58,7 +58,7 @@ public class Music : MonoBehaviour {
 			GetComponent<AudioLowPassFilter>().enabled = true;
 			source.spatialBlend = 0.887f;
 			source.loop  = true;
-			source.volume = 0.538f;
+			//source.volume = 0.538f;
 			CancelInvoke();
 		}
 	}
@@ -85,7 +85,7 @@ public class Music : MonoBehaviour {
 		if(!isSinging){
 			source.clip = oldClip;
 			source.loop = true;
-			source.volume = 0.25f;
+			//source.volume = 0.25f;
 			source.time = 0.0f;
 			source.Play();
 		} else {
@@ -109,7 +109,7 @@ public class Music : MonoBehaviour {
 		}
 		//Debug.Log("Got it");
 		source.clip = newClip;
-		source.volume = 0.25f;
+		//source.volume = 0.25f;
 		source.spatialBlend = 0.8f;
 		source.time = 0.0f;
 		source.Play();
