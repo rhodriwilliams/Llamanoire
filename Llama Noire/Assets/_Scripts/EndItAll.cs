@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EndItAll : Interactable {
+public class EndItAll : MonoBehaviour {
 
 	
 	void Start () {
-		GetComponent<Rigidbody>().AddForce(0f,1000f,-10000f);
+		GetComponent<Rigidbody>().AddRelativeForce(0f,4750f,-9750f);
 	}
 	
 	
