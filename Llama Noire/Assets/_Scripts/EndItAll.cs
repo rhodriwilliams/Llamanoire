@@ -5,9 +5,7 @@ using UnityEngine;
 public class EndItAll : MonoBehaviour {
 
 	
-	void Start () {
+	void OnEnable () {
 		GetComponent<Rigidbody>().AddRelativeForce(0f,4750f,-9750f);
 	}
-	
-	
 }

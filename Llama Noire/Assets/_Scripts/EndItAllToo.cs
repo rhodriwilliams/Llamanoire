@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class EndItAllToo : MonoBehaviour 
 {
-void Start () 
-{
+	void Start () 
+	{
 		GetComponent<Rigidbody>().AddRelativeForce(0f,75f,-750f);
 	}
 }

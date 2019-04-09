@@ -6,17 +6,22 @@ public class EndGame : ObjectiveListener {
 
 	[SerializeField]
 	protected string[] objectives;
+	protected int ending;
 
 	[SerializeField]
-	protected string[] endTexts;
+	protected GameObject shootEndPrefab;
+	[SerializeField]
+	protected GameObject throwEndPrefab;
+	[SerializeField]
+	protected Transform shootEndTransform;
+	[SerializeField]
+	protected Transform throwEndTransform;
 
-	protected int ending;
-	protected GameObject endSplash;
-	protected Text splashText;
+	protected GameObject llamas;
+	protected SceneChanger changer;
 	void Awake(){
-		endSplash = GameObject.Find("EndSplash");
-		splashText = endSplash.GetComponentInChildren<Text>();
-		endSplash.SetActive(false);
+		changer = GameObject.FindGameObjectWithTag("Manager").GetComponent<SceneChanger>();
+		llamas = GameObject.Find("_ANIMATED_LLAMAS");
 	}
 
 	public override void UpdateObj(bool b, int i ){
@@ -29,11 +34,24 @@ public class EndGame : ObjectiveListener {
 	}
 	protected override void CompleteObjective(){
 		GameObject.FindGameObjectWithTag("Player").GetComponent<RhunCharacter>().ToggleCursor();
-		endSplash.SetActive(true);
-		splashText.text = endTexts[ending];
-	}
-	// Update is called once per frame
-	void Update () {
-		
+		switch (ending){
+		case 0:
+			Destroy(GameObject.Find("OfficeWindow"));
+			Destroy(llamas);
+			Instantiate(throwEndPrefab, throwEndTransform.position, throwEndTransform.rotation);
+			break;
+		case 1:
+			changer.LoadScene("ExteriorSpeakeasyWhitebox", "EndGame");
+			break;
+		case 2:
+			
+			break;
+		case 3:
+			Destroy(llamas);
+			Instantiate(shootEndPrefab, shootEndTransform.position, shootEndTransform.rotation);
+			break;
+		default:
+			break;
+		}
 	}
 }

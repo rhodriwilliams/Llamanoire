@@ -22,19 +22,29 @@ public class RhunCharacter : MonoBehaviour {
 	
 	// Update is called once per frame
 	void FixedUpdate () {
-		if(!busy){
+		if(!busy){ //in a menu or interacting with something
+
+			//find direction vectors
 			Vector3 forward = mainCamera.forward * Input.GetAxis("Vertical");
 			Vector3 right = mainCamera.right * Input.GetAxis("Horizontal");
+			
+			//vector for how the character will move
 			Vector3 movement = (forward + right);
 			movement = movement.normalized;
+
+			
+
+			//move the character
+			controller.SimpleMove(movement * speed);
+
+			//animate the character
 			animator.SetFloat("Input X", Input.GetAxis("Horizontal"));
 			animator.SetFloat("Input Y", Input.GetAxis("Vertical"));
-			controller.SimpleMove(movement * speed);// * Time.deltaTime);
-
 			if(movement.magnitude > 0){
 				if(!animator.GetBool("IsWalking"))
 					animator.SetBool("IsWalking", true);
 
+				//rotate the character to face forward
 				float camYAngle = mainCamera.rotation.eulerAngles.y;
 				transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.Euler(0f, camYAngle, 0f), 0.1f);
 

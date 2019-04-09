@@ -109,7 +109,7 @@ public class Dialogue : MonoBehaviour {
 			buttonTexts[i].transform.parent.gameObject.SetActive(false);
 		}
 		if (node.autoTime > 0f){
-			IEnumerator coroutine = CanSkip(2f, node.options);
+			IEnumerator coroutine = CanSkip(node.options);
 			StartCoroutine(coroutine);
 		}
 		currentNode = nodeIndex;
@@ -119,9 +119,10 @@ public class Dialogue : MonoBehaviour {
 		//find the button that was clicked and open a new node accordingly
 		int buttonNo = int.Parse(EventSystem.current.currentSelectedGameObject.name);
 		DialogueOption option = nodeList[currentNode].options[buttonNo]; //find the dialogue option selected
-		if(option.function == ""){ //for special dialogue actions like exiting and animation
+		if(option.function == ""){ 
 			DisplayNode(option.nextNode);
 		} else {
+			//for special dialogue actions like exiting and animation
 			SendMessage(option.function, option, SendMessageOptions.RequireReceiver);
 		}
 
@@ -171,8 +172,9 @@ public class Dialogue : MonoBehaviour {
 		yield return new WaitForSeconds(waitTime);
 		ExitDialogue();
 	}
-	IEnumerator CanSkip(float waitTime, DialogueOption[] options){
-		yield return new WaitForSeconds(waitTime / 2f);
+	IEnumerator CanSkip(DialogueOption[] options){
+		//wait two seconds before allowing the player to continue
+		yield return new WaitForSeconds(2f);
 		canSkip = true;
 		if(options.Length == 0){
 			skipMessage.SetActive(true);

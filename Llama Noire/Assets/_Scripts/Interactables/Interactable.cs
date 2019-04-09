@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(SphereCollider))]
-public class Interactable : MonoBehaviour {
+public abstract class Interactable : MonoBehaviour {
 	public bool requireHover = true;
 	protected ToolTip toolTip;
 	public string objectName;
@@ -28,8 +28,8 @@ public class Interactable : MonoBehaviour {
 	}
 	}
 	void OnTriggerStay(Collider other){
+		//when the player is close enough, and pointing at the object, display the tool tip
 		if(other.gameObject == player){
-			
 			if(requireHover){
 				if(Input.GetButtonDown("Interact") && isHovering)
 					Interact();
@@ -42,13 +42,13 @@ public class Interactable : MonoBehaviour {
 					isHovering = false;
 				}
 			} else {
-			if(Input.GetButtonDown("Interact"))
-				Interact();
+				if(Input.GetButtonDown("Interact"))
+					Interact();
 			}
 		}
 	}
 
-	public virtual void Interact(){}
+	public abstract void Interact();
 
 	protected bool CameraIsPointingAt(){
 		RaycastHit hit;
